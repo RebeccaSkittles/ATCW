@@ -20,14 +20,14 @@ It's CARD WARS!
 
 ## Download
 
-* [Latest Windows Version](https://github.com/shishkabob27/CardWars/releases/latest/download/CardWars-Windows.zip)
-* Mac Version - Coming Soon
-* Linux Version - Coming Soon
+* [Latest Windows Version](https://github.com/ThugRod/CardWarsOriginal/releases/download/latest/CardWars-Windows.zip)
+* [Latest Android Version](https://github.com/ThugRod/CardWarsOriginal/releases/download/latest/CardWars.apk)
+* IOS & Linux - Hopefully Coming Soon
 
 ## Images
 ![CardWars_r8d9H393Tp](https://i.imgur.com/cXUolY0.jpg)
 ![CardWars_F7nDRbIxel](https://i.imgur.com/N3BH326.jpg)
 
 ## Contributing
-Card Wars uses Unity 2017.4.40f1. No other dependencies are required.
+Card Wars used Unity 2017.4.40f1. Other dependencies may be required.
 Imported to Unity 2022.3.33f for Android APK export compatibility
