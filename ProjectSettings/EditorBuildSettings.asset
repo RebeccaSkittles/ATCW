@@ -1,0 +1,40 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1045 &1
+EditorBuildSettings:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Scene/Scenes/StartupScene.unity
+    guid: 65352a212b337ba4fa2786315b20e764
+  - enabled: 1
+    path: Assets/Scene/Scenes/AppReloadScene.unity
+    guid: 5b4176f30f5d8c642b575e9898d7890c
+  - enabled: 1
+    path: Assets/Scene/_hirez/Scenes/AdventureTime.unity
+    guid: 64d9ea1239e21454d8f26c13ef1f0e52
+  - enabled: 1
+    path: Assets/Scene/_hirez/Scenes/AdventureTimeEnvironmentChristmas.unity
+    guid: c82aa11f78872ef47b354fc4cdd55b41
+  - enabled: 1
+    path: Assets/Scene/_hirez/Scenes/AdventureTimeEnvironmentHalloween.unity
+    guid: ab32af215f382da4e8869c353a76b279
+  - enabled: 1
+    path: Assets/Scene/_hirez/Scenes/AssetLoader.unity
+    guid: 40b59f82ff8055c4dbaefc4fc1220c0c
+  - enabled: 1
+    path: Assets/Scene/_hirez/Scenes/AuthScene.unity
+    guid: 933a92f4c02776747a84f03d3312b92b
+  - enabled: 1
+    path: Assets/Scene/_hirez/Scenes/BattleScene.unity
+    guid: 82e8c44d3a89fec4ba465edab774a583
+  - enabled: 1
+    path: Assets/Scene/_hirez/Scenes/DeckManagerScene.unity
+    guid: a020d5337f0b60446ba994b4a1a221cb
+  - enabled: 1
+    path: Assets/Scene/_hirez/Scenes/LoadingScreen.unity
+    guid: 41b33122b00929a44b85edac25a55b3e
+  - enabled: 1
+    path: Assets/Scene/_hirez/Scenes/QuestMapScene.unity
+    guid: f0a0866e4873c344e859822f00e39e49

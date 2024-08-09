@@ -1,0 +1,580 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &100100000
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications: []
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 0}
+  m_RootGameObject: {fileID: 1475134561528227}
+  m_IsPrefabParent: 1
+--- !u!1 &1475134561528227
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 4667043809827260}
+  - component: {fileID: 114279835941248876}
+  m_Layer: 0
+  m_Name: low_GUIAtlas_3
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4667043809827260
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1475134561528227}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &114279835941248876
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1475134561528227}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9302d66c6ec4a0b4cb9c85efd0477c38, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  material: {fileID: 2100000, guid: 25511f100c9bf3447919e3d87c8365df, type: 2}
+  sprites:
+  - name: uiMarket
+    outer:
+      serializedVersion: 2
+      x: 0.7890625
+      y: 0.8828125
+      width: 0.072265625
+      height: 0.076171875
+    inner:
+      serializedVersion: 2
+      x: 0.7890625
+      y: 0.8828125
+      width: 0.072265625
+      height: 0.076171875
+    rotated: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: uiHalloween
+    outer:
+      serializedVersion: 2
+      x: 0.9213867
+      y: 0.6035156
+      width: 0.07324219
+      height: 0.07714844
+    inner:
+      serializedVersion: 2
+      x: 0.9213867
+      y: 0.6035156
+      width: 0.07324219
+      height: 0.07714844
+    rotated: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: uiOptions
+    outer:
+      serializedVersion: 2
+      x: 0.7895508
+      y: 0.72753906
+      width: 0.072753906
+      height: 0.07714844
+    inner:
+      serializedVersion: 2
+      x: 0.7895508
+      y: 0.72753906
+      width: 0.072753906
+      height: 0.07714844
+    rotated: 0
+    paddingLeft: 0
+    paddingRight: 0.006711409
+    paddingTop: 0
+    paddingBottom: 0
+  - name: uiChristmas
+    outer:
+      serializedVersion: 2
+      x: 0.67626953
+      y: 0.81591797
+      width: 0.07324219
+      height: 0.07714844
+    inner:
+      serializedVersion: 2
+      x: 0.67626953
+      y: 0.81591797
+      width: 0.07324219
+      height: 0.07714844
+    rotated: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: uiBattle
+    outer:
+      serializedVersion: 2
+      x: 0.43164062
+      y: 0.30566406
+      width: 0.17333984
+      height: 0.09082031
+    inner:
+      serializedVersion: 2
+      x: 0.43164062
+      y: 0.30566406
+      width: 0.17333984
+      height: 0.09082031
+    rotated: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: uiDeckManager
+    outer:
+      serializedVersion: 2
+      x: 0.7895508
+      y: 0.8051758
+      width: 0.072753906
+      height: 0.076660156
+    inner:
+      serializedVersion: 2
+      x: 0.7895508
+      y: 0.8051758
+      width: 0.072753906
+      height: 0.076660156
+    rotated: 0
+    paddingLeft: 0.006711409
+    paddingRight: 0
+    paddingTop: 0.006369427
+    paddingBottom: 0
+  - name: uiChests
+    outer:
+      serializedVersion: 2
+      x: 0.86279297
+      y: 0.72753906
+      width: 0.072753906
+      height: 0.076660156
+    inner:
+      serializedVersion: 2
+      x: 0.86279297
+      y: 0.72753906
+      width: 0.072753906
+      height: 0.076660156
+    rotated: 0
+    paddingLeft: 0.006711409
+    paddingRight: 0
+    paddingTop: 0.006369427
+    paddingBottom: 0
+  - name: uiDungeon
+    outer:
+      serializedVersion: 2
+      x: 0.67626953
+      y: 0.8935547
+      width: 0.07324219
+      height: 0.07714844
+    inner:
+      serializedVersion: 2
+      x: 0.67626953
+      y: 0.8935547
+      width: 0.07324219
+      height: 0.07714844
+    rotated: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: BMO_Next_Button
+    outer:
+      serializedVersion: 2
+      x: 0.71875
+      y: 0.30566406
+      width: 0.068847656
+      height: 0.08300781
+    inner:
+      serializedVersion: 2
+      x: 0.71875
+      y: 0.30566406
+      width: 0.068847656
+      height: 0.08300781
+    rotated: 0
+    paddingLeft: 0.0141844
+    paddingRight: 0.0141844
+    paddingTop: 0
+    paddingBottom: 0
+  - name: Fisto_Challenge
+    outer:
+      serializedVersion: 2
+      x: 0.8095703
+      y: 0.26611328
+      width: 0.18017578
+      height: 0.13574219
+    inner:
+      serializedVersion: 2
+      x: 0.8095703
+      y: 0.26611328
+      width: 0.18017578
+      height: 0.13574219
+    rotated: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: Fisto_Frame
+    outer:
+      serializedVersion: 2
+      x: 0.60546875
+      y: 0.30566406
+      width: 0.11279297
+      height: 0.087890625
+    inner:
+      serializedVersion: 2
+      x: 0.64941406
+      y: 0.34375
+      width: 0.015136719
+      height: 0.014160156
+    rotated: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: TC_Challenge
+    outer:
+      serializedVersion: 2
+      x: 0.49609375
+      y: 0.6035156
+      width: 0.1796875
+      height: 0.13574219
+    inner:
+      serializedVersion: 2
+      x: 0.49609375
+      y: 0.6035156
+      width: 0.1796875
+      height: 0.13574219
+    rotated: 0
+    paddingLeft: 0.002717391
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: TC_portraitbox
+    outer:
+      serializedVersion: 2
+      x: 0.49609375
+      y: 0.7397461
+      width: 0.12207031
+      height: 0.123535156
+    inner:
+      serializedVersion: 2
+      x: 0.49609375
+      y: 0.7397461
+      width: 0.12207031
+      height: 0.123535156
+    rotated: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: Fisto_Shadowbox
+    outer:
+      serializedVersion: 2
+      x: 0.36132812
+      y: 0.6035156
+      width: 0.13427734
+      height: 0.2109375
+    inner:
+      serializedVersion: 2
+      x: 0.36132812
+      y: 0.6035156
+      width: 0.13427734
+      height: 0.2109375
+    rotated: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: TC_challengebox
+    outer:
+      serializedVersion: 2
+      x: 0.36132812
+      y: 0.8149414
+      width: 0.12207031
+      height: 0.123535156
+    inner:
+      serializedVersion: 2
+      x: 0.36132812
+      y: 0.8149414
+      width: 0.12207031
+      height: 0.123535156
+    rotated: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0.003952569
+    paddingBottom: 0
+  - name: Icon_button
+    outer:
+      serializedVersion: 2
+      x: 0.86279297
+      y: 0.8051758
+      width: 0.07128906
+      height: 0.071777344
+    inner:
+      serializedVersion: 2
+      x: 0.86279297
+      y: 0.8051758
+      width: 0.07128906
+      height: 0.071777344
+    rotated: 0
+    paddingLeft: 0.006849315
+    paddingRight: 0.006849315
+    paddingTop: 0.006802721
+    paddingBottom: 0
+  - name: Sidequest_Frame
+    outer:
+      serializedVersion: 2
+      x: 0.67626953
+      y: 0.72753906
+      width: 0.11279297
+      height: 0.087890625
+    inner:
+      serializedVersion: 2
+      x: 0.7207031
+      y: 0.765625
+      width: 0.018066406
+      height: 0.0146484375
+    rotated: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: LEGGitem
+    outer:
+      serializedVersion: 2
+      x: 0.67626953
+      y: 0.6035156
+      width: 0.12207031
+      height: 0.123535156
+    inner:
+      serializedVersion: 2
+      x: 0.67626953
+      y: 0.6035156
+      width: 0.12207031
+      height: 0.123535156
+    rotated: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0.003952569
+    paddingBottom: 0
+  - name: Tubeitem
+    outer:
+      serializedVersion: 2
+      x: 0.49609375
+      y: 0.86376953
+      width: 0.12207031
+      height: 0.123535156
+    inner:
+      serializedVersion: 2
+      x: 0.49609375
+      y: 0.86376953
+      width: 0.12207031
+      height: 0.123535156
+    rotated: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0.003952569
+    paddingBottom: 0
+  - name: fezzitem
+    outer:
+      serializedVersion: 2
+      x: 0.7988281
+      y: 0.6035156
+      width: 0.12207031
+      height: 0.123535156
+    inner:
+      serializedVersion: 2
+      x: 0.7988281
+      y: 0.6035156
+      width: 0.12207031
+      height: 0.123535156
+    rotated: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0.003952569
+    paddingBottom: 0
+  - name: ItemNumber
+    outer:
+      serializedVersion: 2
+      x: 0.36132812
+      y: 0.93896484
+      width: 0.084472656
+      height: 0.055664062
+    inner:
+      serializedVersion: 2
+      x: 0.36132812
+      y: 0.93896484
+      width: 0.084472656
+      height: 0.055664062
+    rotated: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: fistosurrender
+    outer:
+      serializedVersion: 2
+      x: 0.36132812
+      y: 0.40234375
+      width: 0.30810547
+      height: 0.2006836
+    inner:
+      serializedVersion: 2
+      x: 0.36132812
+      y: 0.40234375
+      width: 0.30810547
+      height: 0.2006836
+    rotated: 0
+    paddingLeft: 0.01426307
+    paddingRight: 0.06339144
+    paddingTop: 0.1216545
+    paddingBottom: 0
+  - name: fistobeback
+    outer:
+      serializedVersion: 2
+      x: 0.6699219
+      y: 0.40234375
+      width: 0.26953125
+      height: 0.2006836
+    inner:
+      serializedVersion: 2
+      x: 0.6699219
+      y: 0.40234375
+      width: 0.26953125
+      height: 0.2006836
+    rotated: 0
+    paddingLeft: 0.1594203
+    paddingRight: 0.07246377
+    paddingTop: 0.1216545
+    paddingBottom: 0
+  - name: Fisto_SwordR
+    outer:
+      serializedVersion: 2
+      x: 0
+      y: 0.40234375
+      width: 0.36083984
+      height: 0.2919922
+    inner:
+      serializedVersion: 2
+      x: 0
+      y: 0.40234375
+      width: 0.36083984
+      height: 0.2919922
+    rotated: 0
+    paddingLeft: 0.1786198
+    paddingRight: 0.2070365
+    paddingTop: 0.2374582
+    paddingBottom: 0.4749164
+  - name: Fisto_SwordL
+    outer:
+      serializedVersion: 2
+      x: 0
+      y: 0.6948242
+      width: 0.36083984
+      height: 0.2919922
+    inner:
+      serializedVersion: 2
+      x: 0
+      y: 0.6948242
+      width: 0.36083984
+      height: 0.2919922
+    rotated: 0
+    paddingLeft: 0.2070365
+    paddingRight: 0.1786198
+    paddingTop: 0.2374582
+    paddingBottom: 0.4749164
+  - name: Fisto_mit
+    outer:
+      serializedVersion: 2
+      x: 0.8095703
+      y: 0
+      width: 0.1616211
+      height: 0.265625
+    inner:
+      serializedVersion: 2
+      x: 0.8095703
+      y: 0
+      width: 0.1616211
+      height: 0.265625
+    rotated: 0
+    paddingLeft: 1.045317
+    paddingRight: 1.048338
+    paddingTop: 0.3143382
+    paddingBottom: 0.5680147
+  - name: Fisto_burst
+    outer:
+      serializedVersion: 2
+      x: 0.43164062
+      y: 0
+      width: 0.3774414
+      height: 0.30517578
+    inner:
+      serializedVersion: 2
+      x: 0.43164062
+      y: 0
+      width: 0.3774414
+      height: 0.30517578
+    rotated: 0
+    paddingLeft: 0.1824062
+    paddingRight: 0.1423027
+    paddingTop: 0.2288
+    paddingBottom: 0.4096
+  - name: Icon_CardGold
+    outer:
+      serializedVersion: 2
+      x: 0.9399414
+      y: 0.40234375
+      width: 0.037597656
+      height: 0.05859375
+    inner:
+      serializedVersion: 2
+      x: 0.9399414
+      y: 0.40234375
+      width: 0.037597656
+      height: 0.05859375
+    rotated: 0
+    paddingLeft: 0.3246753
+    paddingRight: 0.3376623
+    paddingTop: 0.04166667
+    paddingBottom: 0.025
+  - name: Fistogoldcard
+    outer:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0.43115234
+      height: 0.40185547
+    inner:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0.43115234
+      height: 0.40185547
+    rotated: 0
+    paddingLeft: 0.1177803
+    paddingRight: 0.04190261
+    paddingTop: 0.09356014
+    paddingBottom: 0.1506683
+  mCoordinates: 1
+  mPixelSize: 2
+  mReplacement: {fileID: 0}

@@ -1,0 +1,2434 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &100100000
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications: []
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 0}
+  m_RootGameObject: {fileID: 1198295558922455}
+  m_IsPrefabParent: 1
+--- !u!1 &1198295558922455
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 4073193368786501}
+  - component: {fileID: 114531819187677093}
+  m_Layer: 8
+  m_Name: low_GUIAtlas
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4073193368786501
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1198295558922455}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: -104.34, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &114531819187677093
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1198295558922455}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9302d66c6ec4a0b4cb9c85efd0477c38, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  material: {fileID: 2100000, guid: b48d3d995a9875640b80341c0f0394f4, type: 2}
+  sprites:
+  - name: Arrow_Icon
+    outer:
+      serializedVersion: 2
+      x: 0.48828125
+      y: 0.72753906
+      width: 0.07324219
+      height: 0.07324219
+    inner:
+      serializedVersion: 2
+      x: 0.48828125
+      y: 0.72753906
+      width: 0.07324219
+      height: 0.07324219
+    rotated: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: Battle_Flash
+    outer:
+      serializedVersion: 2
+      x: 0
+      y: 0.14794922
+      width: 0.17089844
+      height: 0.17089844
+    inner:
+      serializedVersion: 2
+      x: 0
+      y: 0.14794922
+      width: 0.17089844
+      height: 0.17089844
+    rotated: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: Battle_Shield
+    outer:
+      serializedVersion: 2
+      x: 0.17138672
+      y: 0.46972656
+      width: 0.125
+      height: 0.125
+    inner:
+      serializedVersion: 2
+      x: 0.17138672
+      y: 0.46972656
+      width: 0.125
+      height: 0.125
+    rotated: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: Book
+    outer:
+      serializedVersion: 2
+      x: 0.69384766
+      y: 0.6928711
+      width: 0.05810547
+      height: 0.06591797
+    inner:
+      serializedVersion: 2
+      x: 0.69384766
+      y: 0.6928711
+      width: 0.05810547
+      height: 0.06591797
+    rotated: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: Bottle_Empty
+    outer:
+      serializedVersion: 2
+      x: 0.56152344
+      y: 0.6821289
+      width: 0.0625
+      height: 0.0625
+    inner:
+      serializedVersion: 2
+      x: 0.56152344
+      y: 0.6821289
+      width: 0.0625
+      height: 0.0625
+    rotated: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: Bottle_Full
+    outer:
+      serializedVersion: 2
+      x: 0.56152344
+      y: 0.7451172
+      width: 0.0625
+      height: 0.0625
+    inner:
+      serializedVersion: 2
+      x: 0.56152344
+      y: 0.7451172
+      width: 0.0625
+      height: 0.0625
+    rotated: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: BottomBar
+    outer:
+      serializedVersion: 2
+      x: 0.6533203
+      y: 0.4946289
+      width: 0.09472656
+      height: 0.0546875
+    inner:
+      serializedVersion: 2
+      x: 0.6899414
+      y: 0.4946289
+      width: 0.021484375
+      height: 0.0546875
+    rotated: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: Button_Back
+    outer:
+      serializedVersion: 2
+      x: 0.7036133
+      y: 0.22314453
+      width: 0.10595703
+      height: 0.104003906
+    inner:
+      serializedVersion: 2
+      x: 0.7036133
+      y: 0.22314453
+      width: 0.10595703
+      height: 0.104003906
+    rotated: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: Button_Back_Gold
+    outer:
+      serializedVersion: 2
+      x: 0.8100586
+      y: 0.22314453
+      width: 0.10595703
+      height: 0.104003906
+    inner:
+      serializedVersion: 2
+      x: 0.8100586
+      y: 0.22314453
+      width: 0.10595703
+      height: 0.104003906
+    rotated: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: CardAmount
+    outer:
+      serializedVersion: 2
+      x: 0.13085938
+      y: 0.81103516
+      width: 0.038085938
+      height: 0.037109375
+    inner:
+      serializedVersion: 2
+      x: 0.14111328
+      y: 0.8232422
+      width: 0.015625
+      height: 0.0126953125
+    rotated: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: CheckMark
+    outer:
+      serializedVersion: 2
+      x: 0.95214844
+      y: 0.6298828
+      width: 0.045410156
+      height: 0.0625
+    inner:
+      serializedVersion: 2
+      x: 0.95214844
+      y: 0.6298828
+      width: 0.045410156
+      height: 0.0625
+    rotated: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: Craft_NewCardBadge
+    outer:
+      serializedVersion: 2
+      x: 0.48779297
+      y: 0.93310547
+      width: 0.064941406
+      height: 0.06347656
+    inner:
+      serializedVersion: 2
+      x: 0.48779297
+      y: 0.93310547
+      width: 0.064941406
+      height: 0.06347656
+    rotated: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: CW_Grey
+    outer:
+      serializedVersion: 2
+      x: 0.86279297
+      y: 0.4560547
+      width: 0.03125
+      height: 0.03125
+    inner:
+      serializedVersion: 2
+      x: 0.86279297
+      y: 0.4560547
+      width: 0.03125
+      height: 0.03125
+    rotated: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: DailyGift
+    outer:
+      serializedVersion: 2
+      x: 0.6376953
+      y: 0.6928711
+      width: 0.055664062
+      height: 0.06982422
+    inner:
+      serializedVersion: 2
+      x: 0.6376953
+      y: 0.6928711
+      width: 0.055664062
+      height: 0.06982422
+    rotated: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: DailyGiftBg
+    outer:
+      serializedVersion: 2
+      x: 0.3022461
+      y: 0.5698242
+      width: 0.09765625
+      height: 0.09814453
+    inner:
+      serializedVersion: 2
+      x: 0.3022461
+      y: 0.5698242
+      width: 0.09765625
+      height: 0.09814453
+    rotated: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: Deck
+    outer:
+      serializedVersion: 2
+      x: 0.6376953
+      y: 0.7631836
+      width: 0.05126953
+      height: 0.0625
+    inner:
+      serializedVersion: 2
+      x: 0.6376953
+      y: 0.7631836
+      width: 0.05126953
+      height: 0.0625
+    rotated: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: Deck_Discard
+    outer:
+      serializedVersion: 2
+      x: 0.9433594
+      y: 0.34570312
+      width: 0.05126953
+      height: 0.0625
+    inner:
+      serializedVersion: 2
+      x: 0.9433594
+      y: 0.34570312
+      width: 0.05126953
+      height: 0.0625
+    rotated: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: EmptyCardSlot
+    outer:
+      serializedVersion: 2
+      x: 0.7524414
+      y: 0.81640625
+      width: 0.04638672
+      height: 0.045898438
+    inner:
+      serializedVersion: 2
+      x: 0.76220703
+      y: 0.8261719
+      width: 0.026855469
+      height: 0.026367188
+    rotated: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: Finger_SwipeUp
+    outer:
+      serializedVersion: 2
+      x: 0.103027344
+      y: 0.45117188
+      width: 0.059570312
+      height: 0.125
+    inner:
+      serializedVersion: 2
+      x: 0.103027344
+      y: 0.45117188
+      width: 0.059570312
+      height: 0.125
+    rotated: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: FingerEffect
+    outer:
+      serializedVersion: 2
+      x: 0.56152344
+      y: 0.80810547
+      width: 0.0625
+      height: 0.0625
+    inner:
+      serializedVersion: 2
+      x: 0.56152344
+      y: 0.80810547
+      width: 0.0625
+      height: 0.0625
+    rotated: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: FloopCostBadge
+    outer:
+      serializedVersion: 2
+      x: 0.13085938
+      y: 0.7705078
+      width: 0.040039062
+      height: 0.040039062
+    inner:
+      serializedVersion: 2
+      x: 0.13085938
+      y: 0.7705078
+      width: 0.040039062
+      height: 0.040039062
+    rotated: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: FloopPanel_BG
+    outer:
+      serializedVersion: 2
+      x: 0.9614258
+      y: 0.18359375
+      width: 0.03564453
+      height: 0.033691406
+    inner:
+      serializedVersion: 2
+      x: 0.9711914
+      y: 0.19335938
+      width: 0.016113281
+      height: 0.014160156
+    rotated: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: FloopPanel_NameBG
+    outer:
+      serializedVersion: 2
+      x: 0.12939453
+      y: 0.31933594
+      width: 0.030273438
+      height: 0.125
+    inner:
+      serializedVersion: 2
+      x: 0.14160156
+      y: 0.33398438
+      width: 0.005859375
+      height: 0.051757812
+    rotated: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: FlyingCard
+    outer:
+      serializedVersion: 2
+      x: 0.8388672
+      y: 0.34570312
+      width: 0.104003906
+      height: 0.056152344
+    inner:
+      serializedVersion: 2
+      x: 0.8388672
+      y: 0.34570312
+      width: 0.104003906
+      height: 0.056152344
+    rotated: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: FlyingCardBack
+    outer:
+      serializedVersion: 2
+      x: 0.3022461
+      y: 0.44433594
+      width: 0.084472656
+      height: 0.125
+    inner:
+      serializedVersion: 2
+      x: 0.3022461
+      y: 0.44433594
+      width: 0.084472656
+      height: 0.125
+    rotated: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: Frame_Defeat
+    outer:
+      serializedVersion: 2
+      x: 0.17138672
+      y: 0.22314453
+      width: 0.1303711
+      height: 0.12060547
+    inner:
+      serializedVersion: 2
+      x: 0.22021484
+      y: 0.27197266
+      width: 0.032714844
+      height: 0.022949219
+    rotated: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: Frame_Victory
+    outer:
+      serializedVersion: 2
+      x: 0
+      y: 0.8491211
+      width: 0.1303711
+      height: 0.12060547
+    inner:
+      serializedVersion: 2
+      x: 0.036621094
+      y: 0.890625
+      width: 0.0546875
+      height: 0.04248047
+    rotated: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: GoldPlaque
+    outer:
+      serializedVersion: 2
+      x: 0.17138672
+      y: 0.14794922
+      width: 0.23339844
+      height: 0.07470703
+    inner:
+      serializedVersion: 2
+      x: 0.30566406
+      y: 0.14794922
+      width: 0.013671875
+      height: 0.07470703
+    rotated: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: Hammer
+    outer:
+      serializedVersion: 2
+      x: 0.17138672
+      y: 0.7207031
+      width: 0.125
+      height: 0.125
+    inner:
+      serializedVersion: 2
+      x: 0.17138672
+      y: 0.7207031
+      width: 0.125
+      height: 0.125
+    rotated: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: HealthBar_Creature
+    outer:
+      serializedVersion: 2
+      x: 0.9243164
+      y: 0.12548828
+      width: 0.0146484375
+      height: 0.0146484375
+    inner:
+      serializedVersion: 2
+      x: 0.9267578
+      y: 0.12792969
+      width: 0.009765625
+      height: 0.009765625
+    rotated: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: HealthBar_UpDown_Arrow
+    outer:
+      serializedVersion: 2
+      x: 0.13085938
+      y: 0.6069336
+      width: 0.036132812
+      height: 0.0625
+    inner:
+      serializedVersion: 2
+      x: 0.13085938
+      y: 0.6069336
+      width: 0.036132812
+      height: 0.0625
+    rotated: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: Heart
+    outer:
+      serializedVersion: 2
+      x: 0.17138672
+      y: 0.59521484
+      width: 0.125
+      height: 0.125
+    inner:
+      serializedVersion: 2
+      x: 0.17138672
+      y: 0.59521484
+      width: 0.125
+      height: 0.125
+    rotated: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: HUD_Coins
+    outer:
+      serializedVersion: 2
+      x: 0.81152344
+      y: 0.75341797
+      width: 0.08642578
+      height: 0.03955078
+    inner:
+      serializedVersion: 2
+      x: 0.81152344
+      y: 0.75341797
+      width: 0.08642578
+      height: 0.03955078
+    rotated: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: HUD_Gems
+    outer:
+      serializedVersion: 2
+      x: 0.9165039
+      y: 0.3017578
+      width: 0.0703125
+      height: 0.041992188
+    inner:
+      serializedVersion: 2
+      x: 0.9165039
+      y: 0.3017578
+      width: 0.0703125
+      height: 0.041992188
+    rotated: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: HUD_Inventory
+    outer:
+      serializedVersion: 2
+      x: 0.9091797
+      y: 0.4946289
+      width: 0.0859375
+      height: 0.04638672
+    inner:
+      serializedVersion: 2
+      x: 0.9667969
+      y: 0.4946289
+      width: 0.0014648438
+      height: 0.04638672
+    rotated: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: HUD_PlayerInfo
+    outer:
+      serializedVersion: 2
+      x: 0.6020508
+      y: 0.14794922
+      width: 0.24511719
+      height: 0.04736328
+    inner:
+      serializedVersion: 2
+      x: 0.67529297
+      y: 0.14794922
+      width: 0.015625
+      height: 0.04736328
+    rotated: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: Icon_CardBlack
+    outer:
+      serializedVersion: 2
+      x: 0.56152344
+      y: 0.87109375
+      width: 0.0625
+      height: 0.0625
+    inner:
+      serializedVersion: 2
+      x: 0.56152344
+      y: 0.87109375
+      width: 0.0625
+      height: 0.0625
+    rotated: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: Icon_CardGold
+    outer:
+      serializedVersion: 2
+      x: 0.56152344
+      y: 0.93408203
+      width: 0.0625
+      height: 0.0625
+    inner:
+      serializedVersion: 2
+      x: 0.56152344
+      y: 0.93408203
+      width: 0.0625
+      height: 0.0625
+    rotated: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: Icon_CardNormal
+    outer:
+      serializedVersion: 2
+      x: 0.6376953
+      y: 0.6298828
+      width: 0.0625
+      height: 0.0625
+    inner:
+      serializedVersion: 2
+      x: 0.6376953
+      y: 0.6298828
+      width: 0.0625
+      height: 0.0625
+    rotated: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: IconChooseCard
+    outer:
+      serializedVersion: 2
+      x: 0
+      y: 0.31933594
+      width: 0.12890625
+      height: 0.13134766
+    inner:
+      serializedVersion: 2
+      x: 0
+      y: 0.31933594
+      width: 0.12890625
+      height: 0.13134766
+    rotated: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: IconInventory
+    outer:
+      serializedVersion: 2
+      x: 0.3022461
+      y: 0.34570312
+      width: 0.111328125
+      height: 0.09814453
+    inner:
+      serializedVersion: 2
+      x: 0.3022461
+      y: 0.34570312
+      width: 0.111328125
+      height: 0.09814453
+    rotated: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: IconLoot
+    outer:
+      serializedVersion: 2
+      x: 0.7441406
+      y: 0
+      width: 0.14013672
+      height: 0.14501953
+    inner:
+      serializedVersion: 2
+      x: 0.7441406
+      y: 0
+      width: 0.14013672
+      height: 0.14501953
+    rotated: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: LB_Gray
+    outer:
+      serializedVersion: 2
+      x: 0.9394531
+      y: 0.6928711
+      width: 0.046875
+      height: 0.048828125
+    inner:
+      serializedVersion: 2
+      x: 0.9614258
+      y: 0.71484375
+      width: 0.0029296875
+      height: 0.0048828125
+    rotated: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: MP_FindMatchBar
+    outer:
+      serializedVersion: 2
+      x: 0.8847656
+      y: 0.12548828
+      width: 0.0390625
+      height: 0.018554688
+    inner:
+      serializedVersion: 2
+      x: 0.88964844
+      y: 0.12548828
+      width: 0.009765625
+      height: 0.018554688
+    rotated: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: MP_FindMatchIcon
+    outer:
+      serializedVersion: 2
+      x: 0.13085938
+      y: 0.8491211
+      width: 0.032714844
+      height: 0.048828125
+    inner:
+      serializedVersion: 2
+      x: 0.13085938
+      y: 0.8491211
+      width: 0.032714844
+      height: 0.048828125
+    rotated: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: MP_Icon
+    outer:
+      serializedVersion: 2
+      x: 0.12988281
+      y: 0.57666016
+      width: 0.023925781
+      height: 0.025878906
+    inner:
+      serializedVersion: 2
+      x: 0.12988281
+      y: 0.57666016
+      width: 0.023925781
+      height: 0.025878906
+    rotated: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: MP_Icon_vs
+    outer:
+      serializedVersion: 2
+      x: 0.103027344
+      y: 0.57666016
+      width: 0.026367188
+      height: 0.026855469
+    inner:
+      serializedVersion: 2
+      x: 0.103027344
+      y: 0.57666016
+      width: 0.026367188
+      height: 0.026855469
+    rotated: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: MP_Name
+    outer:
+      serializedVersion: 2
+      x: 0.56152344
+      y: 0.4946289
+      width: 0.091308594
+      height: 0.060058594
+    inner:
+      serializedVersion: 2
+      x: 0.60058594
+      y: 0.4946289
+      width: 0.013183594
+      height: 0.060058594
+    rotated: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: MP_Surrender
+    outer:
+      serializedVersion: 2
+      x: 0.4140625
+      y: 0.41015625
+      width: 0.084472656
+      height: 0.083984375
+    inner:
+      serializedVersion: 2
+      x: 0.4140625
+      y: 0.41015625
+      width: 0.084472656
+      height: 0.083984375
+    rotated: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: MP_TrophyCount
+    outer:
+      serializedVersion: 2
+      x: 0.13085938
+      y: 0.8984375
+      width: 0.037109375
+      height: 0.040039062
+    inner:
+      serializedVersion: 2
+      x: 0.13085938
+      y: 0.8984375
+      width: 0.037109375
+      height: 0.040039062
+    rotated: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: MPLevelBox
+    outer:
+      serializedVersion: 2
+      x: 0.76953125
+      y: 0.4560547
+      width: 0.056152344
+      height: 0.032226562
+    inner:
+      serializedVersion: 2
+      x: 0.76953125
+      y: 0.4560547
+      width: 0.056152344
+      height: 0.032226562
+    rotated: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: MPPortraitFrame
+    outer:
+      serializedVersion: 2
+      x: 0.3022461
+      y: 0.74902344
+      width: 0.088378906
+      height: 0.08935547
+    inner:
+      serializedVersion: 2
+      x: 0.3022461
+      y: 0.74902344
+      width: 0.088378906
+      height: 0.08935547
+    rotated: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: MPTextBox
+    outer:
+      serializedVersion: 2
+      x: 0.56152344
+      y: 0.5551758
+      width: 0.07373047
+      height: 0.07421875
+    inner:
+      serializedVersion: 2
+      x: 0.5859375
+      y: 0.57958984
+      width: 0.024902344
+      height: 0.025390625
+    rotated: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: NamePlate
+    outer:
+      serializedVersion: 2
+      x: 0.3022461
+      y: 0.92333984
+      width: 0.09277344
+      height: 0.07470703
+    inner:
+      serializedVersion: 2
+      x: 0.3388672
+      y: 0.92333984
+      width: 0.01953125
+      height: 0.07470703
+    rotated: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: Pause
+    outer:
+      serializedVersion: 2
+      x: 0.49902344
+      y: 0.41015625
+      width: 0.084472656
+      height: 0.083984375
+    inner:
+      serializedVersion: 2
+      x: 0.49902344
+      y: 0.41015625
+      width: 0.084472656
+      height: 0.083984375
+    rotated: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: PlayButton
+    outer:
+      serializedVersion: 2
+      x: 0.40527344
+      y: 0.14794922
+      width: 0.19628906
+      height: 0.064453125
+    inner:
+      serializedVersion: 2
+      x: 0.40527344
+      y: 0.14794922
+      width: 0.19628906
+      height: 0.064453125
+    rotated: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: PlayerData_StaminaBar
+    outer:
+      serializedVersion: 2
+      x: 0.16552734
+      y: 0.31933594
+      width: 0.0048828125
+      height: 0.036132812
+    inner:
+      serializedVersion: 2
+      x: 0.16552734
+      y: 0.31933594
+      width: 0.0048828125
+      height: 0.036132812
+    rotated: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: PlayerData_XPBar
+    outer:
+      serializedVersion: 2
+      x: 0.9394531
+      y: 0.12548828
+      width: 0.0126953125
+      height: 0.0126953125
+    inner:
+      serializedVersion: 2
+      x: 0.9394531
+      y: 0.12646484
+      width: 0.0126953125
+      height: 0.01171875
+    rotated: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: PopUpSprite_1
+    outer:
+      serializedVersion: 2
+      x: 0
+      y: 0.6069336
+      width: 0.1303711
+      height: 0.12060547
+    inner:
+      serializedVersion: 2
+      x: 0.048828125
+      y: 0.6557617
+      width: 0.032714844
+      height: 0.022949219
+    rotated: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: PopUpSprite_2
+    outer:
+      serializedVersion: 2
+      x: 0.17138672
+      y: 0.8461914
+      width: 0.125
+      height: 0.114746094
+    inner:
+      serializedVersion: 2
+      x: 0.203125
+      y: 0.8901367
+      width: 0.045410156
+      height: 0.056152344
+    rotated: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: Prize_Chest_Black
+    outer:
+      serializedVersion: 2
+      x: 0.7841797
+      y: 0.5551758
+      width: 0.07373047
+      height: 0.07324219
+    inner:
+      serializedVersion: 2
+      x: 0.7841797
+      y: 0.5551758
+      width: 0.07373047
+      height: 0.07324219
+    rotated: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: Prize_Chest_Gems
+    outer:
+      serializedVersion: 2
+      x: 0.85839844
+      y: 0.5551758
+      width: 0.07373047
+      height: 0.071777344
+    inner:
+      serializedVersion: 2
+      x: 0.85839844
+      y: 0.5551758
+      width: 0.07373047
+      height: 0.071777344
+    rotated: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: Prize_Chest_Gold
+    outer:
+      serializedVersion: 2
+      x: 0.70996094
+      y: 0.5551758
+      width: 0.07373047
+      height: 0.07324219
+    inner:
+      serializedVersion: 2
+      x: 0.70996094
+      y: 0.5551758
+      width: 0.07373047
+      height: 0.07324219
+    rotated: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: Prize_Coins1
+    outer:
+      serializedVersion: 2
+      x: 0.875
+      y: 0.6928711
+      width: 0.063964844
+      height: 0.05419922
+    inner:
+      serializedVersion: 2
+      x: 0.875
+      y: 0.6928711
+      width: 0.063964844
+      height: 0.05419922
+    rotated: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: Prize_Coins2
+    outer:
+      serializedVersion: 2
+      x: 0.56152344
+      y: 0.6298828
+      width: 0.075683594
+      height: 0.051757812
+    inner:
+      serializedVersion: 2
+      x: 0.56152344
+      y: 0.6298828
+      width: 0.075683594
+      height: 0.051757812
+    rotated: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: Prize_Frame
+    outer:
+      serializedVersion: 2
+      x: 0.13085938
+      y: 0.93896484
+      width: 0.03515625
+      height: 0.03515625
+    inner:
+      serializedVersion: 2
+      x: 0.14550781
+      y: 0.9536133
+      width: 0.005859375
+      height: 0.005859375
+    rotated: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: Prize_Spotlight
+    outer:
+      serializedVersion: 2
+      x: 0
+      y: 0.97021484
+      width: 0.072265625
+      height: 0.026855469
+    inner:
+      serializedVersion: 2
+      x: 0
+      y: 0.97021484
+      width: 0.072265625
+      height: 0.026855469
+    rotated: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: QuestCondition_Box
+    outer:
+      serializedVersion: 2
+      x: 0.6357422
+      y: 0.5551758
+      width: 0.07373047
+      height: 0.07421875
+    inner:
+      serializedVersion: 2
+      x: 0.66503906
+      y: 0.5991211
+      width: 0.015136719
+      height: 0.0107421875
+    rotated: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: QuestInfo_BG
+    outer:
+      serializedVersion: 2
+      x: 0.5004883
+      y: 0
+      width: 0.24316406
+      height: 0.1459961
+    inner:
+      serializedVersion: 2
+      x: 0.6225586
+      y: 0.048828125
+      width: 0.038085938
+      height: 0.048339844
+    rotated: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: QuestInfo_BG2_Small
+    outer:
+      serializedVersion: 2
+      x: 0
+      y: 0.72802734
+      width: 0.1303711
+      height: 0.12060547
+    inner:
+      serializedVersion: 2
+      x: 0.041503906
+      y: 0.76708984
+      width: 0.037597656
+      height: 0.04736328
+    rotated: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: QuestInfo_Heart
+    outer:
+      serializedVersion: 2
+      x: 0.8261719
+      y: 0.4560547
+      width: 0.036132812
+      height: 0.03125
+    inner:
+      serializedVersion: 2
+      x: 0.8261719
+      y: 0.4560547
+      width: 0.036132812
+      height: 0.03125
+    rotated: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: QuestInfo_Plate
+    outer:
+      serializedVersion: 2
+      x: 0.76953125
+      y: 0.41015625
+      width: 0.125
+      height: 0.045410156
+    inner:
+      serializedVersion: 2
+      x: 0.84033203
+      y: 0.41015625
+      width: 0.010253906
+      height: 0.045410156
+    rotated: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: QuestShield
+    outer:
+      serializedVersion: 2
+      x: 0.9614258
+      y: 0.14794922
+      width: 0.03466797
+      height: 0.03515625
+    inner:
+      serializedVersion: 2
+      x: 0.9614258
+      y: 0.14794922
+      width: 0.03466797
+      height: 0.03515625
+    rotated: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: QuestTextBox
+    outer:
+      serializedVersion: 2
+      x: 0.5839844
+      y: 0.41015625
+      width: 0.09326172
+      height: 0.07421875
+    inner:
+      serializedVersion: 2
+      x: 0.6230469
+      y: 0.45410156
+      width: 0.015136719
+      height: 0.0107421875
+    rotated: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: QuestTitle
+    outer:
+      serializedVersion: 2
+      x: 0.6894531
+      y: 0.34570312
+      width: 0.14892578
+      height: 0.04638672
+    inner:
+      serializedVersion: 2
+      x: 0.77246094
+      y: 0.34570312
+      width: 0.017089844
+      height: 0.04638672
+    rotated: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: SideGradients
+    outer:
+      serializedVersion: 2
+      x: 0.9375
+      y: 0.79345703
+      width: 0.061523438
+      height: 0.040039062
+    inner:
+      serializedVersion: 2
+      x: 0.9375
+      y: 0.79345703
+      width: 0.061523438
+      height: 0.040039062
+    rotated: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: SilverPlate
+    outer:
+      serializedVersion: 2
+      x: 0.52783203
+      y: 0.34570312
+      width: 0.16113281
+      height: 0.044433594
+    inner:
+      serializedVersion: 2
+      x: 0.61328125
+      y: 0.34570312
+      width: 0.009765625
+      height: 0.044433594
+    rotated: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: sliderBarInactive
+    outer:
+      serializedVersion: 2
+      x: 0.2705078
+      y: 0.9614258
+      width: 0.03125
+      height: 0.03125
+    inner:
+      serializedVersion: 2
+      x: 0.2705078
+      y: 0.9614258
+      width: 0.03125
+      height: 0.03125
+    rotated: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: StarButton
+    outer:
+      serializedVersion: 2
+      x: 0.3022461
+      y: 0.8388672
+      width: 0.084472656
+      height: 0.083984375
+    inner:
+      serializedVersion: 2
+      x: 0.3022461
+      y: 0.8388672
+      width: 0.084472656
+      height: 0.083984375
+    rotated: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: TextBoxBlue
+    outer:
+      serializedVersion: 2
+      x: 0.44970703
+      y: 0.9604492
+      width: 0.032714844
+      height: 0.03173828
+    inner:
+      serializedVersion: 2
+      x: 0.46191406
+      y: 0.97265625
+      width: 0.008300781
+      height: 0.0073242188
+    rotated: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: TextBoxRed
+    outer:
+      serializedVersion: 2
+      x: 0.7524414
+      y: 0.86279297
+      width: 0.032714844
+      height: 0.03173828
+    inner:
+      serializedVersion: 2
+      x: 0.76464844
+      y: 0.875
+      width: 0.008300781
+      height: 0.0073242188
+    rotated: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: Tray_BattleButton
+    outer:
+      serializedVersion: 2
+      x: 0.8847656
+      y: 0
+      width: 0.10986328
+      height: 0.125
+    inner:
+      serializedVersion: 2
+      x: 0.8847656
+      y: 0
+      width: 0.10986328
+      height: 0.125
+    rotated: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: Tray_Chest
+    outer:
+      serializedVersion: 2
+      x: 0.4140625
+      y: 0.9604492
+      width: 0.03515625
+      height: 0.03173828
+    inner:
+      serializedVersion: 2
+      x: 0.4140625
+      y: 0.9604492
+      width: 0.03515625
+      height: 0.03173828
+    rotated: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: Tray_DeckCount
+    outer:
+      serializedVersion: 2
+      x: 0.81152344
+      y: 0.79345703
+      width: 0.0625
+      height: 0.046875
+    inner:
+      serializedVersion: 2
+      x: 0.81152344
+      y: 0.79345703
+      width: 0.0625
+      height: 0.046875
+    rotated: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: Tray_DiscardCount
+    outer:
+      serializedVersion: 2
+      x: 0.8745117
+      y: 0.79345703
+      width: 0.0625
+      height: 0.046875
+    inner:
+      serializedVersion: 2
+      x: 0.8745117
+      y: 0.79345703
+      width: 0.0625
+      height: 0.046875
+    rotated: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: Tray_HealthBar
+    outer:
+      serializedVersion: 2
+      x: 0.16015625
+      y: 0.31933594
+      width: 0.0048828125
+      height: 0.036132812
+    inner:
+      serializedVersion: 2
+      x: 0.1616211
+      y: 0.31933594
+      width: 0.001953125
+      height: 0.036132812
+    rotated: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: Tray_HealthBart
+    outer:
+      serializedVersion: 2
+      x: 0.17138672
+      y: 0.9614258
+      width: 0.09863281
+      height: 0.03515625
+    inner:
+      serializedVersion: 2
+      x: 0.22509766
+      y: 0.9614258
+      width: 0.0107421875
+      height: 0.03515625
+    rotated: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: Tray_Player
+    outer:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0.5
+      height: 0.14746094
+    inner:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0.5
+      height: 0.14746094
+    rotated: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: Tray_PlayerPortrait
+    outer:
+      serializedVersion: 2
+      x: 0.6040039
+      y: 0.22314453
+      width: 0.099121094
+      height: 0.118652344
+    inner:
+      serializedVersion: 2
+      x: 0.6040039
+      y: 0.22314453
+      width: 0.099121094
+      height: 0.118652344
+    rotated: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: Tray_PlayerPortrait_MP
+    outer:
+      serializedVersion: 2
+      x: 0.69384766
+      y: 0.75927734
+      width: 0.057128906
+      height: 0.0625
+    inner:
+      serializedVersion: 2
+      x: 0.69384766
+      y: 0.75927734
+      width: 0.057128906
+      height: 0.0625
+    rotated: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: Trophy
+    outer:
+      serializedVersion: 2
+      x: 0.3022461
+      y: 0.22314453
+      width: 0.100097656
+      height: 0.12207031
+    inner:
+      serializedVersion: 2
+      x: 0.3022461
+      y: 0.22314453
+      width: 0.100097656
+      height: 0.12207031
+    rotated: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: Trophy2
+    outer:
+      serializedVersion: 2
+      x: 0.40283203
+      y: 0.22314453
+      width: 0.100097656
+      height: 0.12207031
+    inner:
+      serializedVersion: 2
+      x: 0.40283203
+      y: 0.22314453
+      width: 0.100097656
+      height: 0.12207031
+    rotated: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: TrophyBar
+    outer:
+      serializedVersion: 2
+      x: 0.74853516
+      y: 0.4946289
+      width: 0.08642578
+      height: 0.0546875
+    inner:
+      serializedVersion: 2
+      x: 0.8071289
+      y: 0.4946289
+      width: 0.005859375
+      height: 0.0546875
+    rotated: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: Tutorial_Arrow
+    outer:
+      serializedVersion: 2
+      x: 0.8354492
+      y: 0.4946289
+      width: 0.07324219
+      height: 0.056152344
+    inner:
+      serializedVersion: 2
+      x: 0.8354492
+      y: 0.4946289
+      width: 0.07324219
+      height: 0.056152344
+    rotated: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: UI_Anvil
+    outer:
+      serializedVersion: 2
+      x: 0
+      y: 0.45117188
+      width: 0.10253906
+      height: 0.15527344
+    inner:
+      serializedVersion: 2
+      x: 0
+      y: 0.45117188
+      width: 0.10253906
+      height: 0.15527344
+    rotated: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: UI_Coin_Icon
+    outer:
+      serializedVersion: 2
+      x: 0.7636719
+      y: 0.6298828
+      width: 0.0625
+      height: 0.0625
+    inner:
+      serializedVersion: 2
+      x: 0.7636719
+      y: 0.6298828
+      width: 0.0625
+      height: 0.0625
+    rotated: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: UI_ColorlessIcon
+    outer:
+      serializedVersion: 2
+      x: 0.6376953
+      y: 0.9345703
+      width: 0.053710938
+      height: 0.053710938
+    inner:
+      serializedVersion: 2
+      x: 0.6376953
+      y: 0.9345703
+      width: 0.053710938
+      height: 0.053710938
+    rotated: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: UI_CornIcon
+    outer:
+      serializedVersion: 2
+      x: 0.69384766
+      y: 0.87646484
+      width: 0.053710938
+      height: 0.053710938
+    inner:
+      serializedVersion: 2
+      x: 0.69384766
+      y: 0.87646484
+      width: 0.053710938
+      height: 0.053710938
+    rotated: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: UI_CottonIcon
+    outer:
+      serializedVersion: 2
+      x: 0.69384766
+      y: 0.8222656
+      width: 0.053710938
+      height: 0.053710938
+    inner:
+      serializedVersion: 2
+      x: 0.69384766
+      y: 0.8222656
+      width: 0.053710938
+      height: 0.053710938
+    rotated: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: UI_FastForward
+    outer:
+      serializedVersion: 2
+      x: 0.9165039
+      y: 0.22314453
+      width: 0.078125
+      height: 0.078125
+    inner:
+      serializedVersion: 2
+      x: 0.9165039
+      y: 0.22314453
+      width: 0.078125
+      height: 0.078125
+    rotated: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: UI_FX
+    outer:
+      serializedVersion: 2
+      x: 0.81152344
+      y: 0.8408203
+      width: 0.0625
+      height: 0.04296875
+    inner:
+      serializedVersion: 2
+      x: 0.81152344
+      y: 0.8408203
+      width: 0.0625
+      height: 0.04296875
+    rotated: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: UI_Gear
+    outer:
+      serializedVersion: 2
+      x: 0.13085938
+      y: 0.72802734
+      width: 0.0390625
+      height: 0.041992188
+    inner:
+      serializedVersion: 2
+      x: 0.13085938
+      y: 0.72802734
+      width: 0.0390625
+      height: 0.041992188
+    rotated: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: UI_Gem_Icon
+    outer:
+      serializedVersion: 2
+      x: 0.7524414
+      y: 0.75341797
+      width: 0.05859375
+      height: 0.0625
+    inner:
+      serializedVersion: 2
+      x: 0.7524414
+      y: 0.75341797
+      width: 0.05859375
+      height: 0.0625
+    rotated: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: UI_MagicPoints
+    outer:
+      serializedVersion: 2
+      x: 0.13085938
+      y: 0.6699219
+      width: 0.040039062
+      height: 0.048828125
+    inner:
+      serializedVersion: 2
+      x: 0.13085938
+      y: 0.6699219
+      width: 0.040039062
+      height: 0.048828125
+    rotated: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: UI_PlainsIcon
+    outer:
+      serializedVersion: 2
+      x: 0.69384766
+      y: 0.93066406
+      width: 0.053710938
+      height: 0.053710938
+    inner:
+      serializedVersion: 2
+      x: 0.69384766
+      y: 0.93066406
+      width: 0.053710938
+      height: 0.053710938
+    rotated: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: UI_SandIcon
+    outer:
+      serializedVersion: 2
+      x: 0.6376953
+      y: 0.8261719
+      width: 0.053710938
+      height: 0.053710938
+    inner:
+      serializedVersion: 2
+      x: 0.6376953
+      y: 0.8261719
+      width: 0.053710938
+      height: 0.053710938
+    rotated: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: UI_Star_Empty
+    outer:
+      serializedVersion: 2
+      x: 0.82666016
+      y: 0.6298828
+      width: 0.0625
+      height: 0.0625
+    inner:
+      serializedVersion: 2
+      x: 0.82666016
+      y: 0.6298828
+      width: 0.0625
+      height: 0.0625
+    rotated: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: UI_Star_Full
+    outer:
+      serializedVersion: 2
+      x: 0.9326172
+      y: 0.5551758
+      width: 0.0625
+      height: 0.0625
+    inner:
+      serializedVersion: 2
+      x: 0.9326172
+      y: 0.5551758
+      width: 0.0625
+      height: 0.0625
+    rotated: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: UI_SwampIcon
+    outer:
+      serializedVersion: 2
+      x: 0.6376953
+      y: 0.8803711
+      width: 0.053710938
+      height: 0.053710938
+    inner:
+      serializedVersion: 2
+      x: 0.6376953
+      y: 0.8803711
+      width: 0.053710938
+      height: 0.053710938
+    rotated: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: uiBack
+    outer:
+      serializedVersion: 2
+      x: 0.48779297
+      y: 0.5722656
+      width: 0.07324219
+      height: 0.07714844
+    inner:
+      serializedVersion: 2
+      x: 0.48779297
+      y: 0.5761719
+      width: 0.07324219
+      height: 0.07324219
+    rotated: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: uiBottomTextBox
+    outer:
+      serializedVersion: 2
+      x: 0.48779297
+      y: 0.80126953
+      width: 0.06542969
+      height: 0.06542969
+    inner:
+      serializedVersion: 2
+      x: 0.5073242
+      y: 0.8208008
+      width: 0.026367188
+      height: 0.026367188
+    rotated: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: uiBuildDeck
+    outer:
+      serializedVersion: 2
+      x: 0.89501953
+      y: 0.41015625
+      width: 0.07324219
+      height: 0.07714844
+    inner:
+      serializedVersion: 2
+      x: 0.89501953
+      y: 0.41015625
+      width: 0.07324219
+      height: 0.07714844
+    rotated: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: uiButtonBlue
+    outer:
+      serializedVersion: 2
+      x: 0.4140625
+      y: 0.4946289
+      width: 0.07324219
+      height: 0.07714844
+    inner:
+      serializedVersion: 2
+      x: 0.4482422
+      y: 0.5385742
+      width: 0.009765625
+      height: 0.00390625
+    rotated: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: uiButtonGreen
+    outer:
+      serializedVersion: 2
+      x: 0.48779297
+      y: 0.4946289
+      width: 0.07324219
+      height: 0.07714844
+    inner:
+      serializedVersion: 2
+      x: 0.52197266
+      y: 0.5385742
+      width: 0.009765625
+      height: 0.00390625
+    rotated: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: uiButtonRed
+    outer:
+      serializedVersion: 2
+      x: 0.4140625
+      y: 0.5722656
+      width: 0.07324219
+      height: 0.07714844
+    inner:
+      serializedVersion: 2
+      x: 0.4482422
+      y: 0.61621094
+      width: 0.009765625
+      height: 0.00390625
+    rotated: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: uiCancel
+    outer:
+      serializedVersion: 2
+      x: 0.4140625
+      y: 0.64990234
+      width: 0.07324219
+      height: 0.07714844
+    inner:
+      serializedVersion: 2
+      x: 0.4140625
+      y: 0.65478516
+      width: 0.07324219
+      height: 0.072265625
+    rotated: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: uiCancel_OG
+    outer:
+      serializedVersion: 2
+      x: 0.4140625
+      y: 0.72753906
+      width: 0.07324219
+      height: 0.07714844
+    inner:
+      serializedVersion: 2
+      x: 0.4140625
+      y: 0.72753906
+      width: 0.07324219
+      height: 0.07714844
+    rotated: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: uiDisconnect
+    outer:
+      serializedVersion: 2
+      x: 0.6777344
+      y: 0.41015625
+      width: 0.091308594
+      height: 0.06933594
+    inner:
+      serializedVersion: 2
+      x: 0.6777344
+      y: 0.41015625
+      width: 0.091308594
+      height: 0.06933594
+    rotated: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: uiMap
+    outer:
+      serializedVersion: 2
+      x: 0.48779297
+      y: 0.64990234
+      width: 0.07324219
+      height: 0.07714844
+    inner:
+      serializedVersion: 2
+      x: 0.48779297
+      y: 0.64990234
+      width: 0.07324219
+      height: 0.07714844
+    rotated: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: uiMessageBox
+    outer:
+      serializedVersion: 2
+      x: 0.48779297
+      y: 0.8671875
+      width: 0.06542969
+      height: 0.06542969
+    inner:
+      serializedVersion: 2
+      x: 0.5024414
+      y: 0.88183594
+      width: 0.036132812
+      height: 0.036132812
+    rotated: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: uiMessageWindow
+    outer:
+      serializedVersion: 2
+      x: 0.50341797
+      y: 0.22314453
+      width: 0.100097656
+      height: 0.12109375
+    inner:
+      serializedVersion: 2
+      x: 0.50341797
+      y: 0.22314453
+      width: 0.100097656
+      height: 0.12109375
+    rotated: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: uiNext
+    outer:
+      serializedVersion: 2
+      x: 0.4140625
+      y: 0.8051758
+      width: 0.07324219
+      height: 0.07714844
+    inner:
+      serializedVersion: 2
+      x: 0.4140625
+      y: 0.8100586
+      width: 0.07324219
+      height: 0.072265625
+    rotated: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: uiOK
+    outer:
+      serializedVersion: 2
+      x: 0.4140625
+      y: 0.8828125
+      width: 0.07324219
+      height: 0.07714844
+    inner:
+      serializedVersion: 2
+      x: 0.4140625
+      y: 0.88671875
+      width: 0.07324219
+      height: 0.07324219
+    rotated: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: uiTurns
+    outer:
+      serializedVersion: 2
+      x: 0.84765625
+      y: 0.14794922
+      width: 0.11328125
+      height: 0.063964844
+    inner:
+      serializedVersion: 2
+      x: 0.84765625
+      y: 0.14794922
+      width: 0.11328125
+      height: 0.063964844
+    rotated: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: uiTurnsReady
+    outer:
+      serializedVersion: 2
+      x: 0.4140625
+      y: 0.34570312
+      width: 0.11328125
+      height: 0.063964844
+    inner:
+      serializedVersion: 2
+      x: 0.4140625
+      y: 0.34570312
+      width: 0.11328125
+      height: 0.063964844
+    rotated: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: Window
+    outer:
+      serializedVersion: 2
+      x: 0.9394531
+      y: 0.13867188
+      width: 0.008300781
+      height: 0.008300781
+    inner:
+      serializedVersion: 2
+      x: 0.94189453
+      y: 0.14111328
+      width: 0.0034179688
+      height: 0.0034179688
+    rotated: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: UI_Key
+    outer:
+      serializedVersion: 2
+      x: 0.3022461
+      y: 0.66845703
+      width: 0.10253906
+      height: 0.080078125
+    inner:
+      serializedVersion: 2
+      x: 0.3022461
+      y: 0.66845703
+      width: 0.10253906
+      height: 0.080078125
+    rotated: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: UI_2XP_Coin
+    outer:
+      serializedVersion: 2
+      x: 0.8144531
+      y: 0.6928711
+      width: 0.060058594
+      height: 0.060058594
+    inner:
+      serializedVersion: 2
+      x: 0.8144531
+      y: 0.6928711
+      width: 0.060058594
+      height: 0.060058594
+    rotated: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: Chance_chest
+    outer:
+      serializedVersion: 2
+      x: 0.17138672
+      y: 0.34423828
+      width: 0.125
+      height: 0.125
+    inner:
+      serializedVersion: 2
+      x: 0.17138672
+      y: 0.34423828
+      width: 0.125
+      height: 0.125
+    rotated: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: UI_Star_Gem
+    outer:
+      serializedVersion: 2
+      x: 0.7006836
+      y: 0.6298828
+      width: 0.0625
+      height: 0.0625
+    inner:
+      serializedVersion: 2
+      x: 0.7006836
+      y: 0.6298828
+      width: 0.0625
+      height: 0.0625
+    rotated: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: UI_Star_Gem_Full
+    outer:
+      serializedVersion: 2
+      x: 0.88964844
+      y: 0.6298828
+      width: 0.06201172
+      height: 0.060546875
+    inner:
+      serializedVersion: 2
+      x: 0.88964844
+      y: 0.6298828
+      width: 0.06201172
+      height: 0.060546875
+    rotated: 0
+    paddingLeft: 0.007874016
+    paddingRight: 0
+    paddingTop: 0.008064516
+    paddingBottom: 0.02419355
+  - name: UI_Star_Gem_Empty
+    outer:
+      serializedVersion: 2
+      x: 0.7524414
+      y: 0.6928711
+      width: 0.061523438
+      height: 0.060058594
+    inner:
+      serializedVersion: 2
+      x: 0.7524414
+      y: 0.6928711
+      width: 0.061523438
+      height: 0.060058594
+    rotated: 0
+    paddingLeft: 0.007936508
+    paddingRight: 0.007936508
+    paddingTop: 0.008130081
+    paddingBottom: 0.03252032
+  mCoordinates: 1
+  mPixelSize: 1
+  mReplacement: {fileID: 0}
