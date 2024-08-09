@@ -1,7 +1,9 @@
-using System.Collections.Generic;
-using System.Net;
-using JsonFx.Json;
 using UnityEngine;
+using UnityEngine.Networking;
+using System.Collections;
+using System.Net;
+using System.Collections.Generic;
+using Newtonsoft.Json;
 
 public class ConnectivityController : MonoBehaviour
 {
@@ -39,24 +41,32 @@ public class ConnectivityController : MonoBehaviour
 	{
 	}
 
-	public bool CheckInternet()
-	{
-		switch (Network.TestConnection())
-		{
-		case ConnectionTesterStatus.PublicIPIsConnectable:
-			isValid = true;
-			break;
-		default:
-			isValid = false;
-			break;
-		case ConnectionTesterStatus.Undetermined:
-			break;
-		}
-		if (!isValid)
-		{
-		}
-		return isValid;
-	}
+    public bool CheckInternet()
+    {
+        StartCoroutine(CheckInternetCoroutine());
+        return isValid;
+    }
+
+	    private IEnumerator CheckInternetCoroutine()
+    {
+        UnityWebRequest request = new UnityWebRequest("https://www.google.com");
+        yield return request.SendWebRequest();
+
+        if (request.result == UnityWebRequest.Result.Success)
+        {
+            isValid = true;
+        }
+        else
+        {
+            isValid = false;
+        }
+
+        if (!isValid)
+        {
+            // Handle no internet connection
+            Debug.Log("No internet connection");
+        }
+    }
 
 	public void CheckServer()
 	{
@@ -66,44 +76,46 @@ public class ConnectivityController : MonoBehaviour
 
 	public void ServerCallback(TFWebFileResponse response, bool isUserInfo)
 	{
-		if (!isValid)
-		{
-			return;
-		}
-		if (response.NetworkDown)
-		{
-			connectionLossCounter++;
-			if (connectionLossCounter >= ConnectionLossThreshold)
-			{
-				isValid = false;
-				popupText = KFFLocalization.Get("!!ERROR_REQUIRESINTERNETCONNECTION");
-			}
-		}
-		else if (response.StatusCode == HttpStatusCode.OK)
-		{
-			isValid = true;
-			connectionLossCounter = 0;
-			if (isUserInfo)
-			{
-				string data = response.Data;
-				Dictionary<string, object> data2 = JsonReader.Deserialize<Dictionary<string, object>>(data);
-				string text = TFUtils.LoadString(data2, "version", "unknown");
-				if (text != "unknown" && text != CLIENT_VERSION)
-				{
-					isValid = false;
-					popupText = KFFLocalization.Get("!!ERROR_APPLICATIONOUTOFDATE") + "\n\n";
-					popupText = popupText + string.Format(KFFLocalization.Get("!!FORMAT_CLIENT_VERSION"), CLIENT_VERSION) + "\n";
-					popupText = popupText + string.Format(KFFLocalization.Get("!!FORMAT_SERVER_VERSION"), text) + "\n";
-					popupText += string.Format(KFFLocalization.Get("!!FORMAT_RESPONSE_DATA"), response.Data);
-				}
-			}
-		}
-		else if (response.StatusCode == HttpStatusCode.NotFound && isUserInfo)
-		{
-			isValid = false;
-			popupText = KFFLocalization.Get("!!ERROR_SERVERDOWNFORMAINTENANCE");
-		}
-	}
+    	string data = response.Data;
+    	Dictionary<string, object> data2 = JsonConvert.DeserializeObject<Dictionary<string, object>>(data);
+
+    	if (!isValid)
+    	{
+        return;
+    	}
+
+    	if (response.NetworkDown)
+    	{
+        	connectionLossCounter++;
+        	if (connectionLossCounter >= ConnectionLossThreshold)
+        	{
+            	isValid = false;
+            	popupText = KFFLocalization.Get("!!ERROR_REQUIRESINTERNETCONNECTION");
+        	}
+    	}
+    	else if (response.StatusCode == HttpStatusCode.OK)
+    	{
+        	isValid = true;
+        	connectionLossCounter = 0;
+        	if (isUserInfo)
+        	{
+            	string text = TFUtils.LoadString(data2, "version", "unknown");
+            if (text != "unknown" && text != CLIENT_VERSION)
+        {
+                isValid = false;
+                popupText = KFFLocalization.Get("!!ERROR_APPLICATIONOUTOFDATE") + "\n\n";
+                popupText = popupText + string.Format(KFFLocalization.Get("!!FORMAT_CLIENT_VERSION"), CLIENT_VERSION) + "\n";
+                popupText = popupText + string.Format(KFFLocalization.Get("!!FORMAT_SERVER_VERSION"), text) + "\n";
+                popupText += string.Format(KFFLocalization.Get("!!FORMAT_RESPONSE_DATA"), response.Data);
+        }
+        	}
+    }
+    else if (response.StatusCode == HttpStatusCode.NotFound && isUserInfo)
+    {
+        isValid = false;
+        popupText = KFFLocalization.Get("!!ERROR_SERVERDOWNFORMAINTENANCE");
+    }
+}
 
 	public void showPopup(string title, string text)
 	{

@@ -85,12 +85,12 @@ public class BasicGesturesSample : SampleBase
 		return "This sample demonstrates some of the supported single-finger gestures:\r\n\r\n- Drag: press the red sphere and move your finger to drag it around  \r\n\r\n- LongPress: keep your finger pressed on the cyan sphere for a few seconds\r\n\r\n- Tap: press & release the purple sphere \r\n\r\n- Double Tap: quickly press & release the green sphere twice in a row\r\n\r\n- Swipe: press the yellow sphere and move your finger in one of the four cardinal directions, then release. The speed of the motion is taken into account.";
 	}
 
-	private void SpawnParticles(GameObject obj)
-	{
-		ParticleEmitter componentInChildren = obj.GetComponentInChildren<ParticleEmitter>();
-		if ((bool)componentInChildren)
-		{
-			componentInChildren.Emit();
-		}
-	}
+    private void SpawnParticles(GameObject obj)
+    {
+        ParticleSystem particleSystem = obj.GetComponentInChildren<ParticleSystem>();
+        if (particleSystem != null)
+        {
+            particleSystem.Play();
+        }
+    }
 }

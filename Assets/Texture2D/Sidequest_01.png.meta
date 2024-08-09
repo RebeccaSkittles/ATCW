@@ -1,29 +1,63 @@
 fileFormatVersion: 2
 guid: cedaf59ab1eaa7049948eeeecc124b7d
-timeCreated: 1698412398
-licenseType: Free
 TextureImporter:
-  fileIDToRecycleName:
-    21300000: PARTYGOD_done
-    21300002: PARTYGOD_give
-    21300004: sidequest_Button
-    21300006: sidequest_dialog
-    21300008: sidequest_exclaim
-    21300010: sidequest_itemCUTEKING
-    21300012: sidequest_itemNEWT
-    21300014: sidequest_itemPARTYGOD
-    21300016: sidequest_roundframe
-    21300018: NEWT_done
-    21300020: NEWT_give
-    21300022: sidequest_roundpanel
-    21300024: Sidequest_Marceline_done
-    21300026: Sidequest_Marceline_give
-    21300028: halloween_item
-    21300030: TreeTrunks_done
-    21300032: Sidequest_ItemTreeTrunks
-    21300034: TreeTrunks_give
+  internalIDToNameTable:
+  - first:
+      213: 21300000
+    second: PARTYGOD_done
+  - first:
+      213: 21300002
+    second: PARTYGOD_give
+  - first:
+      213: 21300004
+    second: sidequest_Button
+  - first:
+      213: 21300006
+    second: sidequest_dialog
+  - first:
+      213: 21300008
+    second: sidequest_exclaim
+  - first:
+      213: 21300010
+    second: sidequest_itemCUTEKING
+  - first:
+      213: 21300012
+    second: sidequest_itemNEWT
+  - first:
+      213: 21300014
+    second: sidequest_itemPARTYGOD
+  - first:
+      213: 21300016
+    second: sidequest_roundframe
+  - first:
+      213: 21300018
+    second: NEWT_done
+  - first:
+      213: 21300020
+    second: NEWT_give
+  - first:
+      213: 21300022
+    second: sidequest_roundpanel
+  - first:
+      213: 21300024
+    second: Sidequest_Marceline_done
+  - first:
+      213: 21300026
+    second: Sidequest_Marceline_give
+  - first:
+      213: 21300028
+    second: halloween_item
+  - first:
+      213: 21300030
+    second: TreeTrunks_done
+  - first:
+      213: 21300032
+    second: Sidequest_ItemTreeTrunks
+  - first:
+      213: 21300034
+    second: TreeTrunks_give
   externalObjects: {}
-  serializedVersion: 4
+  serializedVersion: 13
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
@@ -40,7 +74,12 @@ TextureImporter:
     externalNormalMap: 0
     heightScale: 0.25
     normalMapFilter: 0
+    flipGreenChannel: 0
   isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -63,18 +102,27 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
   alphaIsTransparency: 1
   spriteTessellationDetail: -1
   textureType: 8
   textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
   maxTextureSizeSet: 0
   compressionQualitySet: 0
   textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 1
+  swizzle: 50462976
+  cookieLightType: 1
   platformSettings:
-  - buildTarget: DefaultTexturePlatform
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
@@ -83,7 +131,35 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+    ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 1
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 1
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 1
   spriteSheet:
     serializedVersion: 2
     sprites:
@@ -163,6 +239,13 @@ TextureImporter:
         - {x: 16.5, y: -235.0247}
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 02305410000000000800000000000000
+      internalID: 21300000
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: PARTYGOD_give
       rect:
@@ -227,6 +310,13 @@ TextureImporter:
         - {x: -167.5247, y: -105.0081}
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 22305410000000000800000000000000
+      internalID: 21300002
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: sidequest_Button
       rect:
@@ -249,6 +339,13 @@ TextureImporter:
         - {x: 75, y: -65}
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 42305410000000000800000000000000
+      internalID: 21300004
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: sidequest_dialog
       rect:
@@ -271,6 +368,13 @@ TextureImporter:
         - {x: 36, y: -48}
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 62305410000000000800000000000000
+      internalID: 21300006
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: sidequest_exclaim
       rect:
@@ -290,6 +394,13 @@ TextureImporter:
         - {x: 21.00689, y: -69.5}
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 82305410000000000800000000000000
+      internalID: 21300008
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: sidequest_itemCUTEKING
       rect:
@@ -317,6 +428,13 @@ TextureImporter:
         - {x: -124, y: 74.47527}
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: a2305410000000000800000000000000
+      internalID: 21300010
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: sidequest_itemNEWT
       rect:
@@ -387,6 +505,13 @@ TextureImporter:
         - {x: 26.49995, y: -72.5}
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: c2305410000000000800000000000000
+      internalID: 21300012
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: sidequest_itemPARTYGOD
       rect:
@@ -411,6 +536,13 @@ TextureImporter:
         - {x: 70.53806, y: -101.4835}
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: e2305410000000000800000000000000
+      internalID: 21300014
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: sidequest_roundframe
       rect:
@@ -444,6 +576,13 @@ TextureImporter:
         - {x: -96.49998, y: -75.50005}
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 03305410000000000800000000000000
+      internalID: 21300016
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: NEWT_done
       rect:
@@ -523,6 +662,13 @@ TextureImporter:
         - {x: 14.00691, y: -202.0167}
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 23305410000000000800000000000000
+      internalID: 21300018
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: NEWT_give
       rect:
@@ -576,6 +722,13 @@ TextureImporter:
         - {x: -3.968399, y: -210.5247}
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 43305410000000000800000000000000
+      internalID: 21300020
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: sidequest_roundpanel
       rect:
@@ -603,6 +756,13 @@ TextureImporter:
         - {x: 7.961891, y: -59.48663}
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 63305410000000000800000000000000
+      internalID: 21300022
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: Sidequest_Marceline_done
       rect:
@@ -656,6 +816,13 @@ TextureImporter:
         - {x: 95.47533, y: -213.962}
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 83305410000000000800000000000000
+      internalID: 21300024
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: Sidequest_Marceline_give
       rect:
@@ -709,6 +876,13 @@ TextureImporter:
         - {x: -103.9801, y: -164.462}
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: a3305410000000000800000000000000
+      internalID: 21300026
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: halloween_item
       rect:
@@ -737,6 +911,13 @@ TextureImporter:
         - {x: -50.50005, y: -99}
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: c3305410000000000800000000000000
+      internalID: 21300028
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: TreeTrunks_done
       rect:
@@ -797,6 +978,13 @@ TextureImporter:
         - {x: -97.9753, y: -161.9834}
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: e3305410000000000800000000000000
+      internalID: 21300030
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: Sidequest_ItemTreeTrunks
       rect:
@@ -828,6 +1016,13 @@ TextureImporter:
         - {x: -77.02473, y: -83.02468}
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 04305410000000000800000000000000
+      internalID: 21300032
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: TreeTrunks_give
       rect:
@@ -884,9 +1079,44 @@ TextureImporter:
         - {x: -228.5381, y: 36.02467}
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 24305410000000000800000000000000
+      internalID: 21300034
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
-  spritePackingTag:
-  userData:
-  assetBundleName:
-  assetBundleVariant:
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      NEWT_done: 21300018
+      NEWT_give: 21300020
+      PARTYGOD_done: 21300000
+      PARTYGOD_give: 21300002
+      Sidequest_ItemTreeTrunks: 21300032
+      Sidequest_Marceline_done: 21300024
+      Sidequest_Marceline_give: 21300026
+      TreeTrunks_done: 21300030
+      TreeTrunks_give: 21300034
+      halloween_item: 21300028
+      sidequest_Button: 21300004
+      sidequest_dialog: 21300006
+      sidequest_exclaim: 21300008
+      sidequest_itemCUTEKING: 21300010
+      sidequest_itemNEWT: 21300012
+      sidequest_itemPARTYGOD: 21300014
+      sidequest_roundframe: 21300016
+      sidequest_roundpanel: 21300022
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

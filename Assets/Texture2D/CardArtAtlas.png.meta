@@ -1,262 +1,762 @@
 fileFormatVersion: 2
 guid: 8d99699588ab3234e98ed79150f26045
-timeCreated: 1698411883
-licenseType: Free
 TextureImporter:
-  fileIDToRecycleName:
-    21300000: Building_BlueCastle
-    21300002: Building_CaveOfSolitude
-    21300004: Building_ComfyCave
-    21300006: Building_ElfTeepee
-    21300008: Building_GhostCastle
-    21300010: Building_NicelandsTower
-    21300012: Building_ObeliskOfVengeance
-    21300014: Building_PalaceOfBone
-    21300016: Building_PuffyCastle
-    21300018: Building_Pyramidia
-    21300020: Building_RedCastle
-    21300022: Building_RedDome
-    21300024: Building_RedParthenon
-    21300026: Building_SandCastle
-    21300028: Building_SandPyramid
-    21300030: Building_SandSphinx
-    21300032: Building_SchoolHouse
-    21300034: Building_ShadowPyramid
-    21300036: Building_SiloOfTruth
-    21300038: Building_SpiritTower
-    21300040: Building_StoneHenge
-    21300042: Building_SunPyramid
-    21300044: Building_Tomb
-    21300046: Building_Windmill_Ghost
-    21300048: Creature_AncientScholar
-    21300050: Creature_AngelEye
-    21300052: Creature_AngelHeart
-    21300054: Creature_AngelOfSand
-    21300056: Creature_AngelOfVanilla
-    21300058: Creature_AppleTree
-    21300060: Creature_ArcherDan
-    21300062: Creature_Axey
-    21300064: Creature_BaldMansThrone
-    21300066: Creature_BeachMum
-    21300068: Creature_BespectacledOgre
-    21300070: Creature_BlackCat
-    21300072: Creature_BlueberryDjini
-    21300074: Creature_BrainBall
-    21300076: Creature_BurningBush
-    21300078: Creature_CactusBall
-    21300080: Creature_CactusThug
-    21300082: Creature_CameraDude
-    21300084: Creature_CaptainTaco
-    21300086: Creature_Carecrow
-    21300088: Creature_ChestBurster
-    21300090: Creature_CoolDog
-    21300092: Creature_Cornataur
-    21300094: Creature_CornBall
-    21300096: Creature_CornDog
-    21300098: Creature_CornEyeBat
-    21300100: Creature_CornLord
-    21300102: Creature_CornRonin
-    21300104: Creature_CornWall
-    21300106: Creature_CornWorm
-    21300108: Creature_CottonCutie
-    21300110: Creature_CottonEyeBat
-    21300112: Creature_CottonsaurusRex
-    21300114: Creature_Cow
-    21300116: Creature_CowGhost
-    21300118: Creature_DarkAngel
-    21300120: Creature_DevilEye
-    21300122: Creature_DiamondDan
-    21300124: Creature_DjiniGhost
-    21300126: Creature_DogBoy
-    21300128: Creature_DragonClaw
-    21300130: Creature_DragonFoot
-    21300132: Creature_DrDeath
-    21300134: Creature_Earl
-    21300136: Creature_ElfChief
-    21300138: Creature_ElfMarauder
-    21300140: Creature_EmbarrassingBard
-    21300142: Creature_ExtraordinarySpider
-    21300144: Creature_EyeGuy
-    21300146: Creature_FairyShepard
-    21300148: Creature_FarmerTom
-    21300150: Creature_Fatapillar
-    21300152: Creature_FatGoat
-    21300154: Creature_FieldReaper
-    21300156: Creature_Fisherfish
-    21300158: Creature_Fluffantry
-    21300160: Creature_Flufflapillar
-    21300162: Creature_FreezyJ
-    21300164: Creature_Fummy
-    21300166: Creature_FutureScholar
-    21300168: Creature_Ghost
-    21300170: Creature_GhostBull
-    21300172: Creature_GhostHag
-    21300174: Creature_GhostlyTree
-    21300176: Creature_GhostNinja
-    21300178: Creature_GhostSludger
-    21300180: Creature_GhostStalker
-    21300182: Creature_GiantFoot
-    21300184: Creature_GiantMummyHand
-    21300186: Creature_GrapeSlimey
-    21300188: Creature_GrayEyeBat
-    21300190: Creature_GreenMermaid
-    21300192: Creature_GreenMerman
-    21300194: Creature_GreenPartyOgre
-    21300196: Creature_GreenSnakey
-    21300198: Creature_HeadphoneJerk
-    21300200: Creature_Herculeye
-    21300202: Creature_HotEyeBat
-    21300204: Creature_HuskerGiant
-    21300206: Creature_HuskerKnight
-    21300208: Creature_IceIceBaby
-    21300210: Creature_IceKnight
-    21300212: Creature_InfiniteFigure
-    21300214: Creature_KingFluff
-    21300216: Creature_KnightOfObesity
-    21300218: Creature_LadyScarab
-    21300220: Creature_LegionOfEarlings
-    21300222: Creature_LimeSlimey
-    21300224: Creature_LogKnight
-    21300226: Creature_LostGolem
-    21300228: Creature_LtMushroom
-    21300230: Creature_MadameSeota
-    21300232: Creature_MaizeWalker
-    21300234: Creature_ManowarElf
-    21300236: Creature_MermaidYellow
-    21300238: Creature_MotherFluffBucket
-    21300240: Creature_Mouthball
-    21300242: Creature_MsMummy
-    21300244: Creature_MudAngel
-    21300246: Creature_Ninja
-    21300248: Creature_OrangeSlimey
-    21300250: Creature_PajamaNinja
-    21300252: Creature_PatchyThePumpkin
-    21300254: Creature_PeachDjini
-    21300256: Creature_Pentacutie
-    21300258: Creature_Phyllis
-    21300260: Creature_Pickler
-    21300262: Creature_Pieclops
-    21300264: Creature_Pig
-    21300266: Creature_PirateBear
-    21300268: Creature_Polterclops
-    21300270: Creature_PorcelainGuardian
-    21300272: Creature_Poultrygeist
-    21300274: Creature_PunkCat
-    21300276: Creature_Quadurai
-    21300278: Creature_RainbowBarfer
-    21300280: Creature_RecordThug
-    21300282: Creature_RedEyeling
-    21300284: Creature_Rocktopus
-    21300286: Creature_SackOfPain
-    21300288: Creature_SandasaurusRex
-    21300290: Creature_SandEyeBat
-    21300292: Creature_SandFoot
-    21300294: Creature_SandJackal
-    21300296: Creature_SandKnight
-    21300298: Creature_SandShark
-    21300300: Creature_SandSnake
-    21300302: Creature_SandWitch
-    21300304: Creature_SgtMushroom
-    21300306: Creature_SkeletalHand
-    21300308: Creature_Sludger
-    21300310: Creature_SnakeMint
-    21300312: Creature_SnappyDresser
-    21300314: Creature_SnuggleTree
-    21300316: Creature_SoftEyeling
-    21300318: Creature_SpikedMaceStump
-    21300320: Creature_SteakChop
-    21300322: Creature_StruzanJinn
-    21300324: Creature_SugarImp
-    21300326: Creature_SunKing
-    21300328: Creature_TeethLeaf
-    21300330: Creature_TheDrooler
-    21300332: Creature_TheMariachi
-    21300334: Creature_TravelinSkeleton
-    21300336: Creature_TravelinWizard
-    21300338: Creature_TreeEvil
-    21300340: Creature_TreeOfUgliness
-    21300342: Creature_TvDude
-    21300344: Creature_Uni-Knight
-    21300346: Creature_WallOfSand
-    21300348: Creature_WanderingBaldMan
-    21300350: Creature_WellDressedWolf
-    21300352: Creature_WhiteNinja
-    21300354: Creature_WizardElf
-    21300356: Creature_WizardOfPoo
-    21300358: Creature_YellowGnome
-    21300360: Spell_AbracaAmadeus
-    21300362: Spell_Ankh
-    21300364: Spell_BananaButt
-    21300366: Spell_BoneWand
-    21300368: Spell_BriefPower
-    21300370: Spell_BubblegumButt
-    21300372: Spell_CerebralBloodstorm
-    21300374: Spell_ClairvoyantDaggerstorm
-    21300376: Spell_ConfectionaryRing
-    21300378: Spell_CornScepter
-    21300380: Spell_CoughSyrup
-    21300382: Spell_CrystalBall
-    21300384: Spell_DarkPortal
-    21300386: Spell_DoorOfStrength
-    21300388: Spell_ElfBlood
-    21300390: Spell_ElfTalisman
-    21300392: Spell_FallingStar
-    21300394: Spell_FieldOfNightmares
-    21300396: Spell_FountainOfForgiveness
-    21300398: Spell_GenerateMayo
-    21300400: Spell_GnomeSnot
-    21300402: Spell_GrapeButt
-    21300404: Spell_HotDogRain
-    21300406: Spell_IceVolcano
-    21300408: Spell_IncredibleEgg
-    21300410: Spell_KungFuManual
-    21300412: Spell_MagicRingDing
-    21300414: Spell_MazeOfCorn
-    21300416: Spell_Migraine
-    21300418: Spell_OgreGas
-    21300420: Spell_PieStorm
-    21300422: Spell_PortalToNowhere
-    21300424: Spell_PowerRing
-    21300426: Spell_PsychicTempest
-    21300428: Spell_PumaPaw
-    21300430: Spell_ReclaimLandscape
-    21300432: Spell_RingOfFluffy
-    21300434: Spell_RingOfSeeing
-    21300436: Spell_RingOfSnakeEye
-    21300438: Spell_ScrollOfBadBreath
-    21300440: Spell_ScrollOfFreshBreath
-    21300442: Spell_SkullJuice
-    21300444: Spell_SpiritTorch
-    21300446: Spell_StrawberryButt
-    21300448: Spell_Subliminal Strength
-    21300450: Spell_TaxReduction
-    21300452: Spell_Teleport
-    21300454: Spell_ToiletOfDoom
-    21300456: Spell_ToiletOfGloom
-    21300458: Spell_UFOabduction
-    21300460: Spell_UltimateMagicHands
-    21300462: Spell_UnemptyCoffin
-    21300464: Spell_Volcano
-    21300466: Spell_WitchWay
-    21300468: Spell_WizardRawk
-    21300470: Spell_ZaZo'sMagicSeeds
-    21300472: Spell_MagicHotDogPie
-    21300474: Creature_RainbowGnome
-    21300476: Creature_Paladim
-    21300478: Creature_CowPurple
-    21300480: Creature_SnowBall
-    21300482: Creature_GelatinousCubeBlue
-    21300484: Creature_PeaSoupBarfer
-    21300486: Creature_WallOfChocolate
-    21300488: Building_CandyIgloo
-    21300490: Creature_SnowCorn
-    21300492: Creature_SnowCotton
-    21300494: Creature_SnowMan
-    21300496: Creature_SnowPlain
-    21300498: Creature_SnowSand
-    21300500: Creature_SnowSwamp
+  internalIDToNameTable:
+  - first:
+      213: 21300000
+    second: Building_BlueCastle
+  - first:
+      213: 21300002
+    second: Building_CaveOfSolitude
+  - first:
+      213: 21300004
+    second: Building_ComfyCave
+  - first:
+      213: 21300006
+    second: Building_ElfTeepee
+  - first:
+      213: 21300008
+    second: Building_GhostCastle
+  - first:
+      213: 21300010
+    second: Building_NicelandsTower
+  - first:
+      213: 21300012
+    second: Building_ObeliskOfVengeance
+  - first:
+      213: 21300014
+    second: Building_PalaceOfBone
+  - first:
+      213: 21300016
+    second: Building_PuffyCastle
+  - first:
+      213: 21300018
+    second: Building_Pyramidia
+  - first:
+      213: 21300020
+    second: Building_RedCastle
+  - first:
+      213: 21300022
+    second: Building_RedDome
+  - first:
+      213: 21300024
+    second: Building_RedParthenon
+  - first:
+      213: 21300026
+    second: Building_SandCastle
+  - first:
+      213: 21300028
+    second: Building_SandPyramid
+  - first:
+      213: 21300030
+    second: Building_SandSphinx
+  - first:
+      213: 21300032
+    second: Building_SchoolHouse
+  - first:
+      213: 21300034
+    second: Building_ShadowPyramid
+  - first:
+      213: 21300036
+    second: Building_SiloOfTruth
+  - first:
+      213: 21300038
+    second: Building_SpiritTower
+  - first:
+      213: 21300040
+    second: Building_StoneHenge
+  - first:
+      213: 21300042
+    second: Building_SunPyramid
+  - first:
+      213: 21300044
+    second: Building_Tomb
+  - first:
+      213: 21300046
+    second: Building_Windmill_Ghost
+  - first:
+      213: 21300048
+    second: Creature_AncientScholar
+  - first:
+      213: 21300050
+    second: Creature_AngelEye
+  - first:
+      213: 21300052
+    second: Creature_AngelHeart
+  - first:
+      213: 21300054
+    second: Creature_AngelOfSand
+  - first:
+      213: 21300056
+    second: Creature_AngelOfVanilla
+  - first:
+      213: 21300058
+    second: Creature_AppleTree
+  - first:
+      213: 21300060
+    second: Creature_ArcherDan
+  - first:
+      213: 21300062
+    second: Creature_Axey
+  - first:
+      213: 21300064
+    second: Creature_BaldMansThrone
+  - first:
+      213: 21300066
+    second: Creature_BeachMum
+  - first:
+      213: 21300068
+    second: Creature_BespectacledOgre
+  - first:
+      213: 21300070
+    second: Creature_BlackCat
+  - first:
+      213: 21300072
+    second: Creature_BlueberryDjini
+  - first:
+      213: 21300074
+    second: Creature_BrainBall
+  - first:
+      213: 21300076
+    second: Creature_BurningBush
+  - first:
+      213: 21300078
+    second: Creature_CactusBall
+  - first:
+      213: 21300080
+    second: Creature_CactusThug
+  - first:
+      213: 21300082
+    second: Creature_CameraDude
+  - first:
+      213: 21300084
+    second: Creature_CaptainTaco
+  - first:
+      213: 21300086
+    second: Creature_Carecrow
+  - first:
+      213: 21300088
+    second: Creature_ChestBurster
+  - first:
+      213: 21300090
+    second: Creature_CoolDog
+  - first:
+      213: 21300092
+    second: Creature_Cornataur
+  - first:
+      213: 21300094
+    second: Creature_CornBall
+  - first:
+      213: 21300096
+    second: Creature_CornDog
+  - first:
+      213: 21300098
+    second: Creature_CornEyeBat
+  - first:
+      213: 21300100
+    second: Creature_CornLord
+  - first:
+      213: 21300102
+    second: Creature_CornRonin
+  - first:
+      213: 21300104
+    second: Creature_CornWall
+  - first:
+      213: 21300106
+    second: Creature_CornWorm
+  - first:
+      213: 21300108
+    second: Creature_CottonCutie
+  - first:
+      213: 21300110
+    second: Creature_CottonEyeBat
+  - first:
+      213: 21300112
+    second: Creature_CottonsaurusRex
+  - first:
+      213: 21300114
+    second: Creature_Cow
+  - first:
+      213: 21300116
+    second: Creature_CowGhost
+  - first:
+      213: 21300118
+    second: Creature_DarkAngel
+  - first:
+      213: 21300120
+    second: Creature_DevilEye
+  - first:
+      213: 21300122
+    second: Creature_DiamondDan
+  - first:
+      213: 21300124
+    second: Creature_DjiniGhost
+  - first:
+      213: 21300126
+    second: Creature_DogBoy
+  - first:
+      213: 21300128
+    second: Creature_DragonClaw
+  - first:
+      213: 21300130
+    second: Creature_DragonFoot
+  - first:
+      213: 21300132
+    second: Creature_DrDeath
+  - first:
+      213: 21300134
+    second: Creature_Earl
+  - first:
+      213: 21300136
+    second: Creature_ElfChief
+  - first:
+      213: 21300138
+    second: Creature_ElfMarauder
+  - first:
+      213: 21300140
+    second: Creature_EmbarrassingBard
+  - first:
+      213: 21300142
+    second: Creature_ExtraordinarySpider
+  - first:
+      213: 21300144
+    second: Creature_EyeGuy
+  - first:
+      213: 21300146
+    second: Creature_FairyShepard
+  - first:
+      213: 21300148
+    second: Creature_FarmerTom
+  - first:
+      213: 21300150
+    second: Creature_Fatapillar
+  - first:
+      213: 21300152
+    second: Creature_FatGoat
+  - first:
+      213: 21300154
+    second: Creature_FieldReaper
+  - first:
+      213: 21300156
+    second: Creature_Fisherfish
+  - first:
+      213: 21300158
+    second: Creature_Fluffantry
+  - first:
+      213: 21300160
+    second: Creature_Flufflapillar
+  - first:
+      213: 21300162
+    second: Creature_FreezyJ
+  - first:
+      213: 21300164
+    second: Creature_Fummy
+  - first:
+      213: 21300166
+    second: Creature_FutureScholar
+  - first:
+      213: 21300168
+    second: Creature_Ghost
+  - first:
+      213: 21300170
+    second: Creature_GhostBull
+  - first:
+      213: 21300172
+    second: Creature_GhostHag
+  - first:
+      213: 21300174
+    second: Creature_GhostlyTree
+  - first:
+      213: 21300176
+    second: Creature_GhostNinja
+  - first:
+      213: 21300178
+    second: Creature_GhostSludger
+  - first:
+      213: 21300180
+    second: Creature_GhostStalker
+  - first:
+      213: 21300182
+    second: Creature_GiantFoot
+  - first:
+      213: 21300184
+    second: Creature_GiantMummyHand
+  - first:
+      213: 21300186
+    second: Creature_GrapeSlimey
+  - first:
+      213: 21300188
+    second: Creature_GrayEyeBat
+  - first:
+      213: 21300190
+    second: Creature_GreenMermaid
+  - first:
+      213: 21300192
+    second: Creature_GreenMerman
+  - first:
+      213: 21300194
+    second: Creature_GreenPartyOgre
+  - first:
+      213: 21300196
+    second: Creature_GreenSnakey
+  - first:
+      213: 21300198
+    second: Creature_HeadphoneJerk
+  - first:
+      213: 21300200
+    second: Creature_Herculeye
+  - first:
+      213: 21300202
+    second: Creature_HotEyeBat
+  - first:
+      213: 21300204
+    second: Creature_HuskerGiant
+  - first:
+      213: 21300206
+    second: Creature_HuskerKnight
+  - first:
+      213: 21300208
+    second: Creature_IceIceBaby
+  - first:
+      213: 21300210
+    second: Creature_IceKnight
+  - first:
+      213: 21300212
+    second: Creature_InfiniteFigure
+  - first:
+      213: 21300214
+    second: Creature_KingFluff
+  - first:
+      213: 21300216
+    second: Creature_KnightOfObesity
+  - first:
+      213: 21300218
+    second: Creature_LadyScarab
+  - first:
+      213: 21300220
+    second: Creature_LegionOfEarlings
+  - first:
+      213: 21300222
+    second: Creature_LimeSlimey
+  - first:
+      213: 21300224
+    second: Creature_LogKnight
+  - first:
+      213: 21300226
+    second: Creature_LostGolem
+  - first:
+      213: 21300228
+    second: Creature_LtMushroom
+  - first:
+      213: 21300230
+    second: Creature_MadameSeota
+  - first:
+      213: 21300232
+    second: Creature_MaizeWalker
+  - first:
+      213: 21300234
+    second: Creature_ManowarElf
+  - first:
+      213: 21300236
+    second: Creature_MermaidYellow
+  - first:
+      213: 21300238
+    second: Creature_MotherFluffBucket
+  - first:
+      213: 21300240
+    second: Creature_Mouthball
+  - first:
+      213: 21300242
+    second: Creature_MsMummy
+  - first:
+      213: 21300244
+    second: Creature_MudAngel
+  - first:
+      213: 21300246
+    second: Creature_Ninja
+  - first:
+      213: 21300248
+    second: Creature_OrangeSlimey
+  - first:
+      213: 21300250
+    second: Creature_PajamaNinja
+  - first:
+      213: 21300252
+    second: Creature_PatchyThePumpkin
+  - first:
+      213: 21300254
+    second: Creature_PeachDjini
+  - first:
+      213: 21300256
+    second: Creature_Pentacutie
+  - first:
+      213: 21300258
+    second: Creature_Phyllis
+  - first:
+      213: 21300260
+    second: Creature_Pickler
+  - first:
+      213: 21300262
+    second: Creature_Pieclops
+  - first:
+      213: 21300264
+    second: Creature_Pig
+  - first:
+      213: 21300266
+    second: Creature_PirateBear
+  - first:
+      213: 21300268
+    second: Creature_Polterclops
+  - first:
+      213: 21300270
+    second: Creature_PorcelainGuardian
+  - first:
+      213: 21300272
+    second: Creature_Poultrygeist
+  - first:
+      213: 21300274
+    second: Creature_PunkCat
+  - first:
+      213: 21300276
+    second: Creature_Quadurai
+  - first:
+      213: 21300278
+    second: Creature_RainbowBarfer
+  - first:
+      213: 21300280
+    second: Creature_RecordThug
+  - first:
+      213: 21300282
+    second: Creature_RedEyeling
+  - first:
+      213: 21300284
+    second: Creature_Rocktopus
+  - first:
+      213: 21300286
+    second: Creature_SackOfPain
+  - first:
+      213: 21300288
+    second: Creature_SandasaurusRex
+  - first:
+      213: 21300290
+    second: Creature_SandEyeBat
+  - first:
+      213: 21300292
+    second: Creature_SandFoot
+  - first:
+      213: 21300294
+    second: Creature_SandJackal
+  - first:
+      213: 21300296
+    second: Creature_SandKnight
+  - first:
+      213: 21300298
+    second: Creature_SandShark
+  - first:
+      213: 21300300
+    second: Creature_SandSnake
+  - first:
+      213: 21300302
+    second: Creature_SandWitch
+  - first:
+      213: 21300304
+    second: Creature_SgtMushroom
+  - first:
+      213: 21300306
+    second: Creature_SkeletalHand
+  - first:
+      213: 21300308
+    second: Creature_Sludger
+  - first:
+      213: 21300310
+    second: Creature_SnakeMint
+  - first:
+      213: 21300312
+    second: Creature_SnappyDresser
+  - first:
+      213: 21300314
+    second: Creature_SnuggleTree
+  - first:
+      213: 21300316
+    second: Creature_SoftEyeling
+  - first:
+      213: 21300318
+    second: Creature_SpikedMaceStump
+  - first:
+      213: 21300320
+    second: Creature_SteakChop
+  - first:
+      213: 21300322
+    second: Creature_StruzanJinn
+  - first:
+      213: 21300324
+    second: Creature_SugarImp
+  - first:
+      213: 21300326
+    second: Creature_SunKing
+  - first:
+      213: 21300328
+    second: Creature_TeethLeaf
+  - first:
+      213: 21300330
+    second: Creature_TheDrooler
+  - first:
+      213: 21300332
+    second: Creature_TheMariachi
+  - first:
+      213: 21300334
+    second: Creature_TravelinSkeleton
+  - first:
+      213: 21300336
+    second: Creature_TravelinWizard
+  - first:
+      213: 21300338
+    second: Creature_TreeEvil
+  - first:
+      213: 21300340
+    second: Creature_TreeOfUgliness
+  - first:
+      213: 21300342
+    second: Creature_TvDude
+  - first:
+      213: 21300344
+    second: Creature_Uni-Knight
+  - first:
+      213: 21300346
+    second: Creature_WallOfSand
+  - first:
+      213: 21300348
+    second: Creature_WanderingBaldMan
+  - first:
+      213: 21300350
+    second: Creature_WellDressedWolf
+  - first:
+      213: 21300352
+    second: Creature_WhiteNinja
+  - first:
+      213: 21300354
+    second: Creature_WizardElf
+  - first:
+      213: 21300356
+    second: Creature_WizardOfPoo
+  - first:
+      213: 21300358
+    second: Creature_YellowGnome
+  - first:
+      213: 21300360
+    second: Spell_AbracaAmadeus
+  - first:
+      213: 21300362
+    second: Spell_Ankh
+  - first:
+      213: 21300364
+    second: Spell_BananaButt
+  - first:
+      213: 21300366
+    second: Spell_BoneWand
+  - first:
+      213: 21300368
+    second: Spell_BriefPower
+  - first:
+      213: 21300370
+    second: Spell_BubblegumButt
+  - first:
+      213: 21300372
+    second: Spell_CerebralBloodstorm
+  - first:
+      213: 21300374
+    second: Spell_ClairvoyantDaggerstorm
+  - first:
+      213: 21300376
+    second: Spell_ConfectionaryRing
+  - first:
+      213: 21300378
+    second: Spell_CornScepter
+  - first:
+      213: 21300380
+    second: Spell_CoughSyrup
+  - first:
+      213: 21300382
+    second: Spell_CrystalBall
+  - first:
+      213: 21300384
+    second: Spell_DarkPortal
+  - first:
+      213: 21300386
+    second: Spell_DoorOfStrength
+  - first:
+      213: 21300388
+    second: Spell_ElfBlood
+  - first:
+      213: 21300390
+    second: Spell_ElfTalisman
+  - first:
+      213: 21300392
+    second: Spell_FallingStar
+  - first:
+      213: 21300394
+    second: Spell_FieldOfNightmares
+  - first:
+      213: 21300396
+    second: Spell_FountainOfForgiveness
+  - first:
+      213: 21300398
+    second: Spell_GenerateMayo
+  - first:
+      213: 21300400
+    second: Spell_GnomeSnot
+  - first:
+      213: 21300402
+    second: Spell_GrapeButt
+  - first:
+      213: 21300404
+    second: Spell_HotDogRain
+  - first:
+      213: 21300406
+    second: Spell_IceVolcano
+  - first:
+      213: 21300408
+    second: Spell_IncredibleEgg
+  - first:
+      213: 21300410
+    second: Spell_KungFuManual
+  - first:
+      213: 21300412
+    second: Spell_MagicRingDing
+  - first:
+      213: 21300414
+    second: Spell_MazeOfCorn
+  - first:
+      213: 21300416
+    second: Spell_Migraine
+  - first:
+      213: 21300418
+    second: Spell_OgreGas
+  - first:
+      213: 21300420
+    second: Spell_PieStorm
+  - first:
+      213: 21300422
+    second: Spell_PortalToNowhere
+  - first:
+      213: 21300424
+    second: Spell_PowerRing
+  - first:
+      213: 21300426
+    second: Spell_PsychicTempest
+  - first:
+      213: 21300428
+    second: Spell_PumaPaw
+  - first:
+      213: 21300430
+    second: Spell_ReclaimLandscape
+  - first:
+      213: 21300432
+    second: Spell_RingOfFluffy
+  - first:
+      213: 21300434
+    second: Spell_RingOfSeeing
+  - first:
+      213: 21300436
+    second: Spell_RingOfSnakeEye
+  - first:
+      213: 21300438
+    second: Spell_ScrollOfBadBreath
+  - first:
+      213: 21300440
+    second: Spell_ScrollOfFreshBreath
+  - first:
+      213: 21300442
+    second: Spell_SkullJuice
+  - first:
+      213: 21300444
+    second: Spell_SpiritTorch
+  - first:
+      213: 21300446
+    second: Spell_StrawberryButt
+  - first:
+      213: 21300448
+    second: Spell_Subliminal Strength
+  - first:
+      213: 21300450
+    second: Spell_TaxReduction
+  - first:
+      213: 21300452
+    second: Spell_Teleport
+  - first:
+      213: 21300454
+    second: Spell_ToiletOfDoom
+  - first:
+      213: 21300456
+    second: Spell_ToiletOfGloom
+  - first:
+      213: 21300458
+    second: Spell_UFOabduction
+  - first:
+      213: 21300460
+    second: Spell_UltimateMagicHands
+  - first:
+      213: 21300462
+    second: Spell_UnemptyCoffin
+  - first:
+      213: 21300464
+    second: Spell_Volcano
+  - first:
+      213: 21300466
+    second: Spell_WitchWay
+  - first:
+      213: 21300468
+    second: Spell_WizardRawk
+  - first:
+      213: 21300470
+    second: Spell_ZaZo'sMagicSeeds
+  - first:
+      213: 21300472
+    second: Spell_MagicHotDogPie
+  - first:
+      213: 21300474
+    second: Creature_RainbowGnome
+  - first:
+      213: 21300476
+    second: Creature_Paladim
+  - first:
+      213: 21300478
+    second: Creature_CowPurple
+  - first:
+      213: 21300480
+    second: Creature_SnowBall
+  - first:
+      213: 21300482
+    second: Creature_GelatinousCubeBlue
+  - first:
+      213: 21300484
+    second: Creature_PeaSoupBarfer
+  - first:
+      213: 21300486
+    second: Creature_WallOfChocolate
+  - first:
+      213: 21300488
+    second: Building_CandyIgloo
+  - first:
+      213: 21300490
+    second: Creature_SnowCorn
+  - first:
+      213: 21300492
+    second: Creature_SnowCotton
+  - first:
+      213: 21300494
+    second: Creature_SnowMan
+  - first:
+      213: 21300496
+    second: Creature_SnowPlain
+  - first:
+      213: 21300498
+    second: Creature_SnowSand
+  - first:
+      213: 21300500
+    second: Creature_SnowSwamp
   externalObjects: {}
-  serializedVersion: 4
+  serializedVersion: 13
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
@@ -273,7 +773,12 @@ TextureImporter:
     externalNormalMap: 0
     heightScale: 0.25
     normalMapFilter: 0
+    flipGreenChannel: 0
   isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -296,18 +801,27 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
   alphaIsTransparency: 1
   spriteTessellationDetail: -1
   textureType: 8
   textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
   maxTextureSizeSet: 0
   compressionQualitySet: 0
   textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 1
+  swizzle: 50462976
+  cookieLightType: 1
   platformSettings:
-  - buildTarget: DefaultTexturePlatform
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
@@ -316,7 +830,35 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+    ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 1
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 1
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 1
   spriteSheet:
     serializedVersion: 2
     sprites:
@@ -338,6 +880,13 @@ TextureImporter:
         - {x: 62.5, y: 62.5}
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 02305410000000000800000000000000
+      internalID: 21300000
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: Building_CaveOfSolitude
       rect:
@@ -356,6 +905,13 @@ TextureImporter:
         - {x: 62.5, y: 62.5}
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 22305410000000000800000000000000
+      internalID: 21300002
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: Building_ComfyCave
       rect:
@@ -374,6 +930,13 @@ TextureImporter:
         - {x: 62.5, y: 62.5}
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 42305410000000000800000000000000
+      internalID: 21300004
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: Building_ElfTeepee
       rect:
@@ -392,6 +955,13 @@ TextureImporter:
         - {x: 62.5, y: 62.5}
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 62305410000000000800000000000000
+      internalID: 21300006
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: Building_GhostCastle
       rect:
@@ -410,6 +980,13 @@ TextureImporter:
         - {x: 62.5, y: 62.5}
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 82305410000000000800000000000000
+      internalID: 21300008
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: Building_NicelandsTower
       rect:
@@ -428,6 +1005,13 @@ TextureImporter:
         - {x: 62.5, y: 62.5}
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: a2305410000000000800000000000000
+      internalID: 21300010
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: Building_ObeliskOfVengeance
       rect:
@@ -446,6 +1030,13 @@ TextureImporter:
         - {x: 62.5, y: 62.5}
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: c2305410000000000800000000000000
+      internalID: 21300012
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: Building_PalaceOfBone
       rect:
@@ -464,6 +1055,13 @@ TextureImporter:
         - {x: 62.5, y: 62.5}
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: e2305410000000000800000000000000
+      internalID: 21300014
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: Building_PuffyCastle
       rect:
@@ -482,6 +1080,13 @@ TextureImporter:
         - {x: 62.5, y: 62.5}
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 03305410000000000800000000000000
+      internalID: 21300016
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: Building_Pyramidia
       rect:
@@ -500,6 +1105,13 @@ TextureImporter:
         - {x: 62.5, y: 62.5}
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 23305410000000000800000000000000
+      internalID: 21300018
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: Building_RedCastle
       rect:
@@ -518,6 +1130,13 @@ TextureImporter:
         - {x: 62.5, y: 62.5}
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 43305410000000000800000000000000
+      internalID: 21300020
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: Building_RedDome
       rect:
@@ -536,6 +1155,13 @@ TextureImporter:
         - {x: 62.5, y: 62.5}
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 63305410000000000800000000000000
+      internalID: 21300022
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: Building_RedParthenon
       rect:
@@ -554,6 +1180,13 @@ TextureImporter:
         - {x: 62.5, y: 62.5}
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 83305410000000000800000000000000
+      internalID: 21300024
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: Building_SandCastle
       rect:
@@ -572,6 +1205,13 @@ TextureImporter:
         - {x: 62.5, y: 62.5}
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: a3305410000000000800000000000000
+      internalID: 21300026
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: Building_SandPyramid
       rect:
@@ -590,6 +1230,13 @@ TextureImporter:
         - {x: 62.5, y: 62.5}
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: c3305410000000000800000000000000
+      internalID: 21300028
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: Building_SandSphinx
       rect:
@@ -608,6 +1255,13 @@ TextureImporter:
         - {x: 62.5, y: 62.5}
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: e3305410000000000800000000000000
+      internalID: 21300030
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: Building_SchoolHouse
       rect:
@@ -626,6 +1280,13 @@ TextureImporter:
         - {x: 62.5, y: 62.5}
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 04305410000000000800000000000000
+      internalID: 21300032
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: Building_ShadowPyramid
       rect:
@@ -644,6 +1305,13 @@ TextureImporter:
         - {x: 62.5, y: 62.5}
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 24305410000000000800000000000000
+      internalID: 21300034
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: Building_SiloOfTruth
       rect:
@@ -662,6 +1330,13 @@ TextureImporter:
         - {x: 62.5, y: 62.5}
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 44305410000000000800000000000000
+      internalID: 21300036
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: Building_SpiritTower
       rect:
@@ -680,6 +1355,13 @@ TextureImporter:
         - {x: 62.5, y: 62.5}
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 64305410000000000800000000000000
+      internalID: 21300038
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: Building_StoneHenge
       rect:
@@ -698,6 +1380,13 @@ TextureImporter:
         - {x: 62.5, y: 62.5}
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 84305410000000000800000000000000
+      internalID: 21300040
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: Building_SunPyramid
       rect:
@@ -716,6 +1405,13 @@ TextureImporter:
         - {x: 62.5, y: 62.5}
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: a4305410000000000800000000000000
+      internalID: 21300042
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: Building_Tomb
       rect:
@@ -734,6 +1430,13 @@ TextureImporter:
         - {x: 62.5, y: 62.5}
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: c4305410000000000800000000000000
+      internalID: 21300044
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: Building_Windmill_Ghost
       rect:
@@ -752,6 +1455,13 @@ TextureImporter:
         - {x: 62.5, y: 62.5}
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: e4305410000000000800000000000000
+      internalID: 21300046
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: Creature_AncientScholar
       rect:
@@ -770,6 +1480,13 @@ TextureImporter:
         - {x: 62.5, y: 62.5}
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 05305410000000000800000000000000
+      internalID: 21300048
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: Creature_AngelEye
       rect:
@@ -788,6 +1505,13 @@ TextureImporter:
         - {x: 62.5, y: 62.5}
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 25305410000000000800000000000000
+      internalID: 21300050
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: Creature_AngelHeart
       rect:
@@ -806,6 +1530,13 @@ TextureImporter:
         - {x: 62.5, y: 62.5}
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 45305410000000000800000000000000
+      internalID: 21300052
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: Creature_AngelOfSand
       rect:
@@ -824,6 +1555,13 @@ TextureImporter:
         - {x: 62.5, y: 62.5}
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 65305410000000000800000000000000
+      internalID: 21300054
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: Creature_AngelOfVanilla
       rect:
@@ -842,6 +1580,13 @@ TextureImporter:
         - {x: 62.5, y: 62.5}
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 85305410000000000800000000000000
+      internalID: 21300056
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: Creature_AppleTree
       rect:
@@ -860,6 +1605,13 @@ TextureImporter:
         - {x: 62.5, y: 62.5}
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: a5305410000000000800000000000000
+      internalID: 21300058
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: Creature_ArcherDan
       rect:
@@ -878,6 +1630,13 @@ TextureImporter:
         - {x: 62.5, y: 62.5}
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: c5305410000000000800000000000000
+      internalID: 21300060
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: Creature_Axey
       rect:
@@ -896,6 +1655,13 @@ TextureImporter:
         - {x: 62.5, y: 62.5}
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: e5305410000000000800000000000000
+      internalID: 21300062
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: Creature_BaldMansThrone
       rect:
@@ -914,6 +1680,13 @@ TextureImporter:
         - {x: 62.5, y: 62.5}
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 06305410000000000800000000000000
+      internalID: 21300064
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: Creature_BeachMum
       rect:
@@ -932,6 +1705,13 @@ TextureImporter:
         - {x: 62.5, y: 62.5}
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 26305410000000000800000000000000
+      internalID: 21300066
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: Creature_BespectacledOgre
       rect:
@@ -950,6 +1730,13 @@ TextureImporter:
         - {x: 62.5, y: 62.5}
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 46305410000000000800000000000000
+      internalID: 21300068
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: Creature_BlackCat
       rect:
@@ -968,6 +1755,13 @@ TextureImporter:
         - {x: 62.5, y: 62.5}
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 66305410000000000800000000000000
+      internalID: 21300070
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: Creature_BlueberryDjini
       rect:
@@ -986,6 +1780,13 @@ TextureImporter:
         - {x: 62.5, y: 62.5}
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 86305410000000000800000000000000
+      internalID: 21300072
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: Creature_BrainBall
       rect:
@@ -1004,6 +1805,13 @@ TextureImporter:
         - {x: 62.5, y: 62.5}
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: a6305410000000000800000000000000
+      internalID: 21300074
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: Creature_BurningBush
       rect:
@@ -1022,6 +1830,13 @@ TextureImporter:
         - {x: 62.5, y: 62.5}
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: c6305410000000000800000000000000
+      internalID: 21300076
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: Creature_CactusBall
       rect:
@@ -1040,6 +1855,13 @@ TextureImporter:
         - {x: 62.5, y: 62.5}
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: e6305410000000000800000000000000
+      internalID: 21300078
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: Creature_CactusThug
       rect:
@@ -1058,6 +1880,13 @@ TextureImporter:
         - {x: 62.5, y: 62.5}
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 07305410000000000800000000000000
+      internalID: 21300080
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: Creature_CameraDude
       rect:
@@ -1076,6 +1905,13 @@ TextureImporter:
         - {x: 62.5, y: 62.5}
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 27305410000000000800000000000000
+      internalID: 21300082
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: Creature_CaptainTaco
       rect:
@@ -1094,6 +1930,13 @@ TextureImporter:
         - {x: 62.5, y: 62.5}
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 47305410000000000800000000000000
+      internalID: 21300084
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: Creature_Carecrow
       rect:
@@ -1112,6 +1955,13 @@ TextureImporter:
         - {x: 62.5, y: 62.5}
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 67305410000000000800000000000000
+      internalID: 21300086
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: Creature_ChestBurster
       rect:
@@ -1130,6 +1980,13 @@ TextureImporter:
         - {x: 62.5, y: 62.5}
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 87305410000000000800000000000000
+      internalID: 21300088
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: Creature_CoolDog
       rect:
@@ -1148,6 +2005,13 @@ TextureImporter:
         - {x: 62.5, y: 62.5}
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: a7305410000000000800000000000000
+      internalID: 21300090
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: Creature_Cornataur
       rect:
@@ -1166,6 +2030,13 @@ TextureImporter:
         - {x: 62.5, y: 62.5}
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: c7305410000000000800000000000000
+      internalID: 21300092
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: Creature_CornBall
       rect:
@@ -1184,6 +2055,13 @@ TextureImporter:
         - {x: 62.5, y: 62.5}
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: e7305410000000000800000000000000
+      internalID: 21300094
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: Creature_CornDog
       rect:
@@ -1202,6 +2080,13 @@ TextureImporter:
         - {x: 62.5, y: 62.5}
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 08305410000000000800000000000000
+      internalID: 21300096
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: Creature_CornEyeBat
       rect:
@@ -1220,6 +2105,13 @@ TextureImporter:
         - {x: 62.5, y: 62.5}
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 28305410000000000800000000000000
+      internalID: 21300098
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: Creature_CornLord
       rect:
@@ -1238,6 +2130,13 @@ TextureImporter:
         - {x: 62.5, y: 62.5}
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 48305410000000000800000000000000
+      internalID: 21300100
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: Creature_CornRonin
       rect:
@@ -1256,6 +2155,13 @@ TextureImporter:
         - {x: 62.5, y: 62.5}
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 68305410000000000800000000000000
+      internalID: 21300102
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: Creature_CornWall
       rect:
@@ -1274,6 +2180,13 @@ TextureImporter:
         - {x: 62.5, y: 62.5}
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 88305410000000000800000000000000
+      internalID: 21300104
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: Creature_CornWorm
       rect:
@@ -1292,6 +2205,13 @@ TextureImporter:
         - {x: 62.5, y: 62.5}
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: a8305410000000000800000000000000
+      internalID: 21300106
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: Creature_CottonCutie
       rect:
@@ -1310,6 +2230,13 @@ TextureImporter:
         - {x: 62.5, y: 62.5}
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: c8305410000000000800000000000000
+      internalID: 21300108
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: Creature_CottonEyeBat
       rect:
@@ -1328,6 +2255,13 @@ TextureImporter:
         - {x: 62.5, y: 62.5}
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: e8305410000000000800000000000000
+      internalID: 21300110
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: Creature_CottonsaurusRex
       rect:
@@ -1346,6 +2280,13 @@ TextureImporter:
         - {x: 62.5, y: 62.5}
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 09305410000000000800000000000000
+      internalID: 21300112
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: Creature_Cow
       rect:
@@ -1364,6 +2305,13 @@ TextureImporter:
         - {x: 62.5, y: 62.5}
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 29305410000000000800000000000000
+      internalID: 21300114
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: Creature_CowGhost
       rect:
@@ -1382,6 +2330,13 @@ TextureImporter:
         - {x: 62.5, y: 62.5}
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 49305410000000000800000000000000
+      internalID: 21300116
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: Creature_DarkAngel
       rect:
@@ -1400,6 +2355,13 @@ TextureImporter:
         - {x: 62.5, y: 62.5}
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 69305410000000000800000000000000
+      internalID: 21300118
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: Creature_DevilEye
       rect:
@@ -1418,6 +2380,13 @@ TextureImporter:
         - {x: 62.5, y: 62.5}
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 89305410000000000800000000000000
+      internalID: 21300120
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: Creature_DiamondDan
       rect:
@@ -1436,6 +2405,13 @@ TextureImporter:
         - {x: 62.5, y: 62.5}
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: a9305410000000000800000000000000
+      internalID: 21300122
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: Creature_DjiniGhost
       rect:
@@ -1454,6 +2430,13 @@ TextureImporter:
         - {x: 62.5, y: 62.5}
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: c9305410000000000800000000000000
+      internalID: 21300124
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: Creature_DogBoy
       rect:
@@ -1472,6 +2455,13 @@ TextureImporter:
         - {x: 62.5, y: 62.5}
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: e9305410000000000800000000000000
+      internalID: 21300126
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: Creature_DragonClaw
       rect:
@@ -1490,6 +2480,13 @@ TextureImporter:
         - {x: 62.5, y: 62.5}
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 0a305410000000000800000000000000
+      internalID: 21300128
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: Creature_DragonFoot
       rect:
@@ -1508,6 +2505,13 @@ TextureImporter:
         - {x: 62.5, y: 62.5}
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 2a305410000000000800000000000000
+      internalID: 21300130
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: Creature_DrDeath
       rect:
@@ -1526,6 +2530,13 @@ TextureImporter:
         - {x: 62.5, y: 62.5}
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 4a305410000000000800000000000000
+      internalID: 21300132
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: Creature_Earl
       rect:
@@ -1544,6 +2555,13 @@ TextureImporter:
         - {x: 62.5, y: 62.5}
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 6a305410000000000800000000000000
+      internalID: 21300134
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: Creature_ElfChief
       rect:
@@ -1562,6 +2580,13 @@ TextureImporter:
         - {x: 62.5, y: 62.5}
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 8a305410000000000800000000000000
+      internalID: 21300136
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: Creature_ElfMarauder
       rect:
@@ -1580,6 +2605,13 @@ TextureImporter:
         - {x: 62.5, y: 62.5}
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: aa305410000000000800000000000000
+      internalID: 21300138
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: Creature_EmbarrassingBard
       rect:
@@ -1598,6 +2630,13 @@ TextureImporter:
         - {x: 62.5, y: 62.5}
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: ca305410000000000800000000000000
+      internalID: 21300140
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: Creature_ExtraordinarySpider
       rect:
@@ -1616,6 +2655,13 @@ TextureImporter:
         - {x: 62.5, y: 62.5}
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: ea305410000000000800000000000000
+      internalID: 21300142
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: Creature_EyeGuy
       rect:
@@ -1634,6 +2680,13 @@ TextureImporter:
         - {x: 62.5, y: 62.5}
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 0b305410000000000800000000000000
+      internalID: 21300144
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: Creature_FairyShepard
       rect:
@@ -1652,6 +2705,13 @@ TextureImporter:
         - {x: 62.5, y: 62.5}
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 2b305410000000000800000000000000
+      internalID: 21300146
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: Creature_FarmerTom
       rect:
@@ -1670,6 +2730,13 @@ TextureImporter:
         - {x: 62.5, y: 62.5}
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 4b305410000000000800000000000000
+      internalID: 21300148
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: Creature_Fatapillar
       rect:
@@ -1688,6 +2755,13 @@ TextureImporter:
         - {x: 62.5, y: 62.5}
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 6b305410000000000800000000000000
+      internalID: 21300150
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: Creature_FatGoat
       rect:
@@ -1706,6 +2780,13 @@ TextureImporter:
         - {x: 62.5, y: 62.5}
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 8b305410000000000800000000000000
+      internalID: 21300152
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: Creature_FieldReaper
       rect:
@@ -1724,6 +2805,13 @@ TextureImporter:
         - {x: 62.5, y: 62.5}
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: ab305410000000000800000000000000
+      internalID: 21300154
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: Creature_Fisherfish
       rect:
@@ -1742,6 +2830,13 @@ TextureImporter:
         - {x: 62.5, y: 62.5}
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: cb305410000000000800000000000000
+      internalID: 21300156
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: Creature_Fluffantry
       rect:
@@ -1760,6 +2855,13 @@ TextureImporter:
         - {x: 62.5, y: 62.5}
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: eb305410000000000800000000000000
+      internalID: 21300158
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: Creature_Flufflapillar
       rect:
@@ -1778,6 +2880,13 @@ TextureImporter:
         - {x: 62.5, y: 62.5}
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 0c305410000000000800000000000000
+      internalID: 21300160
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: Creature_FreezyJ
       rect:
@@ -1796,6 +2905,13 @@ TextureImporter:
         - {x: 62.5, y: 62.5}
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 2c305410000000000800000000000000
+      internalID: 21300162
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: Creature_Fummy
       rect:
@@ -1814,6 +2930,13 @@ TextureImporter:
         - {x: 62.5, y: 62.5}
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 4c305410000000000800000000000000
+      internalID: 21300164
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: Creature_FutureScholar
       rect:
@@ -1832,6 +2955,13 @@ TextureImporter:
         - {x: 62.5, y: 62.5}
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 6c305410000000000800000000000000
+      internalID: 21300166
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: Creature_Ghost
       rect:
@@ -1850,6 +2980,13 @@ TextureImporter:
         - {x: 62.5, y: 62.5}
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 8c305410000000000800000000000000
+      internalID: 21300168
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: Creature_GhostBull
       rect:
@@ -1868,6 +3005,13 @@ TextureImporter:
         - {x: 62.5, y: 62.5}
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: ac305410000000000800000000000000
+      internalID: 21300170
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: Creature_GhostHag
       rect:
@@ -1886,6 +3030,13 @@ TextureImporter:
         - {x: 62.5, y: 62.5}
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: cc305410000000000800000000000000
+      internalID: 21300172
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: Creature_GhostlyTree
       rect:
@@ -1904,6 +3055,13 @@ TextureImporter:
         - {x: 62.5, y: 62.5}
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: ec305410000000000800000000000000
+      internalID: 21300174
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: Creature_GhostNinja
       rect:
@@ -1922,6 +3080,13 @@ TextureImporter:
         - {x: 62.5, y: 62.5}
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 0d305410000000000800000000000000
+      internalID: 21300176
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: Creature_GhostSludger
       rect:
@@ -1940,6 +3105,13 @@ TextureImporter:
         - {x: 62.5, y: 62.5}
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 2d305410000000000800000000000000
+      internalID: 21300178
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: Creature_GhostStalker
       rect:
@@ -1958,6 +3130,13 @@ TextureImporter:
         - {x: 62.5, y: 62.5}
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 4d305410000000000800000000000000
+      internalID: 21300180
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: Creature_GiantFoot
       rect:
@@ -1976,6 +3155,13 @@ TextureImporter:
         - {x: 62.5, y: 62.5}
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 6d305410000000000800000000000000
+      internalID: 21300182
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: Creature_GiantMummyHand
       rect:
@@ -1994,6 +3180,13 @@ TextureImporter:
         - {x: 62.5, y: 62.5}
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 8d305410000000000800000000000000
+      internalID: 21300184
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: Creature_GrapeSlimey
       rect:
@@ -2012,6 +3205,13 @@ TextureImporter:
         - {x: 62.5, y: 62.5}
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: ad305410000000000800000000000000
+      internalID: 21300186
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: Creature_GrayEyeBat
       rect:
@@ -2030,6 +3230,13 @@ TextureImporter:
         - {x: 62.5, y: 62.5}
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: cd305410000000000800000000000000
+      internalID: 21300188
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: Creature_GreenMermaid
       rect:
@@ -2048,6 +3255,13 @@ TextureImporter:
         - {x: 62.5, y: 62.5}
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: ed305410000000000800000000000000
+      internalID: 21300190
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: Creature_GreenMerman
       rect:
@@ -2066,6 +3280,13 @@ TextureImporter:
         - {x: 62.5, y: 62.5}
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 0e305410000000000800000000000000
+      internalID: 21300192
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: Creature_GreenPartyOgre
       rect:
@@ -2084,6 +3305,13 @@ TextureImporter:
         - {x: 62.5, y: 62.5}
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 2e305410000000000800000000000000
+      internalID: 21300194
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: Creature_GreenSnakey
       rect:
@@ -2102,6 +3330,13 @@ TextureImporter:
         - {x: 62.5, y: 62.5}
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 4e305410000000000800000000000000
+      internalID: 21300196
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: Creature_HeadphoneJerk
       rect:
@@ -2120,6 +3355,13 @@ TextureImporter:
         - {x: 62.5, y: 62.5}
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 6e305410000000000800000000000000
+      internalID: 21300198
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: Creature_Herculeye
       rect:
@@ -2138,6 +3380,13 @@ TextureImporter:
         - {x: 62.5, y: 62.5}
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 8e305410000000000800000000000000
+      internalID: 21300200
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: Creature_HotEyeBat
       rect:
@@ -2156,6 +3405,13 @@ TextureImporter:
         - {x: 62.5, y: 62.5}
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: ae305410000000000800000000000000
+      internalID: 21300202
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: Creature_HuskerGiant
       rect:
@@ -2174,6 +3430,13 @@ TextureImporter:
         - {x: 62.5, y: 62.5}
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: ce305410000000000800000000000000
+      internalID: 21300204
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: Creature_HuskerKnight
       rect:
@@ -2192,6 +3455,13 @@ TextureImporter:
         - {x: 62.5, y: 62.5}
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: ee305410000000000800000000000000
+      internalID: 21300206
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: Creature_IceIceBaby
       rect:
@@ -2210,6 +3480,13 @@ TextureImporter:
         - {x: 62.5, y: 62.5}
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 0f305410000000000800000000000000
+      internalID: 21300208
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: Creature_IceKnight
       rect:
@@ -2228,6 +3505,13 @@ TextureImporter:
         - {x: 62.5, y: 62.5}
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 2f305410000000000800000000000000
+      internalID: 21300210
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: Creature_InfiniteFigure
       rect:
@@ -2246,6 +3530,13 @@ TextureImporter:
         - {x: 62.5, y: 62.5}
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 4f305410000000000800000000000000
+      internalID: 21300212
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: Creature_KingFluff
       rect:
@@ -2264,6 +3555,13 @@ TextureImporter:
         - {x: 62.5, y: 62.5}
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 6f305410000000000800000000000000
+      internalID: 21300214
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: Creature_KnightOfObesity
       rect:
@@ -2282,6 +3580,13 @@ TextureImporter:
         - {x: 62.5, y: 62.5}
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 8f305410000000000800000000000000
+      internalID: 21300216
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: Creature_LadyScarab
       rect:
@@ -2300,6 +3605,13 @@ TextureImporter:
         - {x: 62.5, y: 62.5}
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: af305410000000000800000000000000
+      internalID: 21300218
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: Creature_LegionOfEarlings
       rect:
@@ -2318,6 +3630,13 @@ TextureImporter:
         - {x: 62.5, y: 62.5}
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: cf305410000000000800000000000000
+      internalID: 21300220
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: Creature_LimeSlimey
       rect:
@@ -2336,6 +3655,13 @@ TextureImporter:
         - {x: 62.5, y: 62.5}
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: ef305410000000000800000000000000
+      internalID: 21300222
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: Creature_LogKnight
       rect:
@@ -2354,6 +3680,13 @@ TextureImporter:
         - {x: 62.5, y: 62.5}
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 00405410000000000800000000000000
+      internalID: 21300224
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: Creature_LostGolem
       rect:
@@ -2372,6 +3705,13 @@ TextureImporter:
         - {x: 62.5, y: 62.5}
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 20405410000000000800000000000000
+      internalID: 21300226
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: Creature_LtMushroom
       rect:
@@ -2390,6 +3730,13 @@ TextureImporter:
         - {x: 62.5, y: 62.5}
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 40405410000000000800000000000000
+      internalID: 21300228
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: Creature_MadameSeota
       rect:
@@ -2408,6 +3755,13 @@ TextureImporter:
         - {x: 62.5, y: 62.5}
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 60405410000000000800000000000000
+      internalID: 21300230
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: Creature_MaizeWalker
       rect:
@@ -2426,6 +3780,13 @@ TextureImporter:
         - {x: 62.5, y: 62.5}
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 80405410000000000800000000000000
+      internalID: 21300232
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: Creature_ManowarElf
       rect:
@@ -2444,6 +3805,13 @@ TextureImporter:
         - {x: 62.5, y: 62.5}
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: a0405410000000000800000000000000
+      internalID: 21300234
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: Creature_MermaidYellow
       rect:
@@ -2462,6 +3830,13 @@ TextureImporter:
         - {x: 62.5, y: 62.5}
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: c0405410000000000800000000000000
+      internalID: 21300236
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: Creature_MotherFluffBucket
       rect:
@@ -2480,6 +3855,13 @@ TextureImporter:
         - {x: 62.5, y: 62.5}
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: e0405410000000000800000000000000
+      internalID: 21300238
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: Creature_Mouthball
       rect:
@@ -2498,6 +3880,13 @@ TextureImporter:
         - {x: 62.5, y: 62.5}
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 01405410000000000800000000000000
+      internalID: 21300240
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: Creature_MsMummy
       rect:
@@ -2516,6 +3905,13 @@ TextureImporter:
         - {x: 62.5, y: 62.5}
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 21405410000000000800000000000000
+      internalID: 21300242
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: Creature_MudAngel
       rect:
@@ -2534,6 +3930,13 @@ TextureImporter:
         - {x: 62.5, y: 62.5}
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 41405410000000000800000000000000
+      internalID: 21300244
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: Creature_Ninja
       rect:
@@ -2552,6 +3955,13 @@ TextureImporter:
         - {x: 62.5, y: 62.5}
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 61405410000000000800000000000000
+      internalID: 21300246
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: Creature_OrangeSlimey
       rect:
@@ -2570,6 +3980,13 @@ TextureImporter:
         - {x: 62.5, y: 62.5}
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 81405410000000000800000000000000
+      internalID: 21300248
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: Creature_PajamaNinja
       rect:
@@ -2588,6 +4005,13 @@ TextureImporter:
         - {x: 62.5, y: 62.5}
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: a1405410000000000800000000000000
+      internalID: 21300250
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: Creature_PatchyThePumpkin
       rect:
@@ -2606,6 +4030,13 @@ TextureImporter:
         - {x: 62.5, y: 62.5}
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: c1405410000000000800000000000000
+      internalID: 21300252
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: Creature_PeachDjini
       rect:
@@ -2624,6 +4055,13 @@ TextureImporter:
         - {x: 62.5, y: 62.5}
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: e1405410000000000800000000000000
+      internalID: 21300254
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: Creature_Pentacutie
       rect:
@@ -2642,6 +4080,13 @@ TextureImporter:
         - {x: 62.5, y: 62.5}
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 02405410000000000800000000000000
+      internalID: 21300256
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: Creature_Phyllis
       rect:
@@ -2660,6 +4105,13 @@ TextureImporter:
         - {x: 62.5, y: 62.5}
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 22405410000000000800000000000000
+      internalID: 21300258
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: Creature_Pickler
       rect:
@@ -2678,6 +4130,13 @@ TextureImporter:
         - {x: 62.5, y: 62.5}
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 42405410000000000800000000000000
+      internalID: 21300260
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: Creature_Pieclops
       rect:
@@ -2696,6 +4155,13 @@ TextureImporter:
         - {x: 62.5, y: 62.5}
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 62405410000000000800000000000000
+      internalID: 21300262
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: Creature_Pig
       rect:
@@ -2714,6 +4180,13 @@ TextureImporter:
         - {x: 62.5, y: 62.5}
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 82405410000000000800000000000000
+      internalID: 21300264
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: Creature_PirateBear
       rect:
@@ -2732,6 +4205,13 @@ TextureImporter:
         - {x: 62.5, y: 62.5}
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: a2405410000000000800000000000000
+      internalID: 21300266
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: Creature_Polterclops
       rect:
@@ -2750,6 +4230,13 @@ TextureImporter:
         - {x: 62.5, y: 62.5}
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: c2405410000000000800000000000000
+      internalID: 21300268
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: Creature_PorcelainGuardian
       rect:
@@ -2768,6 +4255,13 @@ TextureImporter:
         - {x: 62.5, y: 62.5}
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: e2405410000000000800000000000000
+      internalID: 21300270
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: Creature_Poultrygeist
       rect:
@@ -2786,6 +4280,13 @@ TextureImporter:
         - {x: 62.5, y: 62.5}
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 03405410000000000800000000000000
+      internalID: 21300272
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: Creature_PunkCat
       rect:
@@ -2804,6 +4305,13 @@ TextureImporter:
         - {x: 62.5, y: 62.5}
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 23405410000000000800000000000000
+      internalID: 21300274
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: Creature_Quadurai
       rect:
@@ -2822,6 +4330,13 @@ TextureImporter:
         - {x: 62.5, y: 62.5}
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 43405410000000000800000000000000
+      internalID: 21300276
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: Creature_RainbowBarfer
       rect:
@@ -2840,6 +4355,13 @@ TextureImporter:
         - {x: 62.5, y: 62.5}
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 63405410000000000800000000000000
+      internalID: 21300278
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: Creature_RecordThug
       rect:
@@ -2858,6 +4380,13 @@ TextureImporter:
         - {x: 62.5, y: 62.5}
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 83405410000000000800000000000000
+      internalID: 21300280
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: Creature_RedEyeling
       rect:
@@ -2876,6 +4405,13 @@ TextureImporter:
         - {x: 62.5, y: 62.5}
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: a3405410000000000800000000000000
+      internalID: 21300282
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: Creature_Rocktopus
       rect:
@@ -2894,6 +4430,13 @@ TextureImporter:
         - {x: 62.5, y: 62.5}
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: c3405410000000000800000000000000
+      internalID: 21300284
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: Creature_SackOfPain
       rect:
@@ -2912,6 +4455,13 @@ TextureImporter:
         - {x: 62.5, y: 62.5}
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: e3405410000000000800000000000000
+      internalID: 21300286
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: Creature_SandasaurusRex
       rect:
@@ -2930,6 +4480,13 @@ TextureImporter:
         - {x: 62.5, y: 62.5}
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 04405410000000000800000000000000
+      internalID: 21300288
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: Creature_SandEyeBat
       rect:
@@ -2948,6 +4505,13 @@ TextureImporter:
         - {x: 62.5, y: 62.5}
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 24405410000000000800000000000000
+      internalID: 21300290
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: Creature_SandFoot
       rect:
@@ -2966,6 +4530,13 @@ TextureImporter:
         - {x: 62.5, y: 62.5}
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 44405410000000000800000000000000
+      internalID: 21300292
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: Creature_SandJackal
       rect:
@@ -2984,6 +4555,13 @@ TextureImporter:
         - {x: 62.5, y: 62.5}
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 64405410000000000800000000000000
+      internalID: 21300294
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: Creature_SandKnight
       rect:
@@ -3002,6 +4580,13 @@ TextureImporter:
         - {x: 62.5, y: 62.5}
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 84405410000000000800000000000000
+      internalID: 21300296
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: Creature_SandShark
       rect:
@@ -3020,6 +4605,13 @@ TextureImporter:
         - {x: 62.5, y: 62.5}
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: a4405410000000000800000000000000
+      internalID: 21300298
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: Creature_SandSnake
       rect:
@@ -3038,6 +4630,13 @@ TextureImporter:
         - {x: 62.5, y: 62.5}
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: c4405410000000000800000000000000
+      internalID: 21300300
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: Creature_SandWitch
       rect:
@@ -3056,6 +4655,13 @@ TextureImporter:
         - {x: 62.5, y: 62.5}
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: e4405410000000000800000000000000
+      internalID: 21300302
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: Creature_SgtMushroom
       rect:
@@ -3074,6 +4680,13 @@ TextureImporter:
         - {x: 62.5, y: 62.5}
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 05405410000000000800000000000000
+      internalID: 21300304
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: Creature_SkeletalHand
       rect:
@@ -3092,6 +4705,13 @@ TextureImporter:
         - {x: 62.5, y: 62.5}
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 25405410000000000800000000000000
+      internalID: 21300306
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: Creature_Sludger
       rect:
@@ -3110,6 +4730,13 @@ TextureImporter:
         - {x: 62.5, y: 62.5}
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 45405410000000000800000000000000
+      internalID: 21300308
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: Creature_SnakeMint
       rect:
@@ -3128,6 +4755,13 @@ TextureImporter:
         - {x: 62.5, y: 62.5}
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 65405410000000000800000000000000
+      internalID: 21300310
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: Creature_SnappyDresser
       rect:
@@ -3146,6 +4780,13 @@ TextureImporter:
         - {x: 62.5, y: 62.5}
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 85405410000000000800000000000000
+      internalID: 21300312
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: Creature_SnuggleTree
       rect:
@@ -3164,6 +4805,13 @@ TextureImporter:
         - {x: 62.5, y: 62.5}
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: a5405410000000000800000000000000
+      internalID: 21300314
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: Creature_SoftEyeling
       rect:
@@ -3182,6 +4830,13 @@ TextureImporter:
         - {x: 62.5, y: 62.5}
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: c5405410000000000800000000000000
+      internalID: 21300316
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: Creature_SpikedMaceStump
       rect:
@@ -3200,6 +4855,13 @@ TextureImporter:
         - {x: 62.5, y: 62.5}
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: e5405410000000000800000000000000
+      internalID: 21300318
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: Creature_SteakChop
       rect:
@@ -3218,6 +4880,13 @@ TextureImporter:
         - {x: 62.5, y: 62.5}
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 06405410000000000800000000000000
+      internalID: 21300320
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: Creature_StruzanJinn
       rect:
@@ -3236,6 +4905,13 @@ TextureImporter:
         - {x: 62.5, y: 62.5}
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 26405410000000000800000000000000
+      internalID: 21300322
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: Creature_SugarImp
       rect:
@@ -3254,6 +4930,13 @@ TextureImporter:
         - {x: 62.5, y: 62.5}
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 46405410000000000800000000000000
+      internalID: 21300324
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: Creature_SunKing
       rect:
@@ -3272,6 +4955,13 @@ TextureImporter:
         - {x: 62.5, y: 62.5}
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 66405410000000000800000000000000
+      internalID: 21300326
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: Creature_TeethLeaf
       rect:
@@ -3290,6 +4980,13 @@ TextureImporter:
         - {x: 62.5, y: 62.5}
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 86405410000000000800000000000000
+      internalID: 21300328
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: Creature_TheDrooler
       rect:
@@ -3308,6 +5005,13 @@ TextureImporter:
         - {x: 62.5, y: 62.5}
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: a6405410000000000800000000000000
+      internalID: 21300330
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: Creature_TheMariachi
       rect:
@@ -3326,6 +5030,13 @@ TextureImporter:
         - {x: 62.5, y: 62.5}
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: c6405410000000000800000000000000
+      internalID: 21300332
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: Creature_TravelinSkeleton
       rect:
@@ -3344,6 +5055,13 @@ TextureImporter:
         - {x: 62.5, y: 62.5}
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: e6405410000000000800000000000000
+      internalID: 21300334
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: Creature_TravelinWizard
       rect:
@@ -3362,6 +5080,13 @@ TextureImporter:
         - {x: 62.5, y: 62.5}
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 07405410000000000800000000000000
+      internalID: 21300336
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: Creature_TreeEvil
       rect:
@@ -3380,6 +5105,13 @@ TextureImporter:
         - {x: 62.5, y: 62.5}
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 27405410000000000800000000000000
+      internalID: 21300338
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: Creature_TreeOfUgliness
       rect:
@@ -3398,6 +5130,13 @@ TextureImporter:
         - {x: 62.5, y: 62.5}
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 47405410000000000800000000000000
+      internalID: 21300340
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: Creature_TvDude
       rect:
@@ -3416,6 +5155,13 @@ TextureImporter:
         - {x: 62.5, y: 62.5}
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 67405410000000000800000000000000
+      internalID: 21300342
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: Creature_Uni-Knight
       rect:
@@ -3434,6 +5180,13 @@ TextureImporter:
         - {x: 62.5, y: 62.5}
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 87405410000000000800000000000000
+      internalID: 21300344
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: Creature_WallOfSand
       rect:
@@ -3452,6 +5205,13 @@ TextureImporter:
         - {x: 62.5, y: 62.5}
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: a7405410000000000800000000000000
+      internalID: 21300346
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: Creature_WanderingBaldMan
       rect:
@@ -3470,6 +5230,13 @@ TextureImporter:
         - {x: 62.5, y: 62.5}
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: c7405410000000000800000000000000
+      internalID: 21300348
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: Creature_WellDressedWolf
       rect:
@@ -3488,6 +5255,13 @@ TextureImporter:
         - {x: 62.5, y: 62.5}
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: e7405410000000000800000000000000
+      internalID: 21300350
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: Creature_WhiteNinja
       rect:
@@ -3506,6 +5280,13 @@ TextureImporter:
         - {x: 62.5, y: 62.5}
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 08405410000000000800000000000000
+      internalID: 21300352
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: Creature_WizardElf
       rect:
@@ -3524,6 +5305,13 @@ TextureImporter:
         - {x: 62.5, y: 62.5}
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 28405410000000000800000000000000
+      internalID: 21300354
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: Creature_WizardOfPoo
       rect:
@@ -3542,6 +5330,13 @@ TextureImporter:
         - {x: 62.5, y: 62.5}
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 48405410000000000800000000000000
+      internalID: 21300356
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: Creature_YellowGnome
       rect:
@@ -3560,6 +5355,13 @@ TextureImporter:
         - {x: 62.5, y: 62.5}
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 68405410000000000800000000000000
+      internalID: 21300358
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: Spell_AbracaAmadeus
       rect:
@@ -3578,6 +5380,13 @@ TextureImporter:
         - {x: 62.5, y: 62.5}
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 88405410000000000800000000000000
+      internalID: 21300360
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: Spell_Ankh
       rect:
@@ -3596,6 +5405,13 @@ TextureImporter:
         - {x: 62.5, y: 62.5}
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: a8405410000000000800000000000000
+      internalID: 21300362
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: Spell_BananaButt
       rect:
@@ -3614,6 +5430,13 @@ TextureImporter:
         - {x: 62.5, y: 62.5}
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: c8405410000000000800000000000000
+      internalID: 21300364
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: Spell_BoneWand
       rect:
@@ -3632,6 +5455,13 @@ TextureImporter:
         - {x: 62.5, y: 62.5}
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: e8405410000000000800000000000000
+      internalID: 21300366
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: Spell_BriefPower
       rect:
@@ -3650,6 +5480,13 @@ TextureImporter:
         - {x: 62.5, y: 62.5}
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 09405410000000000800000000000000
+      internalID: 21300368
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: Spell_BubblegumButt
       rect:
@@ -3668,6 +5505,13 @@ TextureImporter:
         - {x: 62.5, y: 62.5}
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 29405410000000000800000000000000
+      internalID: 21300370
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: Spell_CerebralBloodstorm
       rect:
@@ -3686,6 +5530,13 @@ TextureImporter:
         - {x: 62.5, y: 62.5}
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 49405410000000000800000000000000
+      internalID: 21300372
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: Spell_ClairvoyantDaggerstorm
       rect:
@@ -3704,6 +5555,13 @@ TextureImporter:
         - {x: 62.5, y: 62.5}
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 69405410000000000800000000000000
+      internalID: 21300374
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: Spell_ConfectionaryRing
       rect:
@@ -3722,6 +5580,13 @@ TextureImporter:
         - {x: 62.5, y: 62.5}
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 89405410000000000800000000000000
+      internalID: 21300376
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: Spell_CornScepter
       rect:
@@ -3740,6 +5605,13 @@ TextureImporter:
         - {x: 62.5, y: 62.5}
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: a9405410000000000800000000000000
+      internalID: 21300378
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: Spell_CoughSyrup
       rect:
@@ -3758,6 +5630,13 @@ TextureImporter:
         - {x: 62.5, y: 62.5}
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: c9405410000000000800000000000000
+      internalID: 21300380
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: Spell_CrystalBall
       rect:
@@ -3776,6 +5655,13 @@ TextureImporter:
         - {x: 62.5, y: 62.5}
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: e9405410000000000800000000000000
+      internalID: 21300382
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: Spell_DarkPortal
       rect:
@@ -3794,6 +5680,13 @@ TextureImporter:
         - {x: 62.5, y: 62.5}
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 0a405410000000000800000000000000
+      internalID: 21300384
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: Spell_DoorOfStrength
       rect:
@@ -3812,6 +5705,13 @@ TextureImporter:
         - {x: 62.5, y: 62.5}
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 2a405410000000000800000000000000
+      internalID: 21300386
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: Spell_ElfBlood
       rect:
@@ -3830,6 +5730,13 @@ TextureImporter:
         - {x: 62.5, y: 62.5}
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 4a405410000000000800000000000000
+      internalID: 21300388
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: Spell_ElfTalisman
       rect:
@@ -3848,6 +5755,13 @@ TextureImporter:
         - {x: 62.5, y: 62.5}
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 6a405410000000000800000000000000
+      internalID: 21300390
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: Spell_FallingStar
       rect:
@@ -3866,6 +5780,13 @@ TextureImporter:
         - {x: 62.5, y: 62.5}
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 8a405410000000000800000000000000
+      internalID: 21300392
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: Spell_FieldOfNightmares
       rect:
@@ -3884,6 +5805,13 @@ TextureImporter:
         - {x: 62.5, y: 62.5}
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: aa405410000000000800000000000000
+      internalID: 21300394
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: Spell_FountainOfForgiveness
       rect:
@@ -3902,6 +5830,13 @@ TextureImporter:
         - {x: 62.5, y: 62.5}
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: ca405410000000000800000000000000
+      internalID: 21300396
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: Spell_GenerateMayo
       rect:
@@ -3920,6 +5855,13 @@ TextureImporter:
         - {x: 62.5, y: 62.5}
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: ea405410000000000800000000000000
+      internalID: 21300398
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: Spell_GnomeSnot
       rect:
@@ -3938,6 +5880,13 @@ TextureImporter:
         - {x: 62.5, y: 62.5}
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 0b405410000000000800000000000000
+      internalID: 21300400
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: Spell_GrapeButt
       rect:
@@ -3956,6 +5905,13 @@ TextureImporter:
         - {x: 62.5, y: 62.5}
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 2b405410000000000800000000000000
+      internalID: 21300402
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: Spell_HotDogRain
       rect:
@@ -3974,6 +5930,13 @@ TextureImporter:
         - {x: 62.5, y: 62.5}
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 4b405410000000000800000000000000
+      internalID: 21300404
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: Spell_IceVolcano
       rect:
@@ -3992,6 +5955,13 @@ TextureImporter:
         - {x: 62.5, y: 62.5}
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 6b405410000000000800000000000000
+      internalID: 21300406
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: Spell_IncredibleEgg
       rect:
@@ -4010,6 +5980,13 @@ TextureImporter:
         - {x: 62.5, y: 62.5}
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 8b405410000000000800000000000000
+      internalID: 21300408
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: Spell_KungFuManual
       rect:
@@ -4028,6 +6005,13 @@ TextureImporter:
         - {x: 62.5, y: 62.5}
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: ab405410000000000800000000000000
+      internalID: 21300410
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: Spell_MagicRingDing
       rect:
@@ -4046,6 +6030,13 @@ TextureImporter:
         - {x: 62.5, y: 62.5}
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: cb405410000000000800000000000000
+      internalID: 21300412
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: Spell_MazeOfCorn
       rect:
@@ -4064,6 +6055,13 @@ TextureImporter:
         - {x: 62.5, y: 62.5}
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: eb405410000000000800000000000000
+      internalID: 21300414
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: Spell_Migraine
       rect:
@@ -4082,6 +6080,13 @@ TextureImporter:
         - {x: 62.5, y: 62.5}
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 0c405410000000000800000000000000
+      internalID: 21300416
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: Spell_OgreGas
       rect:
@@ -4100,6 +6105,13 @@ TextureImporter:
         - {x: 62.5, y: 62.5}
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 2c405410000000000800000000000000
+      internalID: 21300418
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: Spell_PieStorm
       rect:
@@ -4118,6 +6130,13 @@ TextureImporter:
         - {x: 62.5, y: 62.5}
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 4c405410000000000800000000000000
+      internalID: 21300420
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: Spell_PortalToNowhere
       rect:
@@ -4136,6 +6155,13 @@ TextureImporter:
         - {x: 62.5, y: 62.5}
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 6c405410000000000800000000000000
+      internalID: 21300422
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: Spell_PowerRing
       rect:
@@ -4154,6 +6180,13 @@ TextureImporter:
         - {x: 62.5, y: 62.5}
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 8c405410000000000800000000000000
+      internalID: 21300424
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: Spell_PsychicTempest
       rect:
@@ -4172,6 +6205,13 @@ TextureImporter:
         - {x: 62.5, y: 62.5}
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: ac405410000000000800000000000000
+      internalID: 21300426
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: Spell_PumaPaw
       rect:
@@ -4190,6 +6230,13 @@ TextureImporter:
         - {x: 62.5, y: 62.5}
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: cc405410000000000800000000000000
+      internalID: 21300428
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: Spell_ReclaimLandscape
       rect:
@@ -4208,6 +6255,13 @@ TextureImporter:
         - {x: 62.5, y: 62.5}
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: ec405410000000000800000000000000
+      internalID: 21300430
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: Spell_RingOfFluffy
       rect:
@@ -4226,6 +6280,13 @@ TextureImporter:
         - {x: 62.5, y: 62.5}
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 0d405410000000000800000000000000
+      internalID: 21300432
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: Spell_RingOfSeeing
       rect:
@@ -4244,6 +6305,13 @@ TextureImporter:
         - {x: 62.5, y: 62.5}
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 2d405410000000000800000000000000
+      internalID: 21300434
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: Spell_RingOfSnakeEye
       rect:
@@ -4262,6 +6330,13 @@ TextureImporter:
         - {x: 62.5, y: 60.5}
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 4d405410000000000800000000000000
+      internalID: 21300436
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: Spell_ScrollOfBadBreath
       rect:
@@ -4280,6 +6355,13 @@ TextureImporter:
         - {x: 62.5, y: 62.5}
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 6d405410000000000800000000000000
+      internalID: 21300438
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: Spell_ScrollOfFreshBreath
       rect:
@@ -4298,6 +6380,13 @@ TextureImporter:
         - {x: 62.5, y: 62.5}
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 8d405410000000000800000000000000
+      internalID: 21300440
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: Spell_SkullJuice
       rect:
@@ -4316,6 +6405,13 @@ TextureImporter:
         - {x: 62.5, y: 62.5}
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: ad405410000000000800000000000000
+      internalID: 21300442
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: Spell_SpiritTorch
       rect:
@@ -4334,6 +6430,13 @@ TextureImporter:
         - {x: 62.5, y: 62.5}
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: cd405410000000000800000000000000
+      internalID: 21300444
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: Spell_StrawberryButt
       rect:
@@ -4352,6 +6455,13 @@ TextureImporter:
         - {x: 62.5, y: 62.5}
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: ed405410000000000800000000000000
+      internalID: 21300446
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: Spell_Subliminal Strength
       rect:
@@ -4370,6 +6480,13 @@ TextureImporter:
         - {x: 62.5, y: 62.5}
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 0e405410000000000800000000000000
+      internalID: 21300448
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: Spell_TaxReduction
       rect:
@@ -4388,6 +6505,13 @@ TextureImporter:
         - {x: 62.5, y: 62.5}
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 2e405410000000000800000000000000
+      internalID: 21300450
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: Spell_Teleport
       rect:
@@ -4406,6 +6530,13 @@ TextureImporter:
         - {x: 62.5, y: 62.5}
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 4e405410000000000800000000000000
+      internalID: 21300452
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: Spell_ToiletOfDoom
       rect:
@@ -4424,6 +6555,13 @@ TextureImporter:
         - {x: 62.5, y: 60.5}
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 6e405410000000000800000000000000
+      internalID: 21300454
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: Spell_ToiletOfGloom
       rect:
@@ -4442,6 +6580,13 @@ TextureImporter:
         - {x: 62.5, y: 62.5}
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 8e405410000000000800000000000000
+      internalID: 21300456
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: Spell_UFOabduction
       rect:
@@ -4460,6 +6605,13 @@ TextureImporter:
         - {x: 62.5, y: 62.5}
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: ae405410000000000800000000000000
+      internalID: 21300458
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: Spell_UltimateMagicHands
       rect:
@@ -4478,6 +6630,13 @@ TextureImporter:
         - {x: 62.5, y: 62.5}
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: ce405410000000000800000000000000
+      internalID: 21300460
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: Spell_UnemptyCoffin
       rect:
@@ -4496,6 +6655,13 @@ TextureImporter:
         - {x: 62.5, y: 62.5}
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: ee405410000000000800000000000000
+      internalID: 21300462
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: Spell_Volcano
       rect:
@@ -4514,6 +6680,13 @@ TextureImporter:
         - {x: 62.5, y: 62.5}
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 0f405410000000000800000000000000
+      internalID: 21300464
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: Spell_WitchWay
       rect:
@@ -4532,6 +6705,13 @@ TextureImporter:
         - {x: 62.5, y: 62.5}
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 2f405410000000000800000000000000
+      internalID: 21300466
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: Spell_WizardRawk
       rect:
@@ -4550,6 +6730,13 @@ TextureImporter:
         - {x: 62.5, y: 62.5}
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 4f405410000000000800000000000000
+      internalID: 21300468
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: Spell_ZaZo'sMagicSeeds
       rect:
@@ -4568,6 +6755,13 @@ TextureImporter:
         - {x: 62.5, y: 62.5}
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 6f405410000000000800000000000000
+      internalID: 21300470
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: Spell_MagicHotDogPie
       rect:
@@ -4586,6 +6780,13 @@ TextureImporter:
         - {x: 62.5, y: 62.5}
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 8f405410000000000800000000000000
+      internalID: 21300472
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: Creature_RainbowGnome
       rect:
@@ -4604,6 +6805,13 @@ TextureImporter:
         - {x: 62.5, y: 62.5}
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: af405410000000000800000000000000
+      internalID: 21300474
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: Creature_Paladim
       rect:
@@ -4622,6 +6830,13 @@ TextureImporter:
         - {x: 62.5, y: 62.5}
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: cf405410000000000800000000000000
+      internalID: 21300476
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: Creature_CowPurple
       rect:
@@ -4640,6 +6855,13 @@ TextureImporter:
         - {x: 62.5, y: 62.5}
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: ef405410000000000800000000000000
+      internalID: 21300478
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: Creature_SnowBall
       rect:
@@ -4658,6 +6880,13 @@ TextureImporter:
         - {x: 62.5, y: 62.5}
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 00505410000000000800000000000000
+      internalID: 21300480
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: Creature_GelatinousCubeBlue
       rect:
@@ -4676,6 +6905,13 @@ TextureImporter:
         - {x: 62.5, y: 62.5}
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 20505410000000000800000000000000
+      internalID: 21300482
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: Creature_PeaSoupBarfer
       rect:
@@ -4694,6 +6930,13 @@ TextureImporter:
         - {x: 62.5, y: 62.5}
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 40505410000000000800000000000000
+      internalID: 21300484
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: Creature_WallOfChocolate
       rect:
@@ -4712,6 +6955,13 @@ TextureImporter:
         - {x: 62.5, y: 62.5}
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 60505410000000000800000000000000
+      internalID: 21300486
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: Building_CandyIgloo
       rect:
@@ -4730,6 +6980,13 @@ TextureImporter:
         - {x: 62.5, y: 62.5}
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 80505410000000000800000000000000
+      internalID: 21300488
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: Creature_SnowCorn
       rect:
@@ -4748,6 +7005,13 @@ TextureImporter:
         - {x: 62.5, y: 62.5}
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: a0505410000000000800000000000000
+      internalID: 21300490
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: Creature_SnowCotton
       rect:
@@ -4766,6 +7030,13 @@ TextureImporter:
         - {x: 62.5, y: 62.5}
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: c0505410000000000800000000000000
+      internalID: 21300492
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: Creature_SnowMan
       rect:
@@ -4784,6 +7055,13 @@ TextureImporter:
         - {x: 62.5, y: 62.5}
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: e0505410000000000800000000000000
+      internalID: 21300494
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: Creature_SnowPlain
       rect:
@@ -4802,6 +7080,13 @@ TextureImporter:
         - {x: 62.5, y: 62.5}
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 01505410000000000800000000000000
+      internalID: 21300496
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: Creature_SnowSand
       rect:
@@ -4820,6 +7105,13 @@ TextureImporter:
         - {x: 62.5, y: 62.5}
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 21505410000000000800000000000000
+      internalID: 21300498
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: Creature_SnowSwamp
       rect:
@@ -4838,9 +7130,277 @@ TextureImporter:
         - {x: 62.5, y: 62.5}
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 41505410000000000800000000000000
+      internalID: 21300500
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
-  spritePackingTag:
-  userData:
-  assetBundleName:
-  assetBundleVariant:
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      Building_BlueCastle: 21300000
+      Building_CandyIgloo: 21300488
+      Building_CaveOfSolitude: 21300002
+      Building_ComfyCave: 21300004
+      Building_ElfTeepee: 21300006
+      Building_GhostCastle: 21300008
+      Building_NicelandsTower: 21300010
+      Building_ObeliskOfVengeance: 21300012
+      Building_PalaceOfBone: 21300014
+      Building_PuffyCastle: 21300016
+      Building_Pyramidia: 21300018
+      Building_RedCastle: 21300020
+      Building_RedDome: 21300022
+      Building_RedParthenon: 21300024
+      Building_SandCastle: 21300026
+      Building_SandPyramid: 21300028
+      Building_SandSphinx: 21300030
+      Building_SchoolHouse: 21300032
+      Building_ShadowPyramid: 21300034
+      Building_SiloOfTruth: 21300036
+      Building_SpiritTower: 21300038
+      Building_StoneHenge: 21300040
+      Building_SunPyramid: 21300042
+      Building_Tomb: 21300044
+      Building_Windmill_Ghost: 21300046
+      Creature_AncientScholar: 21300048
+      Creature_AngelEye: 21300050
+      Creature_AngelHeart: 21300052
+      Creature_AngelOfSand: 21300054
+      Creature_AngelOfVanilla: 21300056
+      Creature_AppleTree: 21300058
+      Creature_ArcherDan: 21300060
+      Creature_Axey: 21300062
+      Creature_BaldMansThrone: 21300064
+      Creature_BeachMum: 21300066
+      Creature_BespectacledOgre: 21300068
+      Creature_BlackCat: 21300070
+      Creature_BlueberryDjini: 21300072
+      Creature_BrainBall: 21300074
+      Creature_BurningBush: 21300076
+      Creature_CactusBall: 21300078
+      Creature_CactusThug: 21300080
+      Creature_CameraDude: 21300082
+      Creature_CaptainTaco: 21300084
+      Creature_Carecrow: 21300086
+      Creature_ChestBurster: 21300088
+      Creature_CoolDog: 21300090
+      Creature_CornBall: 21300094
+      Creature_CornDog: 21300096
+      Creature_CornEyeBat: 21300098
+      Creature_CornLord: 21300100
+      Creature_CornRonin: 21300102
+      Creature_CornWall: 21300104
+      Creature_CornWorm: 21300106
+      Creature_Cornataur: 21300092
+      Creature_CottonCutie: 21300108
+      Creature_CottonEyeBat: 21300110
+      Creature_CottonsaurusRex: 21300112
+      Creature_Cow: 21300114
+      Creature_CowGhost: 21300116
+      Creature_CowPurple: 21300478
+      Creature_DarkAngel: 21300118
+      Creature_DevilEye: 21300120
+      Creature_DiamondDan: 21300122
+      Creature_DjiniGhost: 21300124
+      Creature_DogBoy: 21300126
+      Creature_DrDeath: 21300132
+      Creature_DragonClaw: 21300128
+      Creature_DragonFoot: 21300130
+      Creature_Earl: 21300134
+      Creature_ElfChief: 21300136
+      Creature_ElfMarauder: 21300138
+      Creature_EmbarrassingBard: 21300140
+      Creature_ExtraordinarySpider: 21300142
+      Creature_EyeGuy: 21300144
+      Creature_FairyShepard: 21300146
+      Creature_FarmerTom: 21300148
+      Creature_FatGoat: 21300152
+      Creature_Fatapillar: 21300150
+      Creature_FieldReaper: 21300154
+      Creature_Fisherfish: 21300156
+      Creature_Fluffantry: 21300158
+      Creature_Flufflapillar: 21300160
+      Creature_FreezyJ: 21300162
+      Creature_Fummy: 21300164
+      Creature_FutureScholar: 21300166
+      Creature_GelatinousCubeBlue: 21300482
+      Creature_Ghost: 21300168
+      Creature_GhostBull: 21300170
+      Creature_GhostHag: 21300172
+      Creature_GhostNinja: 21300176
+      Creature_GhostSludger: 21300178
+      Creature_GhostStalker: 21300180
+      Creature_GhostlyTree: 21300174
+      Creature_GiantFoot: 21300182
+      Creature_GiantMummyHand: 21300184
+      Creature_GrapeSlimey: 21300186
+      Creature_GrayEyeBat: 21300188
+      Creature_GreenMermaid: 21300190
+      Creature_GreenMerman: 21300192
+      Creature_GreenPartyOgre: 21300194
+      Creature_GreenSnakey: 21300196
+      Creature_HeadphoneJerk: 21300198
+      Creature_Herculeye: 21300200
+      Creature_HotEyeBat: 21300202
+      Creature_HuskerGiant: 21300204
+      Creature_HuskerKnight: 21300206
+      Creature_IceIceBaby: 21300208
+      Creature_IceKnight: 21300210
+      Creature_InfiniteFigure: 21300212
+      Creature_KingFluff: 21300214
+      Creature_KnightOfObesity: 21300216
+      Creature_LadyScarab: 21300218
+      Creature_LegionOfEarlings: 21300220
+      Creature_LimeSlimey: 21300222
+      Creature_LogKnight: 21300224
+      Creature_LostGolem: 21300226
+      Creature_LtMushroom: 21300228
+      Creature_MadameSeota: 21300230
+      Creature_MaizeWalker: 21300232
+      Creature_ManowarElf: 21300234
+      Creature_MermaidYellow: 21300236
+      Creature_MotherFluffBucket: 21300238
+      Creature_Mouthball: 21300240
+      Creature_MsMummy: 21300242
+      Creature_MudAngel: 21300244
+      Creature_Ninja: 21300246
+      Creature_OrangeSlimey: 21300248
+      Creature_PajamaNinja: 21300250
+      Creature_Paladim: 21300476
+      Creature_PatchyThePumpkin: 21300252
+      Creature_PeaSoupBarfer: 21300484
+      Creature_PeachDjini: 21300254
+      Creature_Pentacutie: 21300256
+      Creature_Phyllis: 21300258
+      Creature_Pickler: 21300260
+      Creature_Pieclops: 21300262
+      Creature_Pig: 21300264
+      Creature_PirateBear: 21300266
+      Creature_Polterclops: 21300268
+      Creature_PorcelainGuardian: 21300270
+      Creature_Poultrygeist: 21300272
+      Creature_PunkCat: 21300274
+      Creature_Quadurai: 21300276
+      Creature_RainbowBarfer: 21300278
+      Creature_RainbowGnome: 21300474
+      Creature_RecordThug: 21300280
+      Creature_RedEyeling: 21300282
+      Creature_Rocktopus: 21300284
+      Creature_SackOfPain: 21300286
+      Creature_SandEyeBat: 21300290
+      Creature_SandFoot: 21300292
+      Creature_SandJackal: 21300294
+      Creature_SandKnight: 21300296
+      Creature_SandShark: 21300298
+      Creature_SandSnake: 21300300
+      Creature_SandWitch: 21300302
+      Creature_SandasaurusRex: 21300288
+      Creature_SgtMushroom: 21300304
+      Creature_SkeletalHand: 21300306
+      Creature_Sludger: 21300308
+      Creature_SnakeMint: 21300310
+      Creature_SnappyDresser: 21300312
+      Creature_SnowBall: 21300480
+      Creature_SnowCorn: 21300490
+      Creature_SnowCotton: 21300492
+      Creature_SnowMan: 21300494
+      Creature_SnowPlain: 21300496
+      Creature_SnowSand: 21300498
+      Creature_SnowSwamp: 21300500
+      Creature_SnuggleTree: 21300314
+      Creature_SoftEyeling: 21300316
+      Creature_SpikedMaceStump: 21300318
+      Creature_SteakChop: 21300320
+      Creature_StruzanJinn: 21300322
+      Creature_SugarImp: 21300324
+      Creature_SunKing: 21300326
+      Creature_TeethLeaf: 21300328
+      Creature_TheDrooler: 21300330
+      Creature_TheMariachi: 21300332
+      Creature_TravelinSkeleton: 21300334
+      Creature_TravelinWizard: 21300336
+      Creature_TreeEvil: 21300338
+      Creature_TreeOfUgliness: 21300340
+      Creature_TvDude: 21300342
+      Creature_Uni-Knight: 21300344
+      Creature_WallOfChocolate: 21300486
+      Creature_WallOfSand: 21300346
+      Creature_WanderingBaldMan: 21300348
+      Creature_WellDressedWolf: 21300350
+      Creature_WhiteNinja: 21300352
+      Creature_WizardElf: 21300354
+      Creature_WizardOfPoo: 21300356
+      Creature_YellowGnome: 21300358
+      Spell_AbracaAmadeus: 21300360
+      Spell_Ankh: 21300362
+      Spell_BananaButt: 21300364
+      Spell_BoneWand: 21300366
+      Spell_BriefPower: 21300368
+      Spell_BubblegumButt: 21300370
+      Spell_CerebralBloodstorm: 21300372
+      Spell_ClairvoyantDaggerstorm: 21300374
+      Spell_ConfectionaryRing: 21300376
+      Spell_CornScepter: 21300378
+      Spell_CoughSyrup: 21300380
+      Spell_CrystalBall: 21300382
+      Spell_DarkPortal: 21300384
+      Spell_DoorOfStrength: 21300386
+      Spell_ElfBlood: 21300388
+      Spell_ElfTalisman: 21300390
+      Spell_FallingStar: 21300392
+      Spell_FieldOfNightmares: 21300394
+      Spell_FountainOfForgiveness: 21300396
+      Spell_GenerateMayo: 21300398
+      Spell_GnomeSnot: 21300400
+      Spell_GrapeButt: 21300402
+      Spell_HotDogRain: 21300404
+      Spell_IceVolcano: 21300406
+      Spell_IncredibleEgg: 21300408
+      Spell_KungFuManual: 21300410
+      Spell_MagicHotDogPie: 21300472
+      Spell_MagicRingDing: 21300412
+      Spell_MazeOfCorn: 21300414
+      Spell_Migraine: 21300416
+      Spell_OgreGas: 21300418
+      Spell_PieStorm: 21300420
+      Spell_PortalToNowhere: 21300422
+      Spell_PowerRing: 21300424
+      Spell_PsychicTempest: 21300426
+      Spell_PumaPaw: 21300428
+      Spell_ReclaimLandscape: 21300430
+      Spell_RingOfFluffy: 21300432
+      Spell_RingOfSeeing: 21300434
+      Spell_RingOfSnakeEye: 21300436
+      Spell_ScrollOfBadBreath: 21300438
+      Spell_ScrollOfFreshBreath: 21300440
+      Spell_SkullJuice: 21300442
+      Spell_SpiritTorch: 21300444
+      Spell_StrawberryButt: 21300446
+      Spell_Subliminal Strength: 21300448
+      Spell_TaxReduction: 21300450
+      Spell_Teleport: 21300452
+      Spell_ToiletOfDoom: 21300454
+      Spell_ToiletOfGloom: 21300456
+      Spell_UFOabduction: 21300458
+      Spell_UltimateMagicHands: 21300460
+      Spell_UnemptyCoffin: 21300462
+      Spell_Volcano: 21300464
+      Spell_WitchWay: 21300466
+      Spell_WizardRawk: 21300468
+      Spell_ZaZo'sMagicSeeds: 21300470
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

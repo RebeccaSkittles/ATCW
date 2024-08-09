@@ -1,5 +1,5 @@
 # Card Wars
-A port of the "Adventure Time: Card Wars" mobile game to PC.
+A port of the "Adventure Time: Card Wars" mobile game to PC and updated for ANDROID
 
 Floop the Pig! It's Adventure Time CARD WARS! Play the game inspired by the Adventure TIme episode, 'Card Wars'! Summon creatures and cast spells to battle your way to victory.
 
@@ -30,3 +30,4 @@ It's CARD WARS!
 
 ## Contributing
 Card Wars uses Unity 2017.4.40f1. No other dependencies are required.
+Imported to Unity 2022.3.33f for Android APK export compatibility

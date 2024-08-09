@@ -27,73 +27,63 @@ public class NsSharedManager : MonoBehaviour
 
 	public GameObject GetSharedParticleGameObject(GameObject originalParticlePrefab)
 	{
-		int num = m_SharedPrefabs.IndexOf(originalParticlePrefab);
-		if (num < 0 || m_SharedGameObjects[num] == null)
-		{
-			if (!NcEffectBehaviour.IsSafe())
-			{
-				return null;
-			}
-			GameObject gameObject = Object.Instantiate(originalParticlePrefab);
-			gameObject.transform.parent = NcEffectBehaviour.GetRootInstanceEffect().transform;
-			if (0 <= num)
-			{
-				m_SharedGameObjects[num] = gameObject;
-			}
-			else
-			{
-				m_SharedPrefabs.Add(originalParticlePrefab);
-				m_SharedGameObjects.Add(gameObject);
-			}
-			NcParticleSystem component = gameObject.GetComponent<NcParticleSystem>();
-			if ((bool)component)
-			{
-				component.enabled = false;
-			}
-			if ((bool)gameObject.GetComponent<ParticleEmitter>())
-			{
-				gameObject.GetComponent<ParticleEmitter>().emit = false;
-				gameObject.GetComponent<ParticleEmitter>().useWorldSpace = true;
-				ParticleAnimator component2 = gameObject.GetComponent<ParticleAnimator>();
-				if ((bool)component2)
-				{
-					component2.autodestruct = false;
-				}
-			}
-			NcParticleSystem component3 = gameObject.GetComponent<NcParticleSystem>();
-			if ((bool)component3)
-			{
-				component3.m_bBurst = false;
-			}
-			ParticleSystem component4 = gameObject.GetComponent<ParticleSystem>();
-			if ((bool)component4)
-			{
-				component4.enableEmission = false;
-			}
-			return gameObject;
-		}
-		return m_SharedGameObjects[num];
+    	int num = m_SharedPrefabs.IndexOf(originalParticlePrefab);
+    	if (num < 0 || m_SharedGameObjects[num] == null)
+    	{
+        	if (!NcEffectBehaviour.IsSafe())
+        	{
+            	return null;
+        	}
+        	GameObject gameObject = Object.Instantiate(originalParticlePrefab);
+        	gameObject.transform.parent = NcEffectBehaviour.GetRootInstanceEffect().transform;
+        	if (0 <= num)
+        	{
+            	m_SharedGameObjects[num] = gameObject;
+        	}
+        	else
+        	{
+            	m_SharedPrefabs.Add(originalParticlePrefab);
+            	m_SharedGameObjects.Add(gameObject);
+        	}
+        	NcParticleSystem component = gameObject.GetComponent<NcParticleSystem>();
+        	if (component != null)
+        	{
+            	component.enabled = false;
+        	}
+        	ParticleSystem particleSystem = gameObject.GetComponent<ParticleSystem>();
+        	if (particleSystem != null)
+        	{
+            	var emission = particleSystem.emission;
+            	emission.enabled = false;
+            	particleSystem.useAutoRandomSeed = false;
+            	particleSystem.simulationSpace = ParticleSystemSimulationSpace.World;
+        	}
+        	NcParticleSystem component3 = gameObject.GetComponent<NcParticleSystem>();
+        	if (component3 != null)
+        	{
+            component3.m_bBurst = false;
+        	}
+        	return gameObject;
+    	}
+    	return m_SharedGameObjects[num];
 	}
 
-	public void EmitSharedParticleSystem(GameObject originalParticlePrefab, int nEmitCount, Vector3 worldPos)
-	{
-		GameObject sharedParticleGameObject = GetSharedParticleGameObject(originalParticlePrefab);
-		if (sharedParticleGameObject == null)
-		{
-			return;
-		}
-		sharedParticleGameObject.transform.position = worldPos;
-		if (sharedParticleGameObject.GetComponent<ParticleEmitter>() != null)
-		{
-			sharedParticleGameObject.GetComponent<ParticleEmitter>().Emit(nEmitCount);
-			return;
-		}
-		ParticleSystem component = sharedParticleGameObject.GetComponent<ParticleSystem>();
-		if (component != null)
-		{
-			component.Emit(nEmitCount);
-		}
-	}
+
+public void EmitSharedParticleSystem(GameObject originalParticlePrefab, int nEmitCount, Vector3 worldPos)
+{
+    GameObject sharedParticleGameObject = GetSharedParticleGameObject(originalParticlePrefab);
+    if (sharedParticleGameObject == null)
+    {
+        return;
+    }
+    sharedParticleGameObject.transform.position = worldPos;
+    ParticleSystem particleSystem = sharedParticleGameObject.GetComponent<ParticleSystem>();
+    if (particleSystem != null)
+    {
+        particleSystem.Emit(nEmitCount);
+    }
+}
+
 
 	public AudioSource GetSharedAudioSource(AudioClip audioClip, int nPriority, bool bLoop, float fVolume, float fPitch)
 	{

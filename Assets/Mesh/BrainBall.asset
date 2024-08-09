@@ -2,7 +2,10 @@
 %TAG !u! tag:unity3d.com,2011:
 --- !u!43 &4300000
 Mesh:
-  m_Name: ' BrainBall'
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: BrainBall
   serializedVersion: 8
   m_SubMeshes:
   - serializedVersion: 2
@@ -31,18 +34,18 @@ Mesh:
     channels: []
     fullWeights: []
   m_BindPose:
-  - e00: 6.123234E-17
-    e01: -6.123234E-17
+  - e00: 6.123234e-17
+    e01: -6.123234e-17
     e02: -1
     e03: 2.188073
-    e10: 5.233538E-07
+    e10: 0.0000005233538
     e11: -1
-    e12: 6.123237E-17
+    e12: 6.123237e-17
     e13: -0.0001031728
     e20: -1
-    e21: -5.233538E-07
-    e22: -6.123231E-17
-    e23: -5.399571E-11
+    e21: -0.0000005233538
+    e22: -6.123231e-17
+    e23: -5.399571e-11
     e30: 0
     e31: 0
     e32: 0
@@ -127,16 +130,16 @@ Mesh:
     e31: 0
     e32: 0
     e33: 1
-  - e00: 6.123234E-17
+  - e00: 6.123234e-17
     e01: 1
-    e02: -6.123234E-17
+    e02: -6.123234e-17
     e03: 0.6075406
     e10: -1
-    e11: 6.123234E-17
-    e12: 4.371127E-08
+    e11: 6.123234e-17
+    e12: 0.00000004371127
     e13: 0.01781093
-    e20: 4.371127E-08
-    e21: 6.123234E-17
+    e20: 0.00000004371127
+    e21: 6.123234e-17
     e22: 1
     e23: -2.29022
     e30: 0
@@ -147,10 +150,10 @@ Mesh:
   m_RootBoneNameHash: 124042677
   m_MeshCompression: 3
   m_IsReadable: 0
-  m_KeepVertices: 1
-  m_KeepIndices: 1
+  m_KeepVertices: 0
+  m_KeepIndices: 0
   m_IndexFormat: 0
-  m_IndexBuffer:
+  m_IndexBuffer: 
   m_Skin: []
   m_VertexData:
     m_CurrentChannels: 0
@@ -189,7 +192,7 @@ Mesh:
       format: 0
       dimension: 0
     m_DataSize: 0
-    _typelessdata:
+    _typelessdata: 
   m_CompressedMesh:
     m_Vertices:
       m_NumItems: 3051
@@ -207,13 +210,13 @@ Mesh:
       m_NumItems: 0
       m_Range: 0
       m_Start: 0
-      m_Data:
+      m_Data: 
       m_BitSize: 0
     m_Tangents:
       m_NumItems: 0
       m_Range: 0
       m_Start: 0
-      m_Data:
+      m_Data: 
       m_BitSize: 0
     m_Weights:
       m_NumItems: 1266
@@ -221,17 +224,17 @@ Mesh:
       m_BitSize: 5
     m_NormalSigns:
       m_NumItems: 0
-      m_Data:
+      m_Data: 
       m_BitSize: 0
     m_TangentSigns:
       m_NumItems: 0
-      m_Data:
+      m_Data: 
       m_BitSize: 0
     m_FloatColors:
       m_NumItems: 0
       m_Range: 0
       m_Start: 0
-      m_Data:
+      m_Data: 
       m_BitSize: 0
     m_BoneIndices:
       m_NumItems: 1266
@@ -246,6 +249,6 @@ Mesh:
     m_Center: {x: 0.05817628, y: -0.09814501, z: 2.466026}
     m_Extent: {x: 1.631754, y: 1.120993, z: 1.693171}
   m_MeshUsageFlags: 1
-  m_BakedConvexCollisionMesh:
-  m_BakedTriangleCollisionMesh:
+  m_BakedConvexCollisionMesh: 
+  m_BakedTriangleCollisionMesh: 
   m_MeshOptimized: 1

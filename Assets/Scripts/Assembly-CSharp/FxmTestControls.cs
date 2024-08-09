@@ -1,4 +1,5 @@
 using UnityEngine;
+using System.Linq;
 
 public class FxmTestControls : MonoBehaviour
 {
@@ -141,100 +142,83 @@ public class FxmTestControls : MonoBehaviour
 	{
 	}
 
-	private void Update()
-	{
-		m_fTimeScale = Time.timeScale;
-		if (FxmTestMain.inst.GetInstanceEffectObject() == null && !IsAutoRepeat())
-		{
-			DelayCreateInstanceEffect(false);
-			return;
-		}
-		NgObject.GetMeshInfo(NcEffectBehaviour.GetRootInstanceEffect(), true, out m_nVertices, out m_nTriangles, out m_nMeshCount);
-		m_nParticleCount = 0;
-		ParticleSystem[] componentsInChildren = NcEffectBehaviour.GetRootInstanceEffect().GetComponentsInChildren<ParticleSystem>();
-		ParticleSystem[] array = componentsInChildren;
-		foreach (ParticleSystem particleSystem in array)
-		{
-			m_nParticleCount += particleSystem.particleCount;
-		}
-		ParticleEmitter[] componentsInChildren2 = NcEffectBehaviour.GetRootInstanceEffect().GetComponentsInChildren<ParticleEmitter>();
-		ParticleEmitter[] array2 = componentsInChildren2;
-		foreach (ParticleEmitter particleEmitter in array2)
-		{
-			m_nParticleCount += particleEmitter.particleCount;
-		}
-		if (m_fDelayCreateTime < Time.time - m_fPlayStartTime)
-		{
-			if (IsRepeat() && m_fCreateTime + GetRepeatTime() < Time.time)
-			{
-				DelayCreateInstanceEffect(false);
-			}
-			if (m_nTransIndex == 0 && IsAutoRepeat() && !m_bCalledDelayCreate && !IsAliveAnimation())
-			{
-				DelayCreateInstanceEffect(false);
-			}
-		}
-	}
+    private void Update()
+    {
+        m_fTimeScale = Time.timeScale;
+        if (FxmTestMain.inst.GetInstanceEffectObject() == null && !IsAutoRepeat())
+        {
+            DelayCreateInstanceEffect(false);
+            return;
+        }
 
-	private bool IsAliveAnimation()
-	{
-		GameObject rootInstanceEffect = NcEffectBehaviour.GetRootInstanceEffect();
-		Transform[] componentsInChildren = rootInstanceEffect.GetComponentsInChildren<Transform>(true);
-		Transform[] array = componentsInChildren;
-		foreach (Transform transform in array)
-		{
-			int num = -1;
-			int num2 = -1;
-			bool flag = false;
-			NcEffectBehaviour[] components = transform.GetComponents<NcEffectBehaviour>();
-			NcEffectBehaviour[] array2 = components;
-			foreach (NcEffectBehaviour ncEffectBehaviour in array2)
-			{
-				switch (ncEffectBehaviour.GetAnimationState())
-				{
-				case 1:
-					num = 1;
-					break;
-				case 0:
-					num = 0;
-					break;
-				}
-			}
-			if (transform.GetComponent<ParticleSystem>() != null)
-			{
-				num2 = 0;
-				if (NgObject.IsActive(transform.gameObject) && ((transform.GetComponent<ParticleSystem>().enableEmission && transform.GetComponent<ParticleSystem>().IsAlive()) || 0 < transform.GetComponent<ParticleSystem>().particleCount))
-				{
-					num2 = 1;
-				}
-			}
-			if (num2 < 1 && transform.GetComponent<ParticleEmitter>() != null)
-			{
-				num2 = 0;
-				if (NgObject.IsActive(transform.gameObject) && (transform.GetComponent<ParticleEmitter>().emit || 0 < transform.GetComponent<ParticleEmitter>().particleCount))
-				{
-					num2 = 1;
-				}
-			}
-			if (transform.GetComponent<Renderer>() != null && transform.GetComponent<Renderer>().enabled && NgObject.IsActive(transform.gameObject))
-			{
-				flag = true;
-			}
-			if (0 < num)
-			{
-				return true;
-			}
-			if (num2 == 1)
-			{
-				return true;
-			}
-			if (flag && (transform.GetComponent<MeshFilter>() != null || transform.GetComponent<TrailRenderer>() != null || transform.GetComponent<LineRenderer>() != null))
-			{
-				return true;
-			}
-		}
-		return false;
-	}
+        NgObject.GetMeshInfo(NcEffectBehaviour.GetRootInstanceEffect(), true, out m_nVertices, out m_nTriangles, out m_nMeshCount);
+        
+        // Update particle count using only ParticleSystem
+        ParticleSystem[] particleSystems = NcEffectBehaviour.GetRootInstanceEffect().GetComponentsInChildren<ParticleSystem>();
+        m_nParticleCount = particleSystems.Sum(ps => ps.particleCount);
+
+        if (m_fDelayCreateTime < Time.time - m_fPlayStartTime)
+        {
+            if (IsRepeat() && m_fCreateTime + GetRepeatTime() < Time.time)
+            {
+                DelayCreateInstanceEffect(false);
+            }
+            if (m_nTransIndex == 0 && IsAutoRepeat() && !m_bCalledDelayCreate && !IsAliveAnimation())
+            {
+                DelayCreateInstanceEffect(false);
+            }
+        }
+    }
+
+    private bool IsAliveAnimation()
+    {
+        GameObject rootInstanceEffect = NcEffectBehaviour.GetRootInstanceEffect();
+        Transform[] componentsInChildren = rootInstanceEffect.GetComponentsInChildren<Transform>(true);
+        
+        foreach (Transform transform in componentsInChildren)
+        {
+            int num = -1;
+            int num2 = -1;
+            bool flag = false;
+            NcEffectBehaviour[] components = transform.GetComponents<NcEffectBehaviour>();
+            
+            foreach (NcEffectBehaviour ncEffectBehaviour in components)
+            {
+                switch (ncEffectBehaviour.GetAnimationState())
+                {
+                    case 1:
+                        num = 1;
+                        break;
+                    case 0:
+                        num = 0;
+                        break;
+                }
+            }
+
+            ParticleSystem particleSystem = transform.GetComponent<ParticleSystem>();
+            if (particleSystem != null)
+            {
+                num2 = 0;
+                if (NgObject.IsActive(transform.gameObject) && 
+                    ((particleSystem.emission.enabled && particleSystem.IsAlive()) || particleSystem.particleCount > 0))
+                {
+                    num2 = 1;
+                }
+            }
+
+            if (transform.GetComponent<Renderer>() != null && transform.GetComponent<Renderer>().enabled && NgObject.IsActive(transform.gameObject))
+            {
+                flag = true;
+            }
+
+            if (num > 0 || num2 == 1 || (flag && (transform.GetComponent<MeshFilter>() != null || transform.GetComponent<TrailRenderer>() != null || transform.GetComponent<LineRenderer>() != null)))
+            {
+                return true;
+            }
+        }
+
+        return false;
+    }
 
 	public void OnGUIControl()
 	{

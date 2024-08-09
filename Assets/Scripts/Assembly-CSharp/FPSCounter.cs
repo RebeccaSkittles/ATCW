@@ -1,96 +1,61 @@
 using System.Collections;
 using UnityEngine;
+using UnityEngine.UI; // Add this for the Text component
 
 public class FPSCounter : MonoBehaviour
 {
-	public float frequency = 0.5f;
+    public float frequency = 0.5f;
+    public UISprite bar;
 
-	public UISprite bar;
+    private Text uiText; // Replace GUIText with Text
+    private UILabel uiLabel;
+    private TextMesh textMesh;
 
-	private GUIText guiText;
+    public float FramesPerSec { get; protected set; }
 
-	private UILabel uiLabel;
+    private void OnEnable()
+    {
+        uiText = GetComponent<Text>();
+        textMesh = GetComponent<TextMesh>();
+        uiLabel = GetComponent<UILabel>();
+        StartCoroutine(FPS());
+    }
 
-	private TextMesh textMesh;
+    private IEnumerator FPS()
+    {
+        while (true)
+        {
+            int lastFrameCount = Time.frameCount;
+            float lastTime = Time.realtimeSinceStartup;
+            yield return new WaitForSeconds(frequency);
+            float timeSpan = Time.realtimeSinceStartup - lastTime;
+            int frameCount = Time.frameCount - lastFrameCount;
+            FramesPerSec = (float)frameCount / timeSpan;
 
-	public float FramesPerSec { get; protected set; }
+            UpdateFPSText();
+            UpdateFPSColor();
 
-	private void OnEnable()
-	{
-		guiText = base.gameObject.GetComponent<GUIText>();
-		textMesh = base.gameObject.GetComponent<TextMesh>();
-		uiLabel = base.gameObject.GetComponent<UILabel>();
-		StartCoroutine(FPS());
-	}
+            if (bar != null)
+            {
+                bar.fillAmount = FramesPerSec / 60f;
+            }
+        }
+    }
 
-	private IEnumerator FPS()
-	{
-		while (true)
-		{
-			int lastFrameCount = Time.frameCount;
-			float lastTime = Time.realtimeSinceStartup;
-			yield return new WaitForSeconds(frequency);
-			float timeSpan = Time.realtimeSinceStartup - lastTime;
-			int frameCount = Time.frameCount - lastFrameCount;
-			FramesPerSec = (float)frameCount / timeSpan;
-			if (guiText != null)
-			{
-				guiText.text = string.Format("{0:F1} FPS", FramesPerSec);
-			}
-			if (textMesh != null)
-			{
-				textMesh.text = string.Format("{0:F1} FPS", FramesPerSec);
-			}
-			if (uiLabel != null)
-			{
-				uiLabel.text = string.Format("{0:F1} FPS", FramesPerSec);
-			}
-			bar.fillAmount = FramesPerSec / 60f;
-			if (FramesPerSec < 30f)
-			{
-				if (guiText != null)
-				{
-					guiText.material.color = Color.yellow;
-				}
-				if (uiLabel != null)
-				{
-					uiLabel.color = Color.yellow;
-				}
-				if (bar != null)
-				{
-					bar.color = Color.yellow;
-				}
-			}
-			else if (FramesPerSec < 10f)
-			{
-				if (guiText != null)
-				{
-					guiText.material.color = Color.red;
-				}
-				if (uiLabel != null)
-				{
-					uiLabel.color = Color.red;
-				}
-				if (bar != null)
-				{
-					bar.color = Color.red;
-				}
-			}
-			else
-			{
-				if (guiText != null)
-				{
-					guiText.material.color = Color.green;
-				}
-				if (uiLabel != null)
-				{
-					uiLabel.color = Color.green;
-				}
-				if (bar != null)
-				{
-					bar.color = Color.green;
-				}
-			}
-		}
-	}
+    private void UpdateFPSText()
+    {
+        string fpsText = string.Format("{0:F1} FPS", FramesPerSec);
+        if (uiText != null) uiText.text = fpsText;
+        if (textMesh != null) textMesh.text = fpsText;
+        if (uiLabel != null) uiLabel.text = fpsText;
+    }
+
+    private void UpdateFPSColor()
+    {
+        Color fpsColor = FramesPerSec >= 30f ? Color.green : (FramesPerSec >= 10f ? Color.yellow : Color.red);
+
+        if (uiText != null) uiText.color = fpsColor;
+        if (uiLabel != null) uiLabel.color = fpsColor;
+        if (bar != null) bar.color = fpsColor;
+    }
 }

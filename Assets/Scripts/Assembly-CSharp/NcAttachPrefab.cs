@@ -202,7 +202,7 @@ public class NcAttachPrefab : NcEffectBehaviour
 		if (!(rootObj == null))
 		{
 			rootObj.layer = nLayer;
-			for (int i = 0; i < rootObj.transform.GetChildCount(); i++)
+			for (int i = 0; i < rootObj.transform.childCount; i++)
 			{
 				Ng_ChangeLayerWithChild(rootObj.transform.GetChild(i).gameObject, nLayer);
 			}

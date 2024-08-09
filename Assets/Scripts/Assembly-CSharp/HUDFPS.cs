@@ -1,97 +1,88 @@
 using UnityEngine;
+using UnityEngine.UI; // Add this for the Text component
 
 public class HUDFPS : MonoBehaviour
 {
-	public float updateInterval = 0.5f;
+    public float updateInterval = 0.5f;
 
-	private float accum;
+    private float accum;
+    private int frames;
+    private float timeleft;
 
-	private int frames;
+    private Text uiText; // Replace GUIText with Text
+    private TextMesh textMesh;
+    private UILabel uiLabel;
 
-	private float timeleft;
+    private void Start()
+    {
+        if (GetComponent<Text>() != null)
+        {
+            uiText = GetComponent<Text>();
+        }
+        if (GetComponent<TextMesh>() != null)
+        {
+            textMesh = GetComponent<TextMesh>();
+        }
+        if (GetComponent<UILabel>() != null)
+        {
+            uiLabel = GetComponent<UILabel>();
+        }
+        timeleft = updateInterval;
+    }
 
-	private GUIText guiText;
+    private void Update()
+    {
+        timeleft -= Time.deltaTime;
+        accum += Time.timeScale / Time.deltaTime;
+        frames++;
 
-	private TextMesh textMesh;
+        if (timeleft <= 0.0)
+        {
+            float fps = accum / frames;
+            string text = string.Format("{0:F2} FPS", fps);
 
-	private UILabel uiLabel;
+            if (uiText != null)
+            {
+                uiText.text = text;
+            }
+            if (textMesh != null)
+            {
+                textMesh.text = text;
+            }
+            if (uiLabel != null)
+            {
+                uiLabel.text = text;
+            }
 
-	private void Start()
-	{
-		if (base.gameObject.GetComponent<GUIText>() != null)
-		{
-			guiText = base.gameObject.GetComponent<GUIText>();
-		}
-		if (base.gameObject.GetComponent<TextMesh>() != null)
-		{
-			textMesh = base.gameObject.GetComponent<TextMesh>();
-		}
-		if (base.gameObject.GetComponent<UILabel>() != null)
-		{
-			uiLabel = base.gameObject.GetComponent<UILabel>();
-		}
-		timeleft = updateInterval;
-	}
+            if (fps < 30f)
+            {
+                SetTextColor(Color.yellow);
+            }
+            else if (fps < 10f)
+            {
+                SetTextColor(Color.red);
+            }
+            else
+            {
+                SetTextColor(Color.green);
+            }
 
-	private void Update()
-	{
-		timeleft -= Time.deltaTime;
-		accum += Time.timeScale / Time.deltaTime;
-		frames++;
-		if (!((double)timeleft <= 0.0))
-		{
-			return;
-		}
-		float num = accum / (float)frames;
-		string text = string.Format("{0:F2} FPS", num);
-		if (guiText != null)
-		{
-			guiText.text = text;
-		}
-		if (textMesh != null)
-		{
-			textMesh.text = text;
-		}
-		if (uiLabel != null)
-		{
-			uiLabel.text = text;
-		}
-		if (num < 30f)
-		{
-			if (guiText != null)
-			{
-				guiText.material.color = Color.yellow;
-			}
-			if (uiLabel != null)
-			{
-				uiLabel.color = Color.yellow;
-			}
-			return;
-		}
-		if (num < 10f)
-		{
-			if (guiText != null)
-			{
-				guiText.material.color = Color.red;
-			}
-			if (uiLabel != null)
-			{
-				uiLabel.color = Color.red;
-			}
-		}
-		else
-		{
-			if (guiText != null)
-			{
-				guiText.material.color = Color.green;
-			}
-			if (uiLabel != null)
-			{
-				uiLabel.color = Color.green;
-			}
-		}
-		timeleft = updateInterval;
-		accum = 0f;
-		frames = 0;
-	}
+            timeleft = updateInterval;
+            accum = 0f;
+            frames = 0;
+        }
+    }
+
+    private void SetTextColor(Color color)
+    {
+        if (uiText != null)
+        {
+            uiText.color = color;
+        }
+        if (uiLabel != null)
+        {
+            uiLabel.color = color;
+        }
+        // Note: TextMesh color is not changed as it might be using a shared material
+    }
 }

@@ -1,31 +1,69 @@
 fileFormatVersion: 2
 guid: 4a0d7ab697c4a51408537ebd012729c3
-timeCreated: 1698412199
-licenseType: Free
 TextureImporter:
-  fileIDToRecycleName:
-    21300000: snow_new_02
-    21300002: snow_new_01
-    21300004: Border
-    21300006: dialog01
-    21300008: icekingdom02
-    21300010: icekingdom01
-    21300012: Mimic
-    21300014: snow_new_04
-    21300016: guntermean1
-    21300018: guntermean2
-    21300020: guntermean3
-    21300022: Nis04_01_fionnacakeback
-    21300024: icebackground01
-    21300026: Fionnatalking2
-    21300028: Fionna_wha_01png
-    21300030: FionnaLookingUp2b
-    21300032: CakeSquishy2
-    21300034: CakeFionna3
-    21300036: CakeFionna2
-    21300038: Cakeshocked06_02
+  internalIDToNameTable:
+  - first:
+      213: 21300000
+    second: snow_new_02
+  - first:
+      213: 21300002
+    second: snow_new_01
+  - first:
+      213: 21300004
+    second: Border
+  - first:
+      213: 21300006
+    second: dialog01
+  - first:
+      213: 21300008
+    second: icekingdom02
+  - first:
+      213: 21300010
+    second: icekingdom01
+  - first:
+      213: 21300012
+    second: Mimic
+  - first:
+      213: 21300014
+    second: snow_new_04
+  - first:
+      213: 21300016
+    second: guntermean1
+  - first:
+      213: 21300018
+    second: guntermean2
+  - first:
+      213: 21300020
+    second: guntermean3
+  - first:
+      213: 21300022
+    second: Nis04_01_fionnacakeback
+  - first:
+      213: 21300024
+    second: icebackground01
+  - first:
+      213: 21300026
+    second: Fionnatalking2
+  - first:
+      213: 21300028
+    second: Fionna_wha_01png
+  - first:
+      213: 21300030
+    second: FionnaLookingUp2b
+  - first:
+      213: 21300032
+    second: CakeSquishy2
+  - first:
+      213: 21300034
+    second: CakeFionna3
+  - first:
+      213: 21300036
+    second: CakeFionna2
+  - first:
+      213: 21300038
+    second: Cakeshocked06_02
   externalObjects: {}
-  serializedVersion: 4
+  serializedVersion: 13
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
@@ -42,7 +80,12 @@ TextureImporter:
     externalNormalMap: 0
     heightScale: 0.25
     normalMapFilter: 0
+    flipGreenChannel: 0
   isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -65,18 +108,27 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
   alphaIsTransparency: 1
   spriteTessellationDetail: -1
   textureType: 8
   textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
   maxTextureSizeSet: 0
   compressionQualitySet: 0
   textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 1
+  swizzle: 50462976
+  cookieLightType: 1
   platformSettings:
-  - buildTarget: DefaultTexturePlatform
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
@@ -85,7 +137,35 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+    ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 1
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 1
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 1
   spriteSheet:
     serializedVersion: 2
     sprites:
@@ -129,6 +209,13 @@ TextureImporter:
         - {x: 34, y: -171.5}
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 02305410000000000800000000000000
+      internalID: 21300000
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: snow_new_01
       rect:
@@ -155,6 +242,13 @@ TextureImporter:
         - {x: -56, y: -167}
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 22305410000000000800000000000000
+      internalID: 21300002
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: Border
       rect:
@@ -173,6 +267,13 @@ TextureImporter:
         - {x: 12, y: -12}
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 42305410000000000800000000000000
+      internalID: 21300004
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: dialog01
       rect:
@@ -195,6 +296,13 @@ TextureImporter:
         - {x: 36, y: -48}
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 62305410000000000800000000000000
+      internalID: 21300006
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: icekingdom02
       rect:
@@ -213,6 +321,13 @@ TextureImporter:
         - {x: 358.5, y: 179}
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 82305410000000000800000000000000
+      internalID: 21300008
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: icekingdom01
       rect:
@@ -231,6 +346,13 @@ TextureImporter:
         - {x: 319, y: 190}
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: a2305410000000000800000000000000
+      internalID: 21300010
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: Mimic
       rect:
@@ -313,6 +435,13 @@ TextureImporter:
         - {x: -145, y: -173}
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: c2305410000000000800000000000000
+      internalID: 21300012
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: snow_new_04
       rect:
@@ -342,6 +471,13 @@ TextureImporter:
         - {x: -19.5, y: -167}
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: e2305410000000000800000000000000
+      internalID: 21300014
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: guntermean1
       rect:
@@ -405,6 +541,13 @@ TextureImporter:
         - {x: 247, y: -158.5}
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 03305410000000000800000000000000
+      internalID: 21300016
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: guntermean2
       rect:
@@ -474,6 +617,13 @@ TextureImporter:
         - {x: 240, y: -176}
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 23305410000000000800000000000000
+      internalID: 21300018
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: guntermean3
       rect:
@@ -497,6 +647,13 @@ TextureImporter:
         - {x: 82.5, y: -16}
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 43305410000000000800000000000000
+      internalID: 21300020
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: Nis04_01_fionnacakeback
       rect:
@@ -550,6 +707,13 @@ TextureImporter:
         - {x: 64, y: 150}
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 63305410000000000800000000000000
+      internalID: 21300022
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: icebackground01
       rect:
@@ -568,6 +732,13 @@ TextureImporter:
         - {x: 337, y: 190}
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 83305410000000000800000000000000
+      internalID: 21300024
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: Fionnatalking2
       rect:
@@ -592,6 +763,13 @@ TextureImporter:
         - {x: 61.53806, y: -163.5}
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: a3305410000000000800000000000000
+      internalID: 21300026
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: Fionna_wha_01png
       rect:
@@ -648,6 +826,13 @@ TextureImporter:
         - {x: -110.5, y: -188}
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: c3305410000000000800000000000000
+      internalID: 21300028
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: FionnaLookingUp2b
       rect:
@@ -690,6 +875,13 @@ TextureImporter:
         - {x: -89, y: 109}
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: e3305410000000000800000000000000
+      internalID: 21300030
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: CakeSquishy2
       rect:
@@ -739,6 +931,13 @@ TextureImporter:
         - {x: -127, y: -67.5}
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 04305410000000000800000000000000
+      internalID: 21300032
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: CakeFionna3
       rect:
@@ -776,6 +975,13 @@ TextureImporter:
         - {x: 98, y: -98.5}
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 24305410000000000800000000000000
+      internalID: 21300034
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: CakeFionna2
       rect:
@@ -833,6 +1039,13 @@ TextureImporter:
         - {x: -185.5, y: -113.5}
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 44305410000000000800000000000000
+      internalID: 21300036
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: Cakeshocked06_02
       rect:
@@ -867,9 +1080,46 @@ TextureImporter:
         - {x: -131, y: -115.5}
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 64305410000000000800000000000000
+      internalID: 21300038
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
-  spritePackingTag:
-  userData:
-  assetBundleName:
-  assetBundleVariant:
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      Border: 21300004
+      CakeFionna2: 21300036
+      CakeFionna3: 21300034
+      CakeSquishy2: 21300032
+      Cakeshocked06_02: 21300038
+      FionnaLookingUp2b: 21300030
+      Fionna_wha_01png: 21300028
+      Fionnatalking2: 21300026
+      Mimic: 21300012
+      Nis04_01_fionnacakeback: 21300022
+      dialog01: 21300006
+      guntermean1: 21300016
+      guntermean2: 21300018
+      guntermean3: 21300020
+      icebackground01: 21300024
+      icekingdom01: 21300010
+      icekingdom02: 21300008
+      snow_new_01: 21300002
+      snow_new_02: 21300000
+      snow_new_04: 21300014
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

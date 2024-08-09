@@ -122,87 +122,88 @@ public class NcParticleSpiral : NcEffectBehaviour
 		m_fSizeValue = UnityEngine.Random.Range(-2f, 2f);
 	}
 
-	private void Start()
-	{
-		m_fStartTime = NcEffectBehaviour.GetEngineTime();
-		if (m_ParticlePrefab == null)
-		{
-			ParticleEmitter component = GetComponent<ParticleEmitter>();
-			if (component == null)
-			{
-				return;
-			}
-			component.emit = false;
-		}
-		defaultSettings = getSettings();
-	}
+    private void Start()
+    {
+        m_fStartTime = NcEffectBehaviour.GetEngineTime();
+        if (m_ParticlePrefab == null)
+        {
+            ParticleSystem component = GetComponent<ParticleSystem>();
+            if (component == null)
+            {
+                return;
+            }
+            component.Stop();
+        }
+        defaultSettings = getSettings();
+    }
 
-	private void SpawnEffect()
-	{
-		GameObject gameObject;
-		if (m_ParticlePrefab != null)
-		{
-			gameObject = CreateGameObject(m_ParticlePrefab);
-			if (gameObject == null)
-			{
-				return;
-			}
-			ChangeParent(base.transform, gameObject.transform, true, null);
-		}
-		else
-		{
-			gameObject = base.gameObject;
-		}
-		ParticleEmitter component = gameObject.GetComponent<ParticleEmitter>();
-		if (component == null)
-		{
-			return;
-		}
-		component.emit = false;
-		component.useWorldSpace = false;
-		ParticleAnimator component2 = component.transform.GetComponent<ParticleAnimator>();
-		if (component2 != null)
-		{
-			component2.autodestruct = true;
-		}
-		component.Emit(m_nNumberOfArms * m_nParticlesPerArm);
-		Particle[] particles = component.particles;
-		float num = (float)Math.PI * 2f / (float)m_nNumberOfArms;
-		for (int i = 0; i < m_nNumberOfArms; i++)
-		{
-			float num2 = 0f;
-			float num3 = 0f;
-			float f = (float)i * num;
-			for (int j = 0; j < m_nParticlesPerArm; j++)
-			{
-				int num4 = i * m_nParticlesPerArm + j;
-				num2 = m_fOriginOffset + m_fTurnDistance * num3;
-				Vector3 position = gameObject.transform.localPosition;
-				position.x += num2 * Mathf.Cos(num3);
-				position.z += num2 * Mathf.Sin(num3);
-				float x = position.x * Mathf.Cos(f) + position.z * Mathf.Sin(f);
-				float z = (0f - position.x) * Mathf.Sin(f) + position.z * Mathf.Cos(f);
-				position.x = x;
-				position.z = z;
-				position.y += (float)j * m_fVerticalTurnDistance;
-				if (component.useWorldSpace)
-				{
-					position = base.transform.TransformPoint(position);
-				}
-				particles[num4].position = position;
-				num3 += m_fParticleSeparation;
-				if (m_fFadeValue != 0f)
-				{
-					particles[num4].energy = particles[num4].energy * (1f - Mathf.Abs(m_fFadeValue)) + particles[num4].energy * Mathf.Abs(m_fFadeValue) * (float)((!(m_fFadeValue < 0f)) ? (j + 1) : (m_nParticlesPerArm - j)) / (float)m_nParticlesPerArm;
-				}
-				if (m_fSizeValue != 0f)
-				{
-					particles[num4].size += Mathf.Abs(m_fSizeValue) * (float)((!(m_fSizeValue < 0f)) ? (j + 1) : (m_nParticlesPerArm - j)) / (float)m_nParticlesPerArm;
-				}
-			}
-		}
-		component.particles = particles;
-	}
+private void SpawnEffect()
+    {
+        GameObject gameObject;
+        if (m_ParticlePrefab != null)
+        {
+            gameObject = CreateGameObject(m_ParticlePrefab);
+            if (gameObject == null)
+            {
+                return;
+            }
+            ChangeParent(base.transform, gameObject.transform, true, null);
+        }
+        else
+        {
+            gameObject = base.gameObject;
+        }
+        ParticleSystem particleSystem = gameObject.GetComponent<ParticleSystem>();
+        if (particleSystem == null)
+        {
+            return;
+        }
+        particleSystem.Stop();
+        ParticleSystem.MainModule main = particleSystem.main;
+        main.simulationSpace = ParticleSystemSimulationSpace.Local;
+
+        int totalParticles = m_nNumberOfArms * m_nParticlesPerArm;
+        ParticleSystem.Particle[] particles = new ParticleSystem.Particle[totalParticles];
+
+        float angleStep = (float)Math.PI * 2f / (float)m_nNumberOfArms;
+        for (int i = 0; i < m_nNumberOfArms; i++)
+        {
+            float radius = 0f;
+            float angle = 0f;
+            float armAngle = (float)i * angleStep;
+            for (int j = 0; j < m_nParticlesPerArm; j++)
+            {
+                int index = i * m_nParticlesPerArm + j;
+                radius = m_fOriginOffset + m_fTurnDistance * angle;
+                Vector3 position = gameObject.transform.localPosition;
+                position.x += radius * Mathf.Cos(angle);
+                position.z += radius * Mathf.Sin(angle);
+                float x = position.x * Mathf.Cos(armAngle) + position.z * Mathf.Sin(armAngle);
+                float z = (0f - position.x) * Mathf.Sin(armAngle) + position.z * Mathf.Cos(armAngle);
+                position.x = x;
+                position.z = z;
+                position.y += (float)j * m_fVerticalTurnDistance;
+
+                particles[index].position = position;
+                particles[index].startLifetime = particleSystem.main.startLifetime.constant;
+                particles[index].startSize = particleSystem.main.startSize.constant;
+                particles[index].startColor = particleSystem.main.startColor.color;
+
+                angle += m_fParticleSeparation;
+                if (m_fFadeValue != 0f)
+                {
+                    float lifetimeScale = 1f - Mathf.Abs(m_fFadeValue) + Mathf.Abs(m_fFadeValue) * (float)((m_fFadeValue < 0f) ? (m_nParticlesPerArm - j) : (j + 1)) / (float)m_nParticlesPerArm;
+                    particles[index].remainingLifetime = particles[index].startLifetime * lifetimeScale;
+                }
+                if (m_fSizeValue != 0f)
+                {
+                    float sizeScale = 1f + Mathf.Abs(m_fSizeValue) * (float)((m_fSizeValue < 0f) ? (m_nParticlesPerArm - j) : (j + 1)) / (float)m_nParticlesPerArm;
+                    particles[index].startSize *= sizeScale;
+                }
+            }
+        }
+        particleSystem.SetParticles(particles, totalParticles);
+    }
 
 	private void Update()
 	{
@@ -280,25 +281,18 @@ public class NcParticleSpiral : NcEffectBehaviour
 		return getSettings();
 	}
 
-	private void killCurrentEffects()
-	{
-		ParticleEmitter[] componentsInChildren = base.transform.GetComponentsInChildren<ParticleEmitter>();
-		ParticleEmitter[] array = componentsInChildren;
-		foreach (ParticleEmitter particleEmitter in array)
-		{
-			ParticleAnimator component = particleEmitter.transform.GetComponent<ParticleAnimator>();
-			if (component != null)
-			{
-				component.autodestruct = true;
-			}
-			Particle[] particles = particleEmitter.particles;
-			for (int j = 0; j < particles.Length; j++)
-			{
-				particles[j].energy = 0.1f;
-			}
-			particleEmitter.particles = particles;
-		}
-	}
+    private void killCurrentEffects()
+    {
+        ParticleSystem[] particleSystems = base.transform.GetComponentsInChildren<ParticleSystem>();
+        foreach (ParticleSystem particleSystem in particleSystems)
+        {
+            ParticleSystem.MainModule main = particleSystem.main;
+            main.loop = false;
+            main.simulationSpace = ParticleSystemSimulationSpace.World;
+            particleSystem.Stop();
+            particleSystem.Clear();
+        }
+    }
 
 	public override void OnUpdateEffectSpeed(float fSpeedRate, bool bRuntime)
 	{

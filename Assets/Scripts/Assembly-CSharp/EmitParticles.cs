@@ -2,49 +2,61 @@ using UnityEngine;
 
 public class EmitParticles : MonoBehaviour
 {
-	public ParticleEmitter emitter;
+    public ParticleSystem particleSystem;
 
-	public Transform left;
+    public Transform left;
+    public Transform right;
+    public Transform up;
+    public Transform down;
 
-	public Transform right;
+    private void Start()
+    {
+        // If particleSystem is not assigned, try to get it from the current GameObject
+        if (particleSystem == null)
+        {
+            particleSystem = GetComponent<ParticleSystem>();
+        }
+    }
 
-	public Transform up;
+    public void Emit()
+    {
+        if (particleSystem != null)
+        {
+            particleSystem.Emit(1);
+        }
+    }
 
-	public Transform down;
+    public void Emit(Vector3 dir)
+    {
+        Emit(Quaternion.LookRotation(dir));
+    }
 
-	public void Emit()
-	{
-		emitter.Emit();
-	}
+    public void Emit(Quaternion rot)
+    {
+        if (particleSystem != null)
+        {
+            particleSystem.transform.rotation = rot;
+            Emit();
+        }
+    }
 
-	public void Emit(Vector3 dir)
-	{
-		Emit(Quaternion.LookRotation(dir));
-	}
+    public void EmitLeft()
+    {
+        Emit(left.rotation);
+    }
 
-	public void Emit(Quaternion rot)
-	{
-		emitter.transform.rotation = rot;
-		Emit();
-	}
+    public void EmitRight()
+    {
+        Emit(right.rotation);
+    }
 
-	public void EmitLeft()
-	{
-		Emit(left.rotation);
-	}
+    public void EmitUp()
+    {
+        Emit(up.rotation);
+    }
 
-	public void EmitRight()
-	{
-		Emit(right.rotation);
-	}
-
-	public void EmitUp()
-	{
-		Emit(up.rotation);
-	}
-
-	public void EmitDown()
-	{
-		Emit(down.rotation);
-	}
+    public void EmitDown()
+    {
+        Emit(down.rotation);
+    }
 }

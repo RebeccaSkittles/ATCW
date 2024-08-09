@@ -74,10 +74,10 @@ public class NcEffectBehaviour : MonoBehaviour
 
 	protected static void SetActiveRecursively(GameObject target, bool bActive)
 	{
-		int num = target.transform.GetChildCount() - 1;
+		int num = target.transform.childCount - 1;
 		while (0 <= num)
 		{
-			if (num < target.transform.GetChildCount())
+			if (num < target.transform.childCount)
 			{
 				SetActiveRecursively(target.transform.GetChild(num).gameObject, bActive);
 			}
@@ -93,10 +93,10 @@ public class NcEffectBehaviour : MonoBehaviour
 
 	protected static void RemoveAllChildObject(GameObject parent, bool bImmediate)
 	{
-		int num = parent.transform.GetChildCount() - 1;
+		int num = parent.transform.childCount - 1;
 		while (0 <= num)
 		{
-			if (num < parent.transform.GetChildCount())
+			if (num < parent.transform.childCount)
 			{
 				Transform child = parent.transform.GetChild(num);
 				if (bImmediate)
@@ -325,42 +325,33 @@ public class NcEffectBehaviour : MonoBehaviour
 
 	protected void DisableEmit()
 	{
-		NcParticleSystem[] componentsInChildren = base.gameObject.GetComponentsInChildren<NcParticleSystem>(true);
-		NcParticleSystem[] array = componentsInChildren;
-		foreach (NcParticleSystem ncParticleSystem in array)
-		{
-			if (ncParticleSystem != null)
-			{
-				ncParticleSystem.SetDisableEmit();
-			}
-		}
-		NcAttachPrefab[] componentsInChildren2 = base.gameObject.GetComponentsInChildren<NcAttachPrefab>(true);
-		NcAttachPrefab[] array2 = componentsInChildren2;
-		foreach (NcAttachPrefab ncAttachPrefab in array2)
-		{
-			if (ncAttachPrefab != null)
-			{
-				ncAttachPrefab.enabled = false;
-			}
-		}
-		ParticleSystem[] componentsInChildren3 = base.gameObject.GetComponentsInChildren<ParticleSystem>(true);
-		ParticleSystem[] array3 = componentsInChildren3;
-		foreach (ParticleSystem particleSystem in array3)
-		{
-			if (particleSystem != null)
-			{
-				particleSystem.enableEmission = false;
-			}
-		}
-		ParticleEmitter[] componentsInChildren4 = base.gameObject.GetComponentsInChildren<ParticleEmitter>(true);
-		ParticleEmitter[] array4 = componentsInChildren4;
-		foreach (ParticleEmitter particleEmitter in array4)
-		{
-			if (particleEmitter != null)
-			{
-				particleEmitter.emit = false;
-			}
-		}
+    	NcParticleSystem[] componentsInChildren = base.gameObject.GetComponentsInChildren<NcParticleSystem>(true);
+    	foreach (NcParticleSystem ncParticleSystem in componentsInChildren)
+    	{
+        		if (ncParticleSystem != null)
+        	{
+            	ncParticleSystem.SetDisableEmit();
+        	}
+    	}
+
+    	NcAttachPrefab[] attachPrefabs = base.gameObject.GetComponentsInChildren<NcAttachPrefab>(true);
+    	foreach (NcAttachPrefab ncAttachPrefab in attachPrefabs)
+    	{
+        		if (ncAttachPrefab != null)
+        	{
+            	ncAttachPrefab.enabled = false;
+        	}
+    	}
+
+    	ParticleSystem[] particleSystems = base.gameObject.GetComponentsInChildren<ParticleSystem>(true);
+    	foreach (ParticleSystem particleSystem in particleSystems)
+    	{
+        		if (particleSystem != null)
+        	{
+            	var emission = particleSystem.emission;
+            	emission.enabled = false;
+        	}
+    	}
 	}
 
 	public static bool IsSafe()

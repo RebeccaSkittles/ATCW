@@ -64,11 +64,11 @@ public class FxmTestMain : MonoBehaviour
 
 	private void Start()
 	{
-		if (0 < m_GroupList.transform.GetChildCount())
+		if (0 < m_GroupList.transform.childCount)
 		{
 			m_PrefabList = m_GroupList.transform.GetChild(0).gameObject;
 		}
-		if (m_PrefabList != null && 0 < m_PrefabList.transform.GetChildCount())
+		if (m_PrefabList != null && 0 < m_PrefabList.transform.childCount)
 		{
 			m_OriginalEffectObject = m_PrefabList.transform.GetChild(0).gameObject;
 			CreateCurrentInstanceEffect(true);
@@ -127,7 +127,7 @@ public class FxmTestMain : MonoBehaviour
 		}
 		if (bNext)
 		{
-			if (m_CurrentPrefabIndex >= m_PrefabList.transform.GetChildCount() - 1)
+			if (m_CurrentPrefabIndex >= m_PrefabList.transform.childCount - 1)
 			{
 				ChangeGroup(true);
 				return;
@@ -151,7 +151,7 @@ public class FxmTestMain : MonoBehaviour
 	{
 		if (bNext)
 		{
-			if (m_CurrentGroupIndex < m_GroupList.transform.GetChildCount() - 1)
+			if (m_CurrentGroupIndex < m_GroupList.transform.childCount - 1)
 			{
 				m_CurrentGroupIndex++;
 			}
@@ -162,14 +162,14 @@ public class FxmTestMain : MonoBehaviour
 		}
 		else if (m_CurrentGroupIndex == 0)
 		{
-			m_CurrentGroupIndex = m_GroupList.transform.GetChildCount() - 1;
+			m_CurrentGroupIndex = m_GroupList.transform.childCount - 1;
 		}
 		else
 		{
 			m_CurrentGroupIndex--;
 		}
 		m_PrefabList = m_GroupList.transform.GetChild(m_CurrentGroupIndex).gameObject;
-		if (m_PrefabList != null && 0 < m_PrefabList.transform.GetChildCount())
+		if (m_PrefabList != null && 0 < m_PrefabList.transform.childCount)
 		{
 			m_CurrentPrefabIndex = 0;
 			m_OriginalEffectObject = m_PrefabList.transform.GetChild(m_CurrentPrefabIndex).gameObject;

@@ -1,26 +1,54 @@
 fileFormatVersion: 2
 guid: ee9ff191bc587904a888c599c7a0cb9c
-timeCreated: 1698412268
-licenseType: Free
 TextureImporter:
-  fileIDToRecycleName:
-    21300000: Cakeshocked06_01
-    21300002: Border
-    21300004: Donutland_01
-    21300006: dialog01
-    21300008: FionnaFace
-    21300010: snow_new_03
-    21300012: Fionna_Talking_6
-    21300014: Donutland_03
-    21300016: LSP06
-    21300018: snow_new_01
-    21300020: fionnashocked06_01
-    21300022: Bronut_01
-    21300024: LSP07
-    21300026: CakeFionna2
-    21300028: cakeeating
+  internalIDToNameTable:
+  - first:
+      213: 21300000
+    second: Cakeshocked06_01
+  - first:
+      213: 21300002
+    second: Border
+  - first:
+      213: 21300004
+    second: Donutland_01
+  - first:
+      213: 21300006
+    second: dialog01
+  - first:
+      213: 21300008
+    second: FionnaFace
+  - first:
+      213: 21300010
+    second: snow_new_03
+  - first:
+      213: 21300012
+    second: Fionna_Talking_6
+  - first:
+      213: 21300014
+    second: Donutland_03
+  - first:
+      213: 21300016
+    second: LSP06
+  - first:
+      213: 21300018
+    second: snow_new_01
+  - first:
+      213: 21300020
+    second: fionnashocked06_01
+  - first:
+      213: 21300022
+    second: Bronut_01
+  - first:
+      213: 21300024
+    second: LSP07
+  - first:
+      213: 21300026
+    second: CakeFionna2
+  - first:
+      213: 21300028
+    second: cakeeating
   externalObjects: {}
-  serializedVersion: 4
+  serializedVersion: 13
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
@@ -37,7 +65,12 @@ TextureImporter:
     externalNormalMap: 0
     heightScale: 0.25
     normalMapFilter: 0
+    flipGreenChannel: 0
   isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -60,18 +93,27 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spritePixelsToUnits: 50
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
   alphaIsTransparency: 1
   spriteTessellationDetail: -1
   textureType: 8
   textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
   maxTextureSizeSet: 0
   compressionQualitySet: 0
   textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 1
+  swizzle: 50462976
+  cookieLightType: 1
   platformSettings:
-  - buildTarget: DefaultTexturePlatform
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
@@ -80,7 +122,35 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+    ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 1
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 1
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 1
   spriteSheet:
     serializedVersion: 2
     sprites:
@@ -106,6 +176,13 @@ TextureImporter:
         - {x: 47.5, y: -16.5}
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 02305410000000000800000000000000
+      internalID: 21300000
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: Border
       rect:
@@ -124,6 +201,13 @@ TextureImporter:
         - {x: 6, y: -6}
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 22305410000000000800000000000000
+      internalID: 21300002
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: Donutland_01
       rect:
@@ -142,6 +226,13 @@ TextureImporter:
         - {x: 240, y: 135}
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 42305410000000000800000000000000
+      internalID: 21300004
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: dialog01
       rect:
@@ -161,6 +252,13 @@ TextureImporter:
         - {x: 24, y: -22}
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 62305410000000000800000000000000
+      internalID: 21300006
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: FionnaFace
       rect:
@@ -182,6 +280,13 @@ TextureImporter:
         - {x: 81.5, y: 100}
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 82305410000000000800000000000000
+      internalID: 21300008
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: snow_new_03
       rect:
@@ -217,6 +322,13 @@ TextureImporter:
         - {x: -22.5, y: -107}
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: a2305410000000000800000000000000
+      internalID: 21300010
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: Fionna_Talking_6
       rect:
@@ -236,6 +348,13 @@ TextureImporter:
         - {x: 56.25, y: -85}
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: c2305410000000000800000000000000
+      internalID: 21300012
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: Donutland_03
       rect:
@@ -254,6 +373,13 @@ TextureImporter:
         - {x: 240.5, y: 135}
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: e2305410000000000800000000000000
+      internalID: 21300014
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: LSP06
       rect:
@@ -281,6 +407,13 @@ TextureImporter:
         - {x: 59.5, y: -57.25}
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 03305410000000000800000000000000
+      internalID: 21300016
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: snow_new_01
       rect:
@@ -303,6 +436,13 @@ TextureImporter:
         - {x: -13, y: -102.25}
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 23305410000000000800000000000000
+      internalID: 21300018
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: fionnashocked06_01
       rect:
@@ -334,6 +474,13 @@ TextureImporter:
         - {x: -74.75, y: 50.5}
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 43305410000000000800000000000000
+      internalID: 21300020
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: Bronut_01
       rect:
@@ -368,6 +515,13 @@ TextureImporter:
         - {x: 56.25, y: 4.75}
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 63305410000000000800000000000000
+      internalID: 21300022
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: LSP07
       rect:
@@ -390,6 +544,13 @@ TextureImporter:
         - {x: 86, y: -36}
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 83305410000000000800000000000000
+      internalID: 21300024
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: CakeFionna2
       rect:
@@ -417,6 +578,13 @@ TextureImporter:
         - {x: 98.25, y: -88.75}
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: a3305410000000000800000000000000
+      internalID: 21300026
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: cakeeating
       rect:
@@ -446,9 +614,41 @@ TextureImporter:
         - {x: 76.5, y: -90}
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: c3305410000000000800000000000000
+      internalID: 21300028
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
-  spritePackingTag:
-  userData:
-  assetBundleName:
-  assetBundleVariant:
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      Border: 21300002
+      Bronut_01: 21300022
+      CakeFionna2: 21300026
+      Cakeshocked06_01: 21300000
+      Donutland_01: 21300004
+      Donutland_03: 21300014
+      FionnaFace: 21300008
+      Fionna_Talking_6: 21300012
+      LSP06: 21300016
+      LSP07: 21300024
+      cakeeating: 21300028
+      dialog01: 21300006
+      fionnashocked06_01: 21300020
+      snow_new_01: 21300018
+      snow_new_03: 21300010
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

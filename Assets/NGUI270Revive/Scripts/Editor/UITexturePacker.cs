@@ -1,5 +1,5 @@
 /*
-	Based on the Public Domain MaxRectsBinPack.cpp source by Jukka Jylänki
+	Based on the Public Domain MaxRectsBinPack.cpp source by Jukka Jylï¿½nki
 	https://github.com/juj/RectangleBinPack/
 
 	Ported to C# by Sven Magnus
@@ -106,7 +106,7 @@ public class UITexturePacker
 			storage[i].paddingY = (yPadding != 0);
 		}
 
-		texture.Resize(width, height);
+		texture.Reinitialize(width, height);
 		texture.SetPixels(new Color[width * height]);
 
 		// The returned rects

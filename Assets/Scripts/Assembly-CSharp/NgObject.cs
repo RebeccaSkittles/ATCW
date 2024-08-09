@@ -11,10 +11,10 @@ public class NgObject
 
 	public static void SetActiveRecursively(GameObject target, bool bActive)
 	{
-		int num = target.transform.GetChildCount() - 1;
+		int num = target.transform.childCount - 1;
 		while (0 <= num)
 		{
-			if (num < target.transform.GetChildCount())
+			if (num < target.transform.childCount)
 			{
 				SetActiveRecursively(target.transform.GetChild(num).gameObject, bActive);
 			}
@@ -105,10 +105,10 @@ public class NgObject
 
 	public static void HideAllChildObject(GameObject parent)
 	{
-		int num = parent.transform.GetChildCount() - 1;
+		int num = parent.transform.childCount - 1;
 		while (0 <= num)
 		{
-			if (num < parent.transform.GetChildCount())
+			if (num < parent.transform.childCount)
 			{
 				IsActive(parent.transform.GetChild(num).gameObject);
 			}
@@ -118,10 +118,10 @@ public class NgObject
 
 	public static void RemoveAllChildObject(GameObject parent, bool bImmediate)
 	{
-		int num = parent.transform.GetChildCount() - 1;
+		int num = parent.transform.childCount - 1;
 		while (0 <= num)
 		{
-			if (num < parent.transform.GetChildCount())
+			if (num < parent.transform.childCount)
 			{
 				Transform child = parent.transform.GetChild(num);
 				if (bImmediate)
@@ -286,7 +286,7 @@ public class NgObject
 		{
 			return rootObj;
 		}
-		for (int i = 0; i < rootObj.transform.GetChildCount(); i++)
+		for (int i = 0; i < rootObj.transform.childCount; i++)
 		{
 			GameObject gameObject = FindObjectWithTag(rootObj.transform.GetChild(i).gameObject, findTag);
 			if (gameObject != null)
@@ -307,7 +307,7 @@ public class NgObject
 		{
 			return rootObj;
 		}
-		for (int i = 0; i < rootObj.transform.GetChildCount(); i++)
+		for (int i = 0; i < rootObj.transform.childCount; i++)
 		{
 			GameObject gameObject = FindObjectWithLayer(rootObj.transform.GetChild(i).gameObject, nFindLayer);
 			if (gameObject != null)
@@ -323,7 +323,7 @@ public class NgObject
 		if (!(rootObj == null))
 		{
 			rootObj.layer = nLayer;
-			for (int i = 0; i < rootObj.transform.GetChildCount(); i++)
+			for (int i = 0; i < rootObj.transform.childCount; i++)
 			{
 				ChangeLayerWithChild(rootObj.transform.GetChild(i).gameObject, nLayer);
 			}

@@ -2,6 +2,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class iTween : MonoBehaviour
 {
@@ -207,10 +208,40 @@ public class iTween : MonoBehaviour
 
 	public static void CameraFadeFrom(float amount, float time)
 	{
-		if ((bool)cameraFade)
-		{
-			CameraFadeFrom(Hash("amount", amount, "time", time));
-		}
+    	if (cameraFade != null)
+    	{
+        	Image fadeImage = cameraFade.GetComponent<Image>();
+        	if (fadeImage != null)
+        	{
+            	Color color = fadeImage.color;
+            	color.a = amount;
+            	fadeImage.color = color;
+            
+            	iTween.ValueTo(cameraFade, iTween.Hash(
+                	"from", amount,
+                	"to", 0f,
+                	"time", time,
+                	"easetype", iTween.EaseType.linear,
+                	"onupdate", "OnFadeUpdate",
+                	"oncomplete", "CameraFadeDestroy",
+               		"oncompleteparams", cameraFade
+            	));
+        	}
+    	}
+	}
+
+	private static void OnFadeUpdate(float value)
+	{
+    	if (cameraFade != null)
+    	{
+        	Image fadeImage = cameraFade.GetComponent<Image>();
+        	if (fadeImage != null)
+        	{
+            	Color color = fadeImage.color;
+            	color.a = value;
+            	fadeImage.color = color;
+        	}
+    	}
 	}
 
 	public static void CameraFadeFrom(Hashtable args)
@@ -319,13 +350,13 @@ public class iTween : MonoBehaviour
 		{
 			args.Add("easetype", EaseType.linear);
 		}
-		if ((bool)target.GetComponent<GUITexture>())
+		if ((bool)target.GetComponent<Image>())
 		{
-			color2 = (color = target.GetComponent<GUITexture>().color);
+			color2 = (color = target.GetComponent<Image>().color);
 		}
-		else if ((bool)target.GetComponent<GUIText>())
+		else if ((bool)target.GetComponent<Text>())
 		{
-			color2 = (color = target.GetComponent<GUIText>().material.color);
+			color2 = (color = target.GetComponent<Text>().material.color);
 		}
 		else if ((bool)target.GetComponent<Renderer>())
 		{
@@ -368,13 +399,13 @@ public class iTween : MonoBehaviour
 			color.a = (float)args["alpha"];
 			args.Remove("alpha");
 		}
-		if ((bool)target.GetComponent<GUITexture>())
+		if ((bool)target.GetComponent<Image>())
 		{
-			target.GetComponent<GUITexture>().color = color;
+			target.GetComponent<Image>().color = color;
 		}
-		else if ((bool)target.GetComponent<GUIText>())
+		else if ((bool)target.GetComponent<Text>())
 		{
-			target.GetComponent<GUIText>().material.color = color;
+			target.GetComponent<Text>().material.color = color;
 		}
 		else if ((bool)target.GetComponent<Renderer>())
 		{
@@ -1183,15 +1214,15 @@ public class iTween : MonoBehaviour
 
 	private void GenerateColorToTargets()
 	{
-		if ((bool)GetComponent<GUITexture>())
+		if ((bool)GetComponent<Image>())
 		{
 			colors = new Color[1, 3];
-			colors[0, 0] = (colors[0, 1] = GetComponent<GUITexture>().color);
+			colors[0, 0] = (colors[0, 1] = GetComponent<Image>().color);
 		}
-		else if ((bool)GetComponent<GUIText>())
+		else if ((bool)GetComponent<Image>())
 		{
 			colors = new Color[1, 3];
-			colors[0, 0] = (colors[0, 1] = GetComponent<GUIText>().material.color);
+			colors[0, 0] = (colors[0, 1] = GetComponent<Image>().material.color);
 		}
 		else if ((bool)GetComponent<Renderer>())
 		{
@@ -1950,13 +1981,13 @@ public class iTween : MonoBehaviour
 			colors[i, 2].b = ease(colors[i, 0].b, colors[i, 1].b, percentage);
 			colors[i, 2].a = ease(colors[i, 0].a, colors[i, 1].a, percentage);
 		}
-		if ((bool)GetComponent<GUITexture>())
+		if ((bool)GetComponent<Image>())
 		{
-			GetComponent<GUITexture>().color = colors[0, 2];
+			GetComponent<Image>().color = colors[0, 2];
 		}
-		else if ((bool)GetComponent<GUIText>())
+		else if ((bool)GetComponent<Text>())
 		{
-			GetComponent<GUIText>().material.color = colors[0, 2];
+			GetComponent<Text>().material.color = colors[0, 2];
 		}
 		else if ((bool)GetComponent<Renderer>())
 		{
@@ -1973,13 +2004,13 @@ public class iTween : MonoBehaviour
 		{
 			return;
 		}
-		if ((bool)GetComponent<GUITexture>())
+		if ((bool)GetComponent<Image>())
 		{
-			GetComponent<GUITexture>().color = colors[0, 1];
+			GetComponent<Image>().color = colors[0, 1];
 		}
-		else if ((bool)GetComponent<GUIText>())
+		else if ((bool)GetComponent<Text>())
 		{
-			GetComponent<GUIText>().material.color = colors[0, 1];
+			GetComponent<Text>().material.color = colors[0, 1];
 		}
 		else if ((bool)GetComponent<Renderer>())
 		{
@@ -2524,13 +2555,13 @@ public class iTween : MonoBehaviour
 		{
 			num = Defaults.updateTime;
 		}
-		if ((bool)target.GetComponent<GUITexture>())
+		if ((bool)target.GetComponent<Image>())
 		{
-			array[0] = (array[1] = target.GetComponent<GUITexture>().color);
+			array[0] = (array[1] = target.GetComponent<Image>().color);
 		}
-		else if ((bool)target.GetComponent<GUIText>())
+		else if ((bool)target.GetComponent<Text>())
 		{
-			array[0] = (array[1] = target.GetComponent<GUIText>().material.color);
+			array[0] = (array[1] = target.GetComponent<Text>().material.color);
 		}
 		else if ((bool)target.GetComponent<Renderer>())
 		{
@@ -2567,13 +2598,13 @@ public class iTween : MonoBehaviour
 		array[3].g = Mathf.SmoothDamp(array[0].g, array[1].g, ref array[2].g, num);
 		array[3].b = Mathf.SmoothDamp(array[0].b, array[1].b, ref array[2].b, num);
 		array[3].a = Mathf.SmoothDamp(array[0].a, array[1].a, ref array[2].a, num);
-		if ((bool)target.GetComponent<GUITexture>())
+		if ((bool)target.GetComponent<Image>())
 		{
-			target.GetComponent<GUITexture>().color = array[3];
+			target.GetComponent<Image>().color = array[3];
 		}
-		else if ((bool)target.GetComponent<GUIText>())
+		else if ((bool)target.GetComponent<Text>())
 		{
-			target.GetComponent<GUIText>().material.color = array[3];
+			target.GetComponent<Text>().material.color = array[3];
 		}
 		else if ((bool)target.GetComponent<Renderer>())
 		{
@@ -3251,6 +3282,15 @@ public class iTween : MonoBehaviour
 		}
 	}
 
+	public static void SetImageTexture(Image image, Texture2D texture)
+	{
+    	if (image != null && texture != null)
+    	{
+        	Sprite sprite = Sprite.Create(texture, new Rect(0, 0, texture.width, texture.height), new Vector2(0.5f, 0.5f));
+        	image.sprite = sprite;
+    	}
+	}
+
 	public static void CameraFadeDepth(int depth)
 	{
 		if ((bool)cameraFade)
@@ -3259,63 +3299,83 @@ public class iTween : MonoBehaviour
 		}
 	}
 
-	public static void CameraFadeDestroy()
+    public static void CameraFadeDestroy()
+    {
+        if (cameraFade != null)
+        {
+            Destroy(cameraFade);
+        }
+    }
+
+	public static void CameraFadeSwap(Sprite sprite)
 	{
-		if ((bool)cameraFade)
-		{
-			UnityEngine.Object.Destroy(cameraFade);
-		}
+    	if (cameraFade != null)
+    	{
+        	cameraFade.GetComponent<Image>().sprite = sprite;
+    	}
 	}
 
-	public static void CameraFadeSwap(Texture2D texture)
+	public static GameObject CameraFadeAdd(int depth)
 	{
-		if ((bool)cameraFade)
-		{
-			cameraFade.GetComponent<GUITexture>().texture = texture;
-		}
+    	if (cameraFade != null)
+    	{
+        	return null;
+    	}
+    	cameraFade = new GameObject("iTween Camera Fade");
+    	cameraFade.transform.position = new Vector3(0.5f, 0.5f, depth);
+    	cameraFade.AddComponent<Image>();
+    	Texture2D texture = new Texture2D(1, 1);
+    	texture.SetPixel(0, 0, Color.white);
+    	texture.Apply();
+    	Sprite sprite = Sprite.Create(texture, new Rect(0, 0, texture.width, texture.height), new Vector2(0.5f, 0.5f));
+    	cameraFade.GetComponent<Image>().sprite = sprite;
+    	cameraFade.GetComponent<Image>().color = new Color(0.5f, 0.5f, 0.5f, 0f);
+    	return cameraFade;
 	}
 
-	public static GameObject CameraFadeAdd(Texture2D texture, int depth)
-	{
-		if ((bool)cameraFade)
-		{
-			return null;
-		}
-		cameraFade = new GameObject("iTween Camera Fade");
-		cameraFade.transform.position = new Vector3(0.5f, 0.5f, depth);
-		cameraFade.AddComponent<GUITexture>();
-		cameraFade.GetComponent<GUITexture>().texture = texture;
-		cameraFade.GetComponent<GUITexture>().color = new Color(0.5f, 0.5f, 0.5f, 0f);
-		return cameraFade;
-	}
+    public static GameObject CameraFadeAdd(Texture2D texture, int depth)
+    {
+        if (cameraFade != null)
+        {
+            return null;
+        }
+        cameraFade = new GameObject("iTween Camera Fade");
+        cameraFade.transform.position = new Vector3(0.5f, 0.5f, depth);
+        Image fadeImage = cameraFade.AddComponent<Image>();
+        
+        // Create a sprite from the texture and assign it to the Image
+        Sprite sprite = Sprite.Create(texture, new Rect(0, 0, texture.width, texture.height), new Vector2(0.5f, 0.5f));
+        fadeImage.sprite = sprite;
+        
+        fadeImage.color = new Color(0.5f, 0.5f, 0.5f, 0f);
+        return cameraFade;
+    }
 
-	public static GameObject CameraFadeAdd(Texture2D texture)
-	{
-		if ((bool)cameraFade)
-		{
-			return null;
-		}
-		cameraFade = new GameObject("iTween Camera Fade");
-		cameraFade.transform.position = new Vector3(0.5f, 0.5f, Defaults.cameraFadeDepth);
-		cameraFade.AddComponent<GUITexture>();
-		cameraFade.GetComponent<GUITexture>().texture = texture;
-		cameraFade.GetComponent<GUITexture>().color = new Color(0.5f, 0.5f, 0.5f, 0f);
-		return cameraFade;
-	}
-
-	public static GameObject CameraFadeAdd()
-	{
-		if ((bool)cameraFade)
-		{
-			return null;
-		}
-		cameraFade = new GameObject("iTween Camera Fade");
-		cameraFade.transform.position = new Vector3(0.5f, 0.5f, Defaults.cameraFadeDepth);
-		cameraFade.AddComponent<GUITexture>();
-		cameraFade.GetComponent<GUITexture>().texture = CameraTexture(Color.black);
-		cameraFade.GetComponent<GUITexture>().color = new Color(0.5f, 0.5f, 0.5f, 0f);
-		return cameraFade;
-	}
+    public static GameObject CameraFadeAdd()
+    {
+        if (cameraFade != null)
+        {
+            return null;
+        }
+        
+        cameraFade = new GameObject("iTween Camera Fade");
+        cameraFade.transform.position = new Vector3(0.5f, 0.5f, Defaults.cameraFadeDepth);
+        
+        Image fadeImage = cameraFade.AddComponent<Image>();
+        
+        // Create a black texture
+        Texture2D texture = new Texture2D(1, 1);
+        texture.SetPixel(0, 0, Color.black);
+        texture.Apply();
+        
+        // Create a sprite from the texture and assign it to the Image
+        Sprite sprite = Sprite.Create(texture, new Rect(0, 0, texture.width, texture.height), new Vector2(0.5f, 0.5f));
+        fadeImage.sprite = sprite;
+        
+        fadeImage.color = new Color(0.5f, 0.5f, 0.5f, 0f);
+        
+        return cameraFade;
+    }
 
 	public static void Resume(GameObject target)
 	{

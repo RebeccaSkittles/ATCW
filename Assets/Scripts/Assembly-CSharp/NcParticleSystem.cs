@@ -86,11 +86,7 @@ public class NcParticleSystem : NcEffectBehaviour
 
 	protected ParticleSystem m_ps;
 
-	protected ParticleEmitter m_pe;
-
-	protected ParticleAnimator m_pa;
-
-	protected ParticleRenderer m_pr;
+	protected ParticleSystemRenderer m_psr;
 
 	protected ParticleSystem.Particle[] m_BufPsParts;
 
@@ -108,10 +104,11 @@ public class NcParticleSystem : NcEffectBehaviour
 		return GetComponent<ParticleSystem>() != null;
 	}
 
-	public bool IsLegacy()
-	{
-		return GetComponent<ParticleEmitter>() != null && GetComponent<ParticleEmitter>().enabled;
-	}
+    public bool IsLegacy()
+    {
+        // Legacy particle system is no longer supported
+        return false;
+    }
 
 	public override int GetAnimationState()
 	{
@@ -151,21 +148,11 @@ public class NcParticleSystem : NcEffectBehaviour
 		return m_bMeshParticleEmitter;
 	}
 
-	private void Awake()
-	{
-		if (IsShuriken())
-		{
-			m_ps = GetComponent<ParticleSystem>();
-			return;
-		}
-		m_pe = GetComponent<ParticleEmitter>();
-		m_pa = GetComponent<ParticleAnimator>();
-		m_pr = GetComponent<ParticleRenderer>();
-		if (m_pe != null)
-		{
-			m_bMeshParticleEmitter = m_pe.ToString().Contains("MeshParticleEmitter");
-		}
-	}
+    private void Awake()
+    {
+        m_ps = GetComponent<ParticleSystem>();
+        m_psr = GetComponent<ParticleSystemRenderer>();
+    }
 
 	private void OnEnable()
 	{
@@ -207,142 +194,102 @@ public class NcParticleSystem : NcEffectBehaviour
 
 	private void Update()
 	{
-		if (m_bDisabledEmit)
-		{
-			return;
-		}
-		if (0f < m_fStartDelayTime)
-		{
-			if (m_fStartTime + m_fStartDelayTime <= NcEffectBehaviour.GetEngineTime())
-			{
-				m_fEmitStartTime = NcEffectBehaviour.GetEngineTime();
-				m_fDurationStartTime = NcEffectBehaviour.GetEngineTime();
-				m_fStartDelayTime = 0f;
-				SetEnableParticle(true);
-			}
-		}
-		else if (m_bBurst)
-		{
-			if (m_fDurationStartTime <= NcEffectBehaviour.GetEngineTime() && (m_nBurstRepeatCount == 0 || m_nCreateCount < m_nBurstRepeatCount))
-			{
-				m_fDurationStartTime = m_fBurstRepeatTime + NcEffectBehaviour.GetEngineTime();
-				m_nCreateCount++;
-				if (IsShuriken())
-				{
-					m_ps.Emit(m_fBurstEmissionCount);
-				}
-				else if (m_pe != null)
-				{
-					m_pe.Emit(m_fBurstEmissionCount);
-				}
-			}
-		}
-		else if (m_bSleep)
-		{
-			if (m_fEmitStartTime + m_fEmitTime + m_fSleepTime < NcEffectBehaviour.GetEngineTime())
-			{
-				SetEnableParticle(true);
-				m_fEmitStartTime = NcEffectBehaviour.GetEngineTime();
-				m_bSleep = false;
-			}
-		}
-		else if (0f < m_fEmitTime && m_fEmitStartTime + m_fEmitTime < NcEffectBehaviour.GetEngineTime())
-		{
-			m_nCreateCount++;
-			SetEnableParticle(false);
-			if (0f < m_fSleepTime)
-			{
-				m_bSleep = true;
-			}
-			else
-			{
-				m_fEmitTime = 0f;
-			}
-		}
-	}
+    	if (m_bDisabledEmit)
+    	{
+        return;
+    	}
+    	if (0f < m_fStartDelayTime)
+    	{
+        if (m_fStartTime + m_fStartDelayTime <= NcEffectBehaviour.GetEngineTime())
+        	{
+            m_fEmitStartTime = NcEffectBehaviour.GetEngineTime();
+            m_fDurationStartTime = NcEffectBehaviour.GetEngineTime();
+            m_fStartDelayTime = 0f;
+            SetEnableParticle(true);
+        	}
+    	}
+    	else if (m_bBurst)
+    	{
+        if (m_fDurationStartTime <= NcEffectBehaviour.GetEngineTime() && (m_nBurstRepeatCount == 0 || m_nCreateCount < m_nBurstRepeatCount))
+        	{
+            	m_fDurationStartTime = m_fBurstRepeatTime + NcEffectBehaviour.GetEngineTime();
+            	m_nCreateCount++;
+            if (m_ps != null)
+            {
+                m_ps.Emit(m_fBurstEmissionCount);
+            }
+        	}
+    	}
+    	else if (m_bSleep)
+    	{
+        if (m_fEmitStartTime + m_fEmitTime + m_fSleepTime < NcEffectBehaviour.GetEngineTime())
+        	{
+            	SetEnableParticle(true);
+            	m_fEmitStartTime = NcEffectBehaviour.GetEngineTime();
+            	m_bSleep = false;
+        	}
+    	}
+    	else if (0f < m_fEmitTime && m_fEmitStartTime + m_fEmitTime < NcEffectBehaviour.GetEngineTime())
+    	{
+        	m_nCreateCount++;
+        	SetEnableParticle(false);
+        	if (0f < m_fSleepTime)
+        {
+            m_bSleep = true;
+        }
+        else
+        {
+            m_fEmitTime = 0f;
+        }
+    }
+}
 
-	private void FixedUpdate()
-	{
-		if (m_ParticleDestruct == ParticleDestruct.NONE)
-		{
-			return;
-		}
-		bool flag = false;
-		if (IsShuriken())
-		{
-			if (!(m_ps != null))
-			{
-				return;
-			}
-			AllocateParticleSystem(ref m_BufColliderOriParts);
-			AllocateParticleSystem(ref m_BufColliderConParts);
-			m_ps.GetParticles(m_BufColliderOriParts);
-			m_ps.GetParticles(m_BufColliderConParts);
-			ShurikenScaleParticle(m_BufColliderConParts, m_ps.particleCount, m_bScaleWithTransform, true);
-			for (int i = 0; i < m_ps.particleCount; i++)
-			{
-				bool flag2 = false;
-				Vector3 position = ((!m_bWorldSpace) ? base.transform.TransformPoint(m_BufColliderConParts[i].position) : m_BufColliderConParts[i].position);
-				if (m_ParticleDestruct == ParticleDestruct.COLLISION)
-				{
-					if (Physics.CheckSphere(position, m_fCollisionRadius, m_CollisionLayer))
-					{
-						flag2 = true;
-					}
-				}
-				else if (m_ParticleDestruct == ParticleDestruct.WORLD_Y && position.y <= m_fDestructPosY)
-				{
-					flag2 = true;
-				}
-				if (flag2 && 0f < m_BufColliderOriParts[i].remainingLifetime)
-				{
-					m_BufColliderOriParts[i].remainingLifetime = 0f;
-					flag = true;
-					CreateAttachPrefab(position, m_BufColliderConParts[i].size * m_fPrefabScale);
-				}
-			}
-			if (flag)
-			{
-				m_ps.SetParticles(m_BufColliderOriParts, m_ps.particleCount);
-			}
-		}
-		else
-		{
-			if (!(m_pe != null))
-			{
-				return;
-			}
-			Particle[] particles = m_pe.particles;
-			Particle[] particles2 = m_pe.particles;
-			LegacyScaleParticle(particles2, m_bScaleWithTransform, true);
-			for (int j = 0; j < particles2.Length; j++)
-			{
-				bool flag3 = false;
-				Vector3 position = ((!m_bWorldSpace) ? base.transform.TransformPoint(particles2[j].position) : particles2[j].position);
-				if (m_ParticleDestruct == ParticleDestruct.COLLISION)
-				{
-					if (Physics.CheckSphere(position, m_fCollisionRadius, m_CollisionLayer))
-					{
-						flag3 = true;
-					}
-				}
-				else if (m_ParticleDestruct == ParticleDestruct.WORLD_Y && position.y <= m_fDestructPosY)
-				{
-					flag3 = true;
-				}
-				if (flag3 && 0f < particles[j].energy)
-				{
-					particles[j].energy = 0f;
-					flag = true;
-					CreateAttachPrefab(position, particles2[j].size * m_fPrefabScale);
-				}
-			}
-			if (flag)
-			{
-				m_pe.particles = particles;
-			}
-		}
-	}
+private void FixedUpdate()
+{
+    if (m_ParticleDestruct == ParticleDestruct.NONE)
+    {
+        return;
+    }
+    bool flag = false;
+    if (IsShuriken())
+    {
+        if (m_ps == null)
+        {
+            return;
+        }
+        AllocateParticleSystem(ref m_BufColliderOriParts);
+        AllocateParticleSystem(ref m_BufColliderConParts);
+        m_ps.GetParticles(m_BufColliderOriParts);
+        m_ps.GetParticles(m_BufColliderConParts);
+        ShurikenScaleParticle(m_BufColliderConParts, m_ps.particleCount, m_bScaleWithTransform, true);
+        for (int i = 0; i < m_ps.particleCount; i++)
+        {
+            bool flag2 = false;
+            Vector3 position = ((!m_bWorldSpace) ? base.transform.TransformPoint(m_BufColliderConParts[i].position) : m_BufColliderConParts[i].position);
+            if (m_ParticleDestruct == ParticleDestruct.COLLISION)
+            {
+                if (Physics.CheckSphere(position, m_fCollisionRadius, m_CollisionLayer))
+                {
+                    flag2 = true;
+                }
+            }
+            else if (m_ParticleDestruct == ParticleDestruct.WORLD_Y && position.y <= m_fDestructPosY)
+            {
+                flag2 = true;
+            }
+            if (flag2 && 0f < m_BufColliderOriParts[i].remainingLifetime)
+            {
+                m_BufColliderOriParts[i].remainingLifetime = 0f;
+                flag = true;
+                CreateAttachPrefab(position, m_BufColliderConParts[i].size * m_fPrefabScale);
+            }
+        	}
+        	if (flag)
+        	{
+            	m_ps.SetParticles(m_BufColliderOriParts, m_ps.particleCount);
+        	}
+    	}
+	}	
 
 	private void OnPreRender()
 	{
@@ -433,17 +380,14 @@ public class NcParticleSystem : NcEffectBehaviour
 		}
 	}
 
-	private void SetEnableParticle(bool bEnable)
-	{
-		if (m_ps != null)
-		{
-			m_ps.enableEmission = bEnable;
-		}
-		if (m_pe != null)
-		{
-			m_pe.emit = bEnable;
-		}
-	}
+    private void SetEnableParticle(bool bEnable)
+    {
+        if (m_ps != null)
+        {
+            var emission = m_ps.emission;
+            emission.enabled = bEnable;
+        }
+    }
 
 	public float GetScaleMinMeshNormalVelocity()
 	{
@@ -455,135 +399,62 @@ public class NcParticleSystem : NcEffectBehaviour
 		return m_fLegacyMaxMeshNormalVelocity * ((!m_bScaleWithTransform) ? 1f : NcTransformTool.GetTransformScaleMeanValue(base.transform));
 	}
 
-	private void LegacyInitParticle()
-	{
-		if (m_pe != null)
-		{
-			LegacySetParticle();
-		}
-	}
+    private void LegacyInitParticle()
+    {
+        // This method is no longer needed, but you might want to keep it for backwards compatibility
+        Debug.LogWarning("LegacyInitParticle is no longer supported. Please update your particle system to use ParticleSystem.");
+    }
 
-	private void LegacySetParticle()
-	{
-		ParticleEmitter pe = m_pe;
-		ParticleAnimator pa = m_pa;
-		ParticleRenderer pr = m_pr;
-		if (pe == null || pr == null)
-		{
-			return;
-		}
-		if (m_bLegacyRuntimeScale)
-		{
-			Vector3 b = Vector3.one * m_fStartSpeedRate;
-			float fStartSpeedRate = m_fStartSpeedRate;
-			pe.minSize *= m_fStartSizeRate;
-			pe.maxSize *= m_fStartSizeRate;
-			pe.minEnergy *= m_fStartLifeTimeRate;
-			pe.maxEnergy *= m_fStartLifeTimeRate;
-			pe.minEmission *= m_fStartEmissionRate;
-			pe.maxEmission *= m_fStartEmissionRate;
-			pe.worldVelocity = Vector3.Scale(pe.worldVelocity, b);
-			pe.localVelocity = Vector3.Scale(pe.localVelocity, b);
-			pe.rndVelocity = Vector3.Scale(pe.rndVelocity, b);
-			pe.angularVelocity *= fStartSpeedRate;
-			pe.rndAngularVelocity *= fStartSpeedRate;
-			pe.emitterVelocityScale *= fStartSpeedRate;
-			if (pa != null)
-			{
-				pa.rndForce = Vector3.Scale(pa.rndForce, b);
-				pa.force = Vector3.Scale(pa.force, b);
-			}
-			pr.lengthScale *= m_fRenderLengthRate;
-			return;
-		}
-		Vector3 b2 = ((!m_bScaleWithTransform) ? Vector3.one : pe.transform.lossyScale) * m_fStartSpeedRate;
-		float num = ((!m_bScaleWithTransform) ? 1f : NcTransformTool.GetTransformScaleMeanValue(pe.transform)) * m_fStartSpeedRate;
-		float num2 = ((!m_bScaleWithTransform) ? 1f : NcTransformTool.GetTransformScaleMeanValue(pe.transform)) * m_fStartSizeRate;
-		pe.minSize *= num2;
-		pe.maxSize *= num2;
-		pe.minEnergy *= m_fStartLifeTimeRate;
-		pe.maxEnergy *= m_fStartLifeTimeRate;
-		pe.minEmission *= m_fStartEmissionRate;
-		pe.maxEmission *= m_fStartEmissionRate;
-		pe.worldVelocity = Vector3.Scale(pe.worldVelocity, b2);
-		pe.localVelocity = Vector3.Scale(pe.localVelocity, b2);
-		pe.rndVelocity = Vector3.Scale(pe.rndVelocity, b2);
-		pe.angularVelocity *= num;
-		pe.rndAngularVelocity *= num;
-		pe.emitterVelocityScale *= num;
-		if (pa != null)
-		{
-			pa.rndForce = Vector3.Scale(pa.rndForce, b2);
-			pa.force = Vector3.Scale(pa.force, b2);
-		}
-		pr.lengthScale *= m_fRenderLengthRate;
-	}
+    private void LegacySetParticle()
+    {
+        // This method is no longer needed, but you might want to keep it for backwards compatibility
+        Debug.LogWarning("LegacySetParticle is no longer supported. Please update your particle system to use ParticleSystem.");
+    }
 
-	private void LegacyParticleSpeed(float fSpeed)
-	{
-		ParticleEmitter pe = m_pe;
-		ParticleAnimator pa = m_pa;
-		ParticleRenderer pr = m_pr;
-		if (!(pe == null) && !(pr == null))
-		{
-			Vector3 b = Vector3.one * fSpeed;
-			pe.minEnergy /= fSpeed;
-			pe.maxEnergy /= fSpeed;
-			pe.worldVelocity = Vector3.Scale(pe.worldVelocity, b);
-			pe.localVelocity = Vector3.Scale(pe.localVelocity, b);
-			pe.rndVelocity = Vector3.Scale(pe.rndVelocity, b);
-			pe.angularVelocity *= fSpeed;
-			pe.rndAngularVelocity *= fSpeed;
-			pe.emitterVelocityScale *= fSpeed;
-			if (pa != null)
-			{
-				pa.rndForce = Vector3.Scale(pa.rndForce, b);
-				pa.force = Vector3.Scale(pa.force, b);
-			}
-		}
-	}
+    private void LegacyParticleSpeed(float fSpeed)
+    {
+        // This method is no longer needed, but you might want to keep it for backwards compatibility
+        Debug.LogWarning("LegacyParticleSpeed is no longer supported. Please update your particle system to use ParticleSystem.");
+    }
 
-	private void LegacySetRuntimeParticleScale(bool bScale)
-	{
-		if (m_bLegacyRuntimeScale && m_pe != null)
-		{
-			Particle[] particles = m_pe.particles;
-			m_pe.particles = LegacyScaleParticle(particles, bScale, true);
-		}
-	}
+    private void LegacySetRuntimeParticleScale(bool bScale)
+    {
+        // This method is no longer needed, but you might want to keep it for backwards compatibility
+        Debug.LogWarning("LegacySetRuntimeParticleScale is no longer supported. Please update your particle system to use ParticleSystem.");
+    }
 
-	public Particle[] LegacyScaleParticle(Particle[] parts, bool bScale, bool bPosUpdate)
-	{
-		float num = ((!bScale) ? (1f / NcTransformTool.GetTransformScaleMeanValue(base.transform)) : NcTransformTool.GetTransformScaleMeanValue(base.transform));
-		for (int i = 0; i < parts.Length; i++)
-		{
-			if (!IsMeshParticleEmitter())
-			{
-				if (m_bWorldSpace)
-				{
-					if (bPosUpdate)
-					{
-						Vector3 vector = m_OldPos - base.transform.position;
-						if (bScale)
-						{
-							parts[i].position -= vector * (1f - 1f / num);
-						}
-					}
-					parts[i].position -= base.transform.position;
-					parts[i].position *= num;
-					parts[i].position += base.transform.position;
-				}
-				else
-				{
-					parts[i].position *= num;
-				}
-			}
-			parts[i].angularVelocity *= num;
-			parts[i].velocity *= num;
-			parts[i].size *= num;
-		}
-		return parts;
-	}
+    public ParticleSystem.Particle[] LegacyScaleParticle(ParticleSystem.Particle[] parts, bool bScale, bool bPosUpdate)
+    {
+        float num = ((!bScale) ? (1f / NcTransformTool.GetTransformScaleMeanValue(base.transform)) : NcTransformTool.GetTransformScaleMeanValue(base.transform));
+        for (int i = 0; i < parts.Length; i++)
+        {
+            if (!IsMeshParticleEmitter())
+            {
+                if (m_bWorldSpace)
+                {
+                    if (bPosUpdate)
+                    {
+                        Vector3 vector = m_OldPos - base.transform.position;
+                        if (bScale)
+                        {
+                            parts[i].position -= vector * (1f - 1f / num);
+                        }
+                    }
+                    parts[i].position -= base.transform.position;
+                    parts[i].position *= num;
+                    parts[i].position += base.transform.position;
+                }
+                else
+                {
+                    parts[i].position *= num;
+                }
+            }
+            // Note: angularVelocity is not available in ParticleSystem.Particle
+            parts[i].velocity *= num;
+            parts[i].startSize *= num;
+        }
+        return parts;
+    }
 
 	private void ShurikenInitParticle()
 	{
