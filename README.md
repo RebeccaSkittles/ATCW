@@ -1,4 +1,15 @@
 # Card Wars
+(NEWER ANDROID DEVICES - Just tap through the error saying the game is outdated, everything functions.)
+
+Changes:
+- Updated the project to work with Unity 2022.3.33f
+- Fixed multiple shader errors and network errors
+- Fixed deprecated code with updated Unity methods
+
+Issues:
+From what I've seen there's an issue on the Fionna and Cake level 24, I want to look into it and attempt a fix ASAP.
+There's no ETA on when I'll be able to thoroughly look through the game as I'm currently trying to fix the PvP and Unity Project for Card Wars Kingdom.
+
 A port of the "Adventure Time: Card Wars" mobile game to PC and updated for ANDROID
 
 Floop the Pig! It's Adventure Time CARD WARS! Play the game inspired by the Adventure TIme episode, 'Card Wars'! Summon creatures and cast spells to battle your way to victory.
