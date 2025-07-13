@@ -21,15 +21,27 @@ It's CARD WARS!
 
 ## Download
 
-* [Latest Windows Version](https://github.com/shishkabob27/CardWars/releases/latest/download/CardWars-Windows.zip)
+* [Latest Windows Version](#)
 * Mac Version - Coming Soon
 * Linux Version - Coming Soon
 * iOS Version - Coming Soon
-* Android Version - Coming Soon
+* [Latest Android Version](#)
 
 ## Version Info
 
-Built with Unity 2017.4.40f1
+### Latest Version - Production
+
+**Unity Version:** 2022.3.33f ![Download Editor](https://unity.com/releases/editor/archive)
+**Game Vesrion:** 1.12.8
+**Build:** 1
+
+### Latest Version - Preview
+
+**Unity Version:** 2022.3.33f ![Download Editor](https://unity.com/releases/editor/archive)
+**Game Vesrion:** 1.12.9
+**Build:** 1
+This Version is not out just yet.
+
 
 ## Images
 ![CardWars_r8d9H393Tp](https://i.imgur.com/cXUolY0.jpg)
@@ -37,19 +49,10 @@ Built with Unity 2017.4.40f1
 
 ## Contributing
 
-Card Wars uses Unity 2017.4.40f1.
+Card Wars uses Unity 2017.4.40f1 *side note: unity 2017 will only work for the Windows build. if you wish to build to another platform, use Unity 2022.*. However it has now been upgraded to Unity 2022.3.33f by [**ThugRod**](https://github.com/ThugRod/CardWarsOriginal)
 
 **Platform-specific Dependencies:**
 
 - **Windows/Linux builds**: No additional dependencies required
 - **macOS/iOS builds**: Requires a Mac
-- **Android builds**: 
-  - Android Studio (any version)
-  - Android Tools from https://dl.google.com/android/repository/tools_r25.2.5-windows.zip
-  - SDK Platform Tools for Android 10
-  - Android SDK 29
-  - SDK Tools 29.0.3 (from Android Studio)
-  - JDK 8 from [Oracle](https://www.oracle.com/java/technologies/javase/javase8u211-later-archive-downloads.html)
-  - **For ARM64 builds** (Android 10+): Android NDK r13b from https://dl.google.com/android/repository/android-ndk-r13b-windows-x86_64.zip
-  - **For ARMv7 builds** (32-bit): NDK not required
-  - **IMPORTANT**: Use INTERNAL building in Unity for Android, NOT Gradle (Gradle sucks, and WILL error out)
+- **Android builds**: No additional dependencies required *may require mods to the player settings, otherwise it should work out of the box. Also don't run Build & Run, just Build, it won't error out then, some devices just don't want to work with this feature.*
