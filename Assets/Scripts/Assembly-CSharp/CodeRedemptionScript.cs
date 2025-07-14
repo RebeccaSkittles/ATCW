@@ -33,6 +33,8 @@ public class CodeRedemptionScript : MonoBehaviour
 
 	private const string MeMowCode = "ME-MOW";
 
+	private const string MikuCode = "Miku";
+
 	public UILabel Label;
 
 	public AudioClip fanfare;
@@ -130,6 +132,11 @@ public class CodeRedemptionScript : MonoBehaviour
 			DoLeaderRedeem("Leader_FinnDoctor");
 			return;
 		}
+		if ("Miku" == input)
+		{
+			DoStaminaRedeem(100);
+			return;
+		}
 		if (Showfail != null)
 		{
 			Showfail.Play(true);
@@ -192,6 +199,23 @@ public class CodeRedemptionScript : MonoBehaviour
 		{
 			ShowDupe.Play(true);
 		}
+	}
+
+	private void DoStaminaRedeem(int amount)
+	{
+		PlayerInfoScript instance = PlayerInfoScript.GetInstance();
+		NGUITools.PlaySound(fanfare);
+		instance.Stamina += amount;
+		instance.Save();
+		if (CreatureName != null)
+		{
+			CreatureName.text = amount + " Hearts";
+		}
+		if (ShowSuccess != null)
+		{
+			ShowSuccess.Play(true);
+		}
+		StartCoroutine(CardRewardSfxCoroutine(cerebral));
 	}
 
 	protected IEnumerator CardRewardSfxCoroutine(AudioClip clip)
