@@ -19,33 +19,72 @@ Think you've got what it takes to be crowned a Cool Guy, or will you end up drin
 
 It's CARD WARS! 
 
+## Redeem Codes
+
+The game includes several redeem codes that can be entered in the Adventure Time scene's redeem code interface:
+
+### Creature Cards
+- `P1GGY1` - Pig creature
+- `CUTIE PIE` - Snuggle Tree creature  
+- `MINSTR3L` - Embarrassing Bard creature
+- `123224` - Music Mallard creature
+- `NICE ONE` - Spiked Mace Stump creature
+- `COOLDUDE` - Freezy J creature
+- `AWESOMATUDE` - Spiked Mace Stump creature
+- `ME-MOW` - Freezy J creature
+
+### Spell Cards
+- `C3R3BL` - Cerebral Bloodstorm spell
+- `BRIEF` - Brief Power spell
+
+### Leader Characters
+- `WINTER BMO` - BMO Sweater leader
+- `GHOST DOG` - Jake Ghost leader (Halloween seasonal)
+- `LUMPS` - Lumpy Sweater leader (Christmas seasonal)
+- `UND3RPANT5` - Finn Pajama leader (time-limited)
+- `DRKUNGFU` - Finn Doctor leader (time-limited)
+
+### Special Codes *requires version 1.12.9 or higher to use*
+- `Miku` - Gives 100 hearts (stamina)
+
+**Note:** Some codes may have time restrictions or seasonal availability requirements.
+
+## Images
+![CardWars_r8d9H393Tp](https://i.imgur.com/cXUolY0.jpg)
+![CardWars_F7nDRbIxel](https://i.imgur.com/N3BH326.jpg)
+
 ## Download
 
-* [Latest Windows Version](#)
-* Mac Version - Coming Soon
-* Linux Version - Coming Soon
+* [Latest Windows Version](https://github.com/RebeccaSkittles/ATCW/releases/latest)
+* [Latest Mac Version](https://github.com/RebeccaSkittles/ATCW/releases/latest)
+* [Latest Linux Version](https://github.com/RebeccaSkittles/ATCW/releases/latest)
 * iOS Version - Coming Soon
-* [Latest Android Version](#)
+* [Latest Android Version](https://github.com/RebeccaSkittles/ATCW/releases/latest)
 
 ## Version Info
 
 ### Latest Version - Production
 
-**Unity Version:** 2022.3.33f ![Download Editor](https://unity.com/releases/editor/archive)
-**Game Vesrion:** 1.12.8
+**Unity Version:** 2022.3.33f [Download Editor](https://unity.com/releases/editor/archive)
+
+**Game Vesrion:** 1.12.8 [Download](https://github.com/RebeccaSkittles/ATCW/releases/1.12.8)
+
 **Build:** 1
 
 ### Latest Version - Preview
 
-**Unity Version:** 2022.3.33f ![Download Editor](https://unity.com/releases/editor/archive)
-**Game Vesrion:** 1.12.9
+**Unity Version:** 2022.3.33f [Download Editor](https://unity.com/releases/editor/archive)
+
+**Game Vesrion:** 1.12.9 *This Version is not out just yet.*
+
 **Build:** 1
-This Version is not out just yet.
 
+### Notice for Preview Builds
 
-## Images
-![CardWars_r8d9H393Tp](https://i.imgur.com/cXUolY0.jpg)
-![CardWars_F7nDRbIxel](https://i.imgur.com/N3BH326.jpg)
+**Preview builds only support Windows and Android platforms. For all platform support, please use the Production build.**
+
+Preview versions may have multiple different builds due to frequent updates during development. For stability, it's recommended to use the **Production** build, which receives fewer updates and is more stable.
+
 
 ## Contributing
 
